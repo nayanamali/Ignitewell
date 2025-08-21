@@ -19,10 +19,10 @@
       font-size: 3rem;
       font-weight: bold;
       color: white;
-      text-align: center;
       opacity: 0;
       position: relative;
       animation: slideUp 2s ease-out forwards;
+      padding-bottom:20px;
 }
 
 @keyframes slideUp {
