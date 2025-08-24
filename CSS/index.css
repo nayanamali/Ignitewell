@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: #0b0b0d   ;        /*#000*/
   color: #fff;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -129,7 +129,7 @@ header {
 
 /* ---------- SERVICE CARDS ---------- */
 .service-card {
-  background:#1a1a1a;
+  background:rgba(255,255,255,0.04);           /*#1a1a1a*/
   border: 1px solid #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeUp 1s ease both;
@@ -149,7 +149,7 @@ header {
 
 /* ---------- TRAINER CARDS ---------- */
 .trainer-card {
-  background: #1a1a1a;
+  background: rgba(255,255,255,0.04);                /*#1a1a1a*/
   padding: 20px;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -186,7 +186,7 @@ header {
 
 /* ---------- PLANS ---------- */
 .plan-card {
-  background: #1a1a1a;
+  background:rgba(255,255,255,0.04);
   padding: 30px 20px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,255,127,0.15);
@@ -240,7 +240,7 @@ header {
 
 /* ---------- TESTIMONIALS ---------- */
 .testimonials {
-  background: #111;
+  background:#0b0b0d;       /*#000*/
   color: #fff;
 }
 .section-title {
@@ -249,7 +249,7 @@ header {
   color: #00ff7f;
 }
 .testimonial-card {
-  background:#1a1a1a;
+  background:rgba(255,255,255,0.04);              /*#1a1a1a*/
   padding: 30px 20px;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -392,7 +392,7 @@ button:hover {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background:#111;
+  background:#0b0b0d;
   color: #fff;
   padding: 50px 0;
   position: relative;
