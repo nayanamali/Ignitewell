@@ -1,48 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Contact Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/contact.css">
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg shadow" style="background-color:#272727" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand fs-3" href="#"><img src="images/logo2.png" alt="Logo" width="50" height="35"
-                    class="d-inline-block align-text-top object-fit-cover">
-                Ignitewell</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto justify-content-evenly">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="subscription.html">Subscriptions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="trainers.html">Trainers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- HEADER with NAV + SLIDER -->
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo">
+          <span class="brand-text">IgniteWell</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#subscription">Subscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-</header>
+ </header>
+<!-- Hero -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="background-image: url('https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg');">
+      <div class="carousel-caption text-center">
+        <h1 class="hero-title">Unleash Your Power ⚡</h1>
+        <p class="hero-subtext">Train hard, push limits, and achieve greatness.</p>
+        <button class="btn-cta">Join The Movement</button>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item" style="background-image: url('https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg');">
+      <div class="carousel-caption text-center">
+        <h1 class="hero-title">No Excuses. Just Results 💪</h1>
+        <p class="hero-subtext">Our coaches are here to guide your transformation.</p>
+        <button class="btn-cta">Start Now</button>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item" style="background-image: url('images/gym1.jpg');">
+      <div class="carousel-caption text-center">
+        <h1 class="hero-title">Strong Body. Strong Mind 🏋️</h1>
+        <p class="hero-subtext">Fitness isn’t a destination — it’s a lifestyle.</p>
+        <button class="btn-cta">Contact Us</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Contact Info Cards -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md-3">
+        <div class="info-card"><i class="bi bi-telephone-fill"></i><p>+91 98765 43210</p></div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-card"><i class="bi bi-envelope-fill"></i><p>info@ignitewellfitness.com</p></div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-card"><i class="bi bi-geo-alt-fill"></i><p>123 Fitness Street, Mumbai</p></div>
+      </div>
+      <div class="col-md-3">
+        <div class="info-card"><i class="bi bi-clock-fill"></i><p>Mon-Sat: 6AM - 10PM</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form & Map -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="contact-form">
+          <h3 class="mb-3">Send Us a Message</h3>
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Your Name">
+            <input type="email" class="form-control mb-3" placeholder="Your Email">
+            <input type="tel" class="form-control mb-3" placeholder="Phone Number">
+            <select class="form-control mb-3">
+              <option selected>Choose Inquiry Type</option>
+              <option>Membership</option>
+              <option>Personal Training</option>
+              <option>Trial Session</option>
+            </select>
+            <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-custom w-100">Start Your Fitness Journey</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160982431!2d72.74109962701416!3d19.082197838699814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63a6f0b9a6d%3A0xdeb8c29c88b35c9a!2sMumbai!5e0!3m2!1sen!2sin!4v1692874063434!5m2!1sen!2sin" 
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4" style="color:#00ff7f;">Frequently Asked Questions</h3>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+            Do you offer a free trial?
+          </button>
+        </h2>
+        <div id="q1" class="accordion-collapse collapse show">
+          <div class="accordion-body">Yes, we offer a free 1-day trial so you can experience our gym before joining.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+            Do you provide personal trainers?
+          </button>
+        </h2>
+        <div id="q2" class="accordion-collapse collapse">
+          <div class="accordion-body">Absolutely! Our certified trainers will guide you through customized workout plans.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About Section -->
+    <div class="footer-about">
+      <h3>About Ignitewell</h3>
+      <p>
+        Ignitewell is your ultimate fitness partner. We provide personalized training programs, expert guidance, and an inspiring environment to help you reach your fitness goals.
+      </p>
+      <div class="footer-social">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><i class="bi bi-geo-alt-fill"></i> New York, USA</p>
+      <p><i class="bi bi-telephone-fill"></i> +1 234 567 890</p>
+      <p><i class="bi bi-envelope-fill"></i> info@fitness.com</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for fitness tips & updates</p>
+      <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Animated Background Circles -->
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
