@@ -12,6 +12,13 @@ body {
 .navbar {
   background: rgba(0, 0, 0, 0.85);
 }
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: 700;
@@ -46,7 +53,11 @@ body {
 .nav-link:hover {
   color: #0f0 !important;
 }
-
+.active{
+             background-color: forestgreen;
+             border-radius:20px;
+             
+}
 /* ---------- HERO SLIDER ---------- */
 header {
   position: relative;
