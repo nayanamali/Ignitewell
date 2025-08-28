@@ -101,8 +101,38 @@ body {
       background-color: #65f392;
       color: white;
     }
-
-   
+.carousel-item {
+      height: 80vh;
+      min-height: 400px;
+      background: no-repeat center center scroll;
+      background-size: cover;
+      position: relative;
+    }
+     .carousel-item::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+    }
+    .carousel-caption {
+      bottom: 13%;
+      z-index: 2;
+    }
+    .title {
+      font-size: 3.4rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00ff7f, #00cc66, #00ff7f);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 300%;
+      animation: gradientFlow 6s infinite linear;
+    }
+    .subtext {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      color: #ddd;
+      animation: fadeIn 2s ease;
+    }
 
 
 
