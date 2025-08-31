@@ -1,12 +1,51 @@
-     :root {
-        --pf-accent: #7ef9a6; /* mint */
-        --pf-accent-2: #a6c8ff; /* soft blue */
-      }
-      body {
-        background: #0b0b0d; /* deep black */
-        color: #e9ecef;
-        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      }
+:root {
+  --pf-accent: #7ef9a6; /* mint */
+  --pf-accent-2: #a6c8ff; /* soft blue */
+}
+body {
+  background: #0b0b0d; /* deep black */
+  color: #e9ecef;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.navbar-brand img {
+  width: 50px;
+  height: 35px;
+}
+
+/* Animated IgniteWell text */
+.brand-text {
+  background: linear-gradient(90deg, #0f0, #fff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite alternate;
+}
+@keyframes shine {
+  0% { letter-spacing: 1px; opacity: 0.7; }
+  100% { letter-spacing: 3px; opacity: 1; }
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #0f0 !important;
+}
+
       /* Glassy cards */
       .glass {
         background: rgba(255,255,255,0.04);
@@ -62,10 +101,20 @@
       .muted { color: #aab0b8 }
 
       /* Team cards */
-      .team-card img { filter: grayscale(100%); transition: transform .4s ease, filter .4s ease; }
-      .team-card:hover img { filter: grayscale(0%); transform: scale(1.03); }
-      .team-card .social a { opacity: .8; }
-      .team-card .social a:hover { opacity: 1; }
+      .team-card img { 
+        filter: grayscale(100%); 
+        transition: transform .4s ease, filter .4s ease;
+      }
+      .team-card:hover img { 
+        filter: grayscale(0%); 
+        transform: scale(1.03); 
+      }
+      .team-card .social a { 
+        opacity: .8; 
+      }
+      .team-card .social a:hover { 
+        opacity: 1;
+       }
 
       /* Testimonial avatar ring */
       .avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,.25); }

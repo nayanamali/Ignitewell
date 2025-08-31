@@ -10,46 +10,45 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg shadow" style="background:black" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-3 ignite-text" href="#"  ><img src="images/logo2.png" alt="Logo" width="50" height="35"
-                        class="d-inline-block align-text-top object-fit-cover">
-                    Ignitewell</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto justify-content-evenly">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="subscription.html">Subscriptions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="trainers.html">Trainers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+         <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo">
+          <span class="brand-text">IgniteWell</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="Subscription.html">Subscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="Trainers.html">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     </header>
-
-       
-
-    <img src="images/rock.jpg" alt="rock" height="600px" width="100%"><br><br>
-    <h1 style="text-align:center;">Gym Subscription Plans</h1>
+    <div id="Carousel" >
+  <div class="carousel-inner">
+<div class="carousel-item active" style="background-image: url('images/rock.jpg'); ">
+  <div class="carousel-caption">
+    <h1 class="title">Invest in your body, it will pay you for life.</h1>
+    <p class="subtext">Don't limit your challenges. Challenge your limits</p>
+  </div>
+</div>
+</div>
+    </div>
+     
+  <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Our Subscription Plans</h2>
+          <p class="text-secondary">Select the perfect plan that fits your journey.</p>
+        </div>
     <div class="card-deck">
     <div class="card" style="width: 18rem;">
   <img src="images/athletic.jpg" class="card-img-top" alt="...">
@@ -58,7 +57,8 @@
     <p class="card-text">✅ Access to gym equipment<br>
 ✅ Locker facility<br>
 ❌ No trainer<br>
-❌ No group classes</p>
+❌ No group classes<br>
+❌Spa/Steam & Swimming Pool</p>
     <a href="#" class="btn btn-primary">Subscribe</a>
   </div>
 </div>
@@ -71,7 +71,7 @@
 ✅ 1 Fitness Assessment / month<br>
 ❌ Personal Trainer</p>
     <a href="#" class="btn btn-primary">Subscribe</a>
-  </div>
+</div>
 </div>
 
 <div class="card" style="width: 18rem;">
@@ -99,5 +99,86 @@
   </div>
   </div>
   </div>
+   <!-- PERKS -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <img src="images/trainer3.jpg" class="perk-img" alt="Track Progress">
+            <p class="mt-2 small text-secondary">Track progress in real-time</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/gym1.jpg" class="perk-img" alt="Community">
+            <p class="mt-2 small text-secondary">Join a supportive community</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/co5.jpg" class="perk-img" alt="Nutrition">
+            <p class="mt-2 small text-secondary">Flexible nutrition guidance</p>
+          </div>
+          <div class="col-md-3">
+            <img src="images/co4.jpg" class="perk-img" alt="Progress Tracking">
+            <p class="mt-2 small text-secondary">Visible progress tracking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- About Section -->
+    <div class="footer-about">
+      <h3>About Ignitewell</h3>
+      <p>
+        Ignitewell is your ultimate fitness partner. We provide personalized training programs, expert guidance, and an inspiring environment to help you reach your fitness goals.
+      </p>
+      <div class="footer-social">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p><i class="bi bi-geo-alt-fill"></i> New York, USA</p>
+      <p><i class="bi bi-telephone-fill"></i> +1 234 567 890</p>
+      <p><i class="bi bi-envelope-fill"></i> info@fitness.com</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe for fitness tips & updates</p>
+      <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Animated Background Circles -->
+  <div class="circle circle1"></div>
+  <div class="circle circle2"></div>
+</footer>
+
+
 </body>
 </html>

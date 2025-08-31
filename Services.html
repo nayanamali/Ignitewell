@@ -9,41 +9,450 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg shadow" style="background:black" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand fs-3 ignite-text" href="#"  ><img src="images/logo2.png" alt="Logo" width="50" height="35"
-                        class="d-inline-block align-text-top object-fit-cover">
-                    Ignitewell</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto justify-content-evenly">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="subscription.html">Subscriptions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="trainers.html">Trainers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="Logo">
+          <span class="brand-text">IgniteWell</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="Subscription.html">Subscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="Trainers.html">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     </header>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trainers · FitMint</title>
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+      :root {
+        --mint: #00e69d;
+        --mint-600: #00cf8d;
+        --mint-300: #4fffc5;
+        --glass-bg: rgba(255,255,255,.06);
+        --glass-br: 18px;
+      }
+
+      html, body { 
+        height: 100%; 
+        background: #0b0f12; 
+        color: #eaeff3; 
+        font-family: 'Segoe UI', sans-serif;
+       }
+
+      body::before {
+        content: "";
+        position: fixed; inset: 0;
+        z-index: -2;
+        background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
+                    radial-gradient(900px 500px at -10% 110%, rgba(0,230,157,.12), transparent 60%),
+                    linear-gradient(180deg, #0b0f12 0%, #07090b 100%);
+      }
+
+      body::after {
+        content: "";
+        position: fixed; inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+        background-size: 36px 36px;
+        mix-blend-mode: overlay;
+        opacity: .4;
+      }
+
+      /* Hero */
+      .hero { 
+        position: relative; 
+        padding: 96px 0 48px; 
+        background: radial-gradient(800px 300px at 50% -10%, rgba(0,230,157,.18), transparent 60%); 
+       }
+
+      .glass { 
+        background: var(--glass-bg); 
+        border:1px solid rgba(255,255,255,.12); 
+        border-radius: var(--glass-br); backdrop-filter: blur(12px);
+        box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
+       }
+      .badge-mint 
+      { 
+        background: rgba(0,230,157,.15); 
+        border:1px solid rgba(0,230,157,.35); 
+        color: var(--mint-300); 
+      }
+
+      /* Trainer Card */
+      .trainer-card { 
+        background: var(--glass-bg); 
+        border:1px solid rgba(255,255,255,.12); 
+        border-radius: var(--glass-br); overflow:hidden; 
+        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; 
+      }
+      .trainer-card:hover {
+         transform: translateY(-6px); 
+         box-shadow: 0 18px 50px rgba(0,0,0,.5); 
+         border-color: rgba(0,230,157,.35); 
+      }
+      .trainer-img {
+        width: 100%; 
+        aspect-ratio: 4/3; 
+        object-fit: cover; 
+      }
+      .rating i {
+         color: var(--mint); 
+        }
+      .chip { 
+        font-size:.8rem; padding:.35rem .6rem;
+        background:rgba(255,255,255,.06); 
+        border:1px solid rgba(255,255,255,.12); 
+        border-radius:999px; 
+      }
+      .chip i { 
+        margin-right:.25rem; 
+      }
+
+      /* Mint buttons */
+      .btn-mint { 
+        --bs-btn-color:#081012; 
+        --bs-btn-bg: var(--mint); --bs-btn-border-color: var(--mint-600); 
+        --bs-btn-hover-bg:#0df0a5; --bs-btn-hover-border-color: var(--mint-300); 
+        --bs-btn-active-bg:#00bd82; color:#081012; 
+      }
+      .btn-outline-mint { 
+        --bs-btn-color: var(--mint-300); 
+        --bs-btn-border-color: rgba(0,230,157,.5);
+         --bs-btn-hover-bg: rgba(0,230,157,.15); 
+         --bs-btn-hover-color: #bffff0; 
+        }
+
+      /* Footer */
+      footer { border-top:1px solid rgba(255,255,255,.08); 
+            background: rgba(0,0,0,.35); 
+            backdrop-filter: blur(6px); 
+            }
+
+      /* Social links */
+      .social a { 
+        width:36px; 
+        height:36px; display:inline-flex; 
+        align-items:center; justify-content:center; 
+        border-radius:999px; border:1px solid rgba(255,255,255,.16); 
+        background:rgba(255,255,255,.04);
+       }
+      .social a:hover { 
+        border-color: rgba(0,230,157,.5); 
+        color: var(--mint-300);
+       }
+
+      .divider { 
+        height:1px;
+        background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); 
+       }
+    </style>
+  </head>
+  <body>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <div class="p-4 p-md-5 glass">
+              <span class="badge badge-mint mb-3">Elite Coaches • 1:1 & Group</span>
+              <h1 class="display-5 fw-bold">Meet Our <span style="color:var(--mint)">Trainers</span></h1>
+              <p class="lead text-secondary">Certified experts in strength, conditioning, yoga, and sports performance. Handpicked for results and great vibes.</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="glass p-3">
+              <img class="w-100 rounded-3" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1920&auto=format&fit=crop" alt="fitness hero" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="divider my-4"></div>
+
+    <!-- SPECIALTIES TAGS -->
+    <section id="specialties" class="container py-3 py-md-4">
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <span class="chip"><i class="bi bi-dumbbell"></i>Strength</span>
+        <span class="chip"><i class="bi bi-heart-pulse"></i>Cardio</span>
+        <span class="chip"><i class="bi bi-flower3"></i>Yoga</span>
+        <span class="chip"><i class="bi bi-boxing-glove"></i>Boxing</span>
+        <span class="chip"><i class="bi bi-bicycle"></i>Endurance</span>
+        <span class="chip"><i class="bi bi-cup-hot"></i>Nutrition</span>
+      </div>
+    </section>
+
+    <section id="trainers" class="container py-4 py-md-5">
+  <div class="row g-4">
+    <!-- Trainer Card 1 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/member3.jpg" alt="Trainer Aarav">
+        <div class="p-3">
+          <h5>Aarav Shah</h5>
+          <p class="text-secondary mb-2">Strength & Fat Loss</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Strength</span>
+            <span class="badge badge-mint">Weight Loss</span>
+            <span class="badge badge-mint">Nutrition</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 2 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/john.jpg" alt="Trainer Meera">
+        <div class="p-3">
+          <h5>Meera Kapoor</h5>
+          <p class="text-secondary mb-2">Yoga, Pilates & Mobility</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Yoga</span>
+            <span class="badge badge-mint">Pilates</span>
+            <span class="badge badge-mint">Mobility</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 3 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/member1.png" alt="Trainer Raj">
+        <div class="p-3">
+          <h5>Raj Malhotra</h5>
+          <p class="text-secondary mb-2">CrossFit & HIIT</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">CrossFit</span>
+            <span class="badge badge-mint">HIIT</span>
+            <span class="badge badge-mint">Strength</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 4 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/co5.jpg" alt="Trainer Anika">
+        <div class="p-3">
+          <h5>Anika Desai</h5>
+          <p class="text-secondary mb-2">Pilates & Yoga</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Pilates</span>
+            <span class="badge badge-mint">Yoga</span>
+            <span class="badge badge-mint">Mobility</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 5 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/co4.jpg" alt="Trainer Karan">
+        <div class="p-3">
+          <h5>Karan Verma</h5>
+          <p class="text-secondary mb-2">Boxing & Cardio</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Boxing</span>
+            <span class="badge badge-mint">Cardio</span>
+            <span class="badge badge-mint">Strength</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 6 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/co3.jpg" alt="Trainer Priya">
+        <div class="p-3">
+          <h5>Priya Singh</h5>
+          <p class="text-secondary mb-2">Nutrition & Wellness</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Nutrition</span>
+            <span class="badge badge-mint">Wellness</span>
+            <span class="badge badge-mint">Yoga</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 7 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/co2.jpg" alt="Trainer Dev">
+        <div class="p-3">
+          <h5>Dev Sharma</h5>
+          <p class="text-secondary mb-2">Strength & Endurance</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Strength</span>
+            <span class="badge badge-mint">Endurance</span>
+            <span class="badge badge-mint">Cardio</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 8 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/member2.png" alt="Trainer Dev">
+        <div class="p-3">
+          <h5>Dev Sharma</h5>
+          <p class="text-secondary mb-2">Strength & Endurance</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Strength</span>
+            <span class="badge badge-mint">Endurance</span>
+            <span class="badge badge-mint">Cardio</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainer Card 9 -->
+    <div class="col-sm-6 col-lg-4">
+      <div class="trainer-card h-100">
+        <img class="trainer-img" src="images/co1.jpg" alt="Trainer Nisha">
+        <div class="p-3">
+          <h5>Nisha Patel</h5>
+          <p class="text-secondary mb-2">Yoga & Meditation</p>
+          <div class="d-flex gap-2 flex-wrap mb-3">
+            <span class="badge badge-mint">Yoga</span>
+            <span class="badge badge-mint">Meditation</span>
+            <span class="badge badge-mint">Wellness</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="social">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <a href="#book" class="btn btn-sm btn-mint">Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- FAQ -->
+    <section id="faqs" class="container pb-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="trainer-card p-4 h-100">
+            <h4>How does booking work?</h4>
+            <p class="text-secondary">Choose a trainer, tap Book, pick your preferred slot. Instant confirmation will follow.</p>
+            <h4>Do you offer trials?</h4>
+            <p class="text-secondary">Yes—ask for a 30‑minute discovery session to assess your goals and plan.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="trainer-card p-4 h-100">
+            <h4>Certifications & safety</h4>
+            <p class="text-secondary">All trainers are certified and background‑checked. Safe programming is priority.</p>
+            <h4>Pricing</h4>
+            <p class="text-secondary">Session packs start at ₹999. Ask your trainer for tailored packages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
 </body>
 </html>
