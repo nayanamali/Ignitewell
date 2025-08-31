@@ -1,13 +1,13 @@
-     :root {
-        --pf-accent: #7ef9a6; /* mint */
-        --pf-accent-2: #a6c8ff; /* soft blue */
-      }
-      body {
-        background: #0b0b0d; /* deep black */
-        color: #e9ecef;
-        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      }
-      /* ---------- NAVBAR ---------- */
+:root {
+  --pf-accent: #7ef9a6; /* mint */
+  --pf-accent-2: #a6c8ff; /* soft blue */
+}
+body {
+  background: #0b0b0d; /* deep black */
+  color: #e9ecef;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+}
+/* ---------- NAVBAR ---------- */
 .navbar {
   background: rgba(0, 0, 0, 0.85);
 }
@@ -101,10 +101,20 @@
       .muted { color: #aab0b8 }
 
       /* Team cards */
-      .team-card img { filter: grayscale(100%); transition: transform .4s ease, filter .4s ease; }
-      .team-card:hover img { filter: grayscale(0%); transform: scale(1.03); }
-      .team-card .social a { opacity: .8; }
-      .team-card .social a:hover { opacity: 1; }
+      .team-card img { 
+        filter: grayscale(100%); 
+        transition: transform .4s ease, filter .4s ease;
+      }
+      .team-card:hover img { 
+        filter: grayscale(0%); 
+        transform: scale(1.03); 
+      }
+      .team-card .social a { 
+        opacity: .8; 
+      }
+      .team-card .social a:hover { 
+        opacity: 1;
+       }
 
       /* Testimonial avatar ring */
       .avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,.25); }
