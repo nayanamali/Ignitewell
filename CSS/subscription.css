@@ -87,17 +87,22 @@ body {
     }
 
     .card img {
+      height: 450px;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       object-fit: cover;
     }
 
     .btn-primary{
+      margin-left: 75px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       background-color: #65f392;
       border: none;
       color: black;
       font-weight: bold;
       transition: 0.3s;
+
     }
 
     .btn-primary:hover {
