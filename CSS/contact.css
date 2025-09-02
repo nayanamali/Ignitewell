@@ -233,6 +233,18 @@ body {
   cursor: pointer;
   transition: transform 0.3s;
 }
+.back-color1{
+       color:blue;
+    
+}
+.back-color2{
+       color:magenta;
+    
+}
+.back-color3{
+       color:white;
+    
+}
 .footer-newsletter button:hover { transform: scale(1.05); }
 
 /* Animated Background Circles */

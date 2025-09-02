@@ -23,7 +23,11 @@ body {
   width: 50px;
   height: 35px;
 }
-
+.active{
+             background-color: forestgreen;
+             border-radius:20px;
+             
+}
 /* Animated IgniteWell text */
 .brand-text {
   background: linear-gradient(90deg, #0f0, #fff);
