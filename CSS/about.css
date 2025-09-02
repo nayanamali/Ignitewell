@@ -99,8 +99,9 @@ body {
         letter-spacing: .5px;
       }
       .muted { color: #aab0b8 }
-
-      .glass {
+      
+/* glass cards */
+.glass {
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(0, 255, 127, 0.4);
   backdrop-filter: blur(10px);
