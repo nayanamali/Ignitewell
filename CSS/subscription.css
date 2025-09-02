@@ -127,7 +127,7 @@ body {
       z-index: 2;
     }
     .title {
-      font-size: 3.4rem;
+      font-size: 3.2rem;
       font-weight: bold;
       background: linear-gradient(90deg, #00ff7f, #00cc66, #00ff7f);
       background-clip: text;
