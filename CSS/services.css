@@ -7,7 +7,6 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-
 /* ---------- NAVBAR ---------- */
 .navbar {
   background: rgba(0, 0, 0, 0.85);
@@ -24,7 +23,11 @@ body {
   width: 50px;
   height: 35px;
 }
-
+.active{
+             background-color: forestgreen;
+             border-radius:20px;
+             
+}
 /* Animated IgniteWell text */
 .brand-text {
   background: linear-gradient(90deg, #0f0, #fff);
@@ -46,3 +49,119 @@ body {
 .nav-link:hover {
   color: #0f0 !important;
 }
+.active{
+    background-color: forestgreen;
+    border-radius:20px;
+             
+}
+/* Hero Section */
+    .service-header {
+        position: relative;
+        height: 100vh;
+        background: url("/images/gym1.jpg") center center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        animation: bgZoom 20s infinite alternate ease-in-out;
+    }
+
+    
+    .service-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, rgba(0,0,0,0.85), rgba(0,255,127,0.15));
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 2rem;
+    }
+    .header-content h6 {
+      font-size: 3.8rem;
+      font-weight: 600;
+      color: #00ff7f;
+      text-shadow: 0 0 20px rgba(0,255,127,0.7);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 1.5s ease forwards 0.5s;
+    }
+    .header-content p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin: 1rem 0 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 1.5s ease forwards 1.2s;
+    }
+    .btn-mint {
+      background: #00ff7f;
+      color: #0d0d0d;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0,255,127,0.6);
+      opacity: 0;
+      transform: scale(0.9);
+      animation: fadeInScale 1.5s ease forwards 2s;
+    }
+    .btn-mint:hover {
+      background: #0d0d0d;
+      color: #00ff7f;
+      border: 2px solid #00ff7f;
+      box-shadow: 0 0 25px rgba(0,255,127,1);
+    }
+
+    /* Animations */
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @keyframes bgZoom {
+      from {
+        background-size: 100%;
+      }
+      to {
+        background-size: 115%;
+      }
+    }
+    /* Black background */
+body {
+      background-color: #000; 
+      color: #f1f1f1;
+    }
+    
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 136, 0.4);
+      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
+    }
+    .btn-accent {
+      background-color: #00ff88;
+      color: #000;
+      font-weight: 600;
+    }
+    .btn-accent:hover {
+      background-color: #00cc6a;
+      color: #fff;
+    }
+    .icon-green {
+      color: #00ff88;
+    }

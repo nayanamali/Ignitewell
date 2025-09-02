@@ -23,7 +23,11 @@ body {
   width: 50px;
   height: 35px;
 }
-
+.active{
+             background-color: forestgreen;
+             border-radius:20px;
+             
+}
 /* Animated IgniteWell text */
 .brand-text {
   background: linear-gradient(90deg, #0f0, #fff);
@@ -46,14 +50,14 @@ body {
   color: #0f0 !important;
 }
 
-      /* Glassy cards */
-      .glass {
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.08);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border-radius: 1.25rem;
-      }
+/* Glassy cards */
+.glass {
+ background: rgba(255,255,255,0.04);
+ border: 1px solid rgba(255,255,255,0.08);
+ backdrop-filter: blur(8px);
+ -webkit-backdrop-filter: blur(8px);
+ border-radius: 1.25rem;
+}
       /* Accent gradient border */
       .ring {
         position: relative;
@@ -78,7 +82,7 @@ body {
       }
       .hero-img {
         position: absolute; inset: 0; z-index: 0; opacity: .25; mix-blend: screen;
-        background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2000&auto=format&fit=crop');
+        background-image: url("/images/about1.avif");
         background-size: cover; background-position: center;
       }
       .hero-inner {
@@ -99,6 +103,49 @@ body {
         letter-spacing: .5px;
       }
       .muted { color: #aab0b8 }
+      
+/* glass cards */
+.glass {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 255, 127, 0.4);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  color: #dcdcdc;
+}
+
+/* Hover effect */
+.glass:hover {
+  background: rgba(0, 255, 127, 0.15); /* mint green overlay */
+  border-color: #00ff7f;
+  box-shadow: 0 8px 20px rgba(0, 255, 127, 0.3);
+  transform: translateY(-6px) scale(1.02);
+  color: #fff;
+}
+
+/* Headings inside glass cards */
+.glass h5 {
+  color: #00ff7f;
+  transition: color 0.3s;
+}
+
+/* Change heading color on hover */
+.glass:hover h5 {
+  color: #000;
+}
+
+/* Icon badge style */
+.glass .badge {
+  background: rgba(0, 255, 127, 0.15);
+  border: 1px solid #00ff7f;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Badge hover */
+.glass:hover .badge {
+  background: #00ff7f;
+  color: #000;
+}
+
 
       /* Team cards */
       .team-card img { 
@@ -117,7 +164,13 @@ body {
        }
 
       /* Testimonial avatar ring */
-      .avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,.25); }
+      .avatar { 
+        width: 56px; 
+        height: 56px; 
+        border-radius: 50%; 
+        object-fit: cover; 
+        border: 2px solid rgba(255,255,255,.25); 
+      }
 
       /* Timeline */
       .timeline {
@@ -125,9 +178,35 @@ body {
         padding-left: 1.25rem;
       }
       .timeline .dot {
-        width: .9rem; height: .9rem; border-radius: 999px; background: var(--pf-accent);
+        width: .9rem;
+        height: .9rem; 
+        border-radius: 999px; 
+        background: var(--pf-accent);
         box-shadow: 0 0 0 .25rem rgba(126,249,166,.15);
       }
+
+/* FAQ */
+    .accordion-button {
+      background: #111;
+      color: #fff;
+      border: none;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+    .accordion-button:not(.collapsed) {
+      background: #00ff7f;
+      color: #000;
+    }
+    .accordion-body {
+      background: #111;
+      color: #fff;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
 
       /* CTA glow */
       .glow {
@@ -138,8 +217,8 @@ body {
         --bs-btn-color: #000;
         --bs-btn-bg: var(--pf-accent);
         --bs-btn-border-color: var(--pf-accent);
-        --bs-btn-hover-bg: #65f392;
-        --bs-btn-hover-border-color: #65f392;
+        --bs-btn-hover-bg: #00ff7f;
+        --bs-btn-hover-border-color: #00ff7f;
       }
 
       .btn-outline-accent {
@@ -150,4 +229,8 @@ body {
       }
 
       /* Make grayscale images pop nicely */
-      .bw-img { filter: grayscale(100%) contrast(1.05); }
+      .bw-img { 
+        filter: grayscale(100%) contrast(1.05); 
+    }
+    
+  
