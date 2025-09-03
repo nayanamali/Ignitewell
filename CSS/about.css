@@ -103,23 +103,33 @@ border-radius:20px;
 .muted { 
   color: #aab0b8;
 }
-/* Info Cards */
-    .glass {
+/* Glassy cards */
+.glass {
+ background: rgba(255,255,255,0.04);
+ border: 1px solid rgba(255,255,255,0.08);
+ backdrop-filter: blur(8px);
+ -webkit-backdrop-filter: blur(8px);
+ border-radius: 1.25rem;
+}
+/* glass1 Cards */
+    .glass1 {
       background: #111;
       border-radius: 20px;
-      padding: 20px;
-      text-align: center;
+      
       transition: 0.3s;
       box-shadow: 0 0 15px rgba(0,255,127,0.2);
     }
-    .glass:hover {
+    .glass1 h5{
+      text-align: center;
+    }
+    .glass1:hover {
       transform: translateY(-8px);
       box-shadow: 0 0 25px rgba(0,255,127,0.4);
     }
-    .glass i {
+    .glass1 i {
       font-size: 2rem;
       color: #00ff7f;
-      margin-bottom: 10px;
+      
     }
       
 /* Team cards */
