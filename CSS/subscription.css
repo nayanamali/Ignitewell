@@ -91,7 +91,7 @@ body {
     }
 
     .card img {
-      height: 450px;
+      height: 400px;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       object-fit: cover;
@@ -131,7 +131,7 @@ body {
       z-index: 2;
     }
     .title {
-      font-size: 3.4rem;
+      font-size: 3.2rem;
       font-weight: bold;
       background: linear-gradient(90deg, #00ff7f, #00cc66, #00ff7f);
       background-clip: text;
@@ -280,7 +280,7 @@ body {
 
 
 
-    /* ---------- FOOTER ---------- */
+/* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
   color: #fff;
@@ -320,5 +320,39 @@ body {
   transition: transform 0.3s;
 }
 .footer-newsletter button:hover { transform: scale(1.05); }
-
-  
+.back-color1{
+       color:blue;
+    
+}
+.back-color2{
+       color:magenta;
+    
+}
+.back-color3{
+       color:white;
+    
+}
+/* Animated Background Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 255, 127, 0.1);
+}
+.circle1 {
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  animation: floatCircle 6s ease-in-out infinite;
+}
+.circle2 {
+  bottom: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  animation: floatCircle 8s ease-in-out infinite alternate;
+}
+@keyframes floatCircle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(45deg); }
+}
