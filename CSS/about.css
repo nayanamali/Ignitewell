@@ -135,6 +135,13 @@ border-radius:20px;
       color: #00ff7f;
       
     }
+     
+    /* why we choose us */
+    .row i{
+      font-size: 2rem;
+      color: #00ff7f;
+      
+    }
       
 /* Team cards */
 .team-card img { 
@@ -163,8 +170,8 @@ border-radius:20px;
 
 /* Timeline */
 .timeline {
- border-left: 2px dashed rgba(255,255,255,0.18);
- padding-left: 1.25rem;
+ border-left: 3px dashed rgba(255,255,255,0.18);
+ padding-left: 0rem;
 }
   .timeline .dot {
   width: .9rem;
