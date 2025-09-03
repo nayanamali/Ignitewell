@@ -84,17 +84,6 @@ body {
              border-radius:20px;
              
 }
-/* Navbar responsive */
-@media (max-width: 991px) {
-  .navbar-brand img { width: 50px; }
-  .brand-text { font-size: 1.2rem; }
-  .navbar-nav { text-align: center; }
-  .navbar-nav .nav-link { display: block; padding: 12px 0; }
-}
-@media (max-width: 576px) {
-  .navbar-brand img { width: 40px; }
-  .navbar-nav .nav-link { font-size: 0.9rem; margin: 8px 0; }
-}
 /* ---------- HERO SLIDER ---------- */
 header {
   position: relative;
@@ -141,17 +130,7 @@ header {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-/* Hero responsive */
-@media (max-width: 991px) {
-  header, .slider-img { height: 80vh; }
-  .carousel-caption { bottom: 15%; }
-  .slide-title { font-size: 2rem; }
-  .slide-sub { font-size: 1rem; }
-}
-@media (max-width: 576px) {
-  .slide-title { font-size: 1.5rem; }
-  .slide-sub { font-size: 0.8rem; }
-}
+
 /* ---------- BUTTONS ---------- */
 .btn-join, .carousel-caption a.btn {
   display: inline-block;
@@ -335,7 +314,7 @@ header {
   color: #00ff7f;
 }
 .testimonial-card {
-  background:rgba(255,255,255,0.04);              /*#1a1a1a*/
+  background:rgba(255,255,255,0.04);              
   padding: 30px 20px;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
