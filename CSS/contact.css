@@ -209,12 +209,31 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
-.footer h3 { color: #00ff7f; margin-bottom: 15px; }
-.footer p, .footer ul li { color: #aaa; font-size: 0.9rem; }
-.footer a { color: #aaa; text-decoration: none; transition: color 0.3s, transform 0.3s; }
-.footer a:hover { color: #00ff7f; transform: scale(1.1); }
-.footer-social a { margin-right: 10px; font-size: 1.2rem; }
-.footer-newsletter form { display: flex; margin-top: 10px; }
+.footer h3 
+{ color: #00ff7f;
+  margin-bottom: 15px; 
+}
+.footer p, .footer ul li 
+{ color: #aaa; 
+  font-size: 0.9rem; 
+}
+.footer a 
+{ color: #aaa; 
+  text-decoration: none; 
+  transition: color 0.3s, transform 0.3s; 
+}
+.footer a:hover 
+{ color: #00ff7f;
+  transform: scale(1.1); 
+}
+.footer-social a 
+{ margin-right: 10px; 
+  font-size: 1.2rem; 
+}
+.footer-newsletter form 
+{ display: flex; 
+  margin-top: 10px; 
+}
 .footer-newsletter input {
   flex: 1;
   padding: 8px 10px;

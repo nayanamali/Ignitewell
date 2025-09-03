@@ -28,10 +28,31 @@ body {
   gap: 8px;
 }
 .navbar-brand img {
-  width: 50px;
-  height: 35px;
+  width: 40px;
+  height: auto;
+}
+.navbar {
+  background: #000;
+  padding: 10px 0;
 }
 
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 15px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00ff7f;
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+  color: #00ff7f;
+}
 /* Animated IgniteWell text */
 .brand-text {
   background: linear-gradient(90deg, #0f0, #fff);
@@ -39,9 +60,14 @@ body {
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite alternate;
 }
+
 @keyframes shine {
-  0% { letter-spacing: 1px; opacity: 0.7; }
-  100% { letter-spacing: 3px; opacity: 1; }
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
 }
 
 .nav-link {
@@ -51,12 +77,23 @@ body {
   transition: color 0.3s;
 }
 .nav-link:hover {
-  color: #0f0 !important;
+  color: #00ff7f !important;
 }
 .active{
-             background-color: forestgreen;
+             background-color:forestgreen;
              border-radius:20px;
              
+}
+/* Navbar responsive */
+@media (max-width: 991px) {
+  .navbar-brand img { width: 50px; }
+  .brand-text { font-size: 1.2rem; }
+  .navbar-nav { text-align: center; }
+  .navbar-nav .nav-link { display: block; padding: 12px 0; }
+}
+@media (max-width: 576px) {
+  .navbar-brand img { width: 40px; }
+  .navbar-nav .nav-link { font-size: 0.9rem; margin: 8px 0; }
 }
 /* ---------- HERO SLIDER ---------- */
 header {
@@ -104,7 +141,17 @@ header {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
+/* Hero responsive */
+@media (max-width: 991px) {
+  header, .slider-img { height: 80vh; }
+  .carousel-caption { bottom: 15%; }
+  .slide-title { font-size: 2rem; }
+  .slide-sub { font-size: 1rem; }
+}
+@media (max-width: 576px) {
+  .slide-title { font-size: 1.5rem; }
+  .slide-sub { font-size: 0.8rem; }
+}
 /* ---------- BUTTONS ---------- */
 .btn-join, .carousel-caption a.btn {
   display: inline-block;
@@ -151,7 +198,7 @@ header {
 }
 .service-icon {
   font-size: 3rem;
-  color: #00ff80;
+  color: #00ff7f;
   transition: transform 0.3s ease;
 }
 .service-card:hover .service-icon {
@@ -164,7 +211,6 @@ header {
   padding: 20px;
   border-radius: 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0 0 15px rgba(0, 255, 127, 0.2);
 }
 .trainer-card:hover {
   transform: translateY(-8px) scale(1.02);
@@ -202,16 +248,24 @@ header {
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0,255,127,0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  animation: fadeUp 1s ease both;
+  
 }
 .plan-card:hover {
   transform: translateY(-10px) scale(1.02);
   box-shadow: 0 0 25px rgba(0,255,127,0.4);
 }
+.plan-title1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-right:25px;
+}
 .plan-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 15px;
+
 }
 .plan-price {
   font-size: 2.2rem;
