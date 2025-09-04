@@ -59,13 +59,17 @@ body {
     .service-header {
         position: relative;
         height: 100vh;
-        background: url("/images/backimg2.webp") center center/cover no-repeat;
+        background: url("/images/serviceback.jpg") center center/cover no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         overflow: hidden;
       
+    }
+    .service-header h2{
+      margin-top: 50px;
+      margin-bottom: 10px;
     }
 
     
