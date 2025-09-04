@@ -59,29 +59,29 @@ body {
     .service-header {
         position: relative;
         height: 100vh;
-        background: url("/images/gym1.jpg") center center/cover no-repeat;
+        background: url("/images/backimg2.webp") center center/cover no-repeat;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         overflow: hidden;
-        animation: bgZoom 20s infinite alternate ease-in-out;
+      
     }
 
     
-    .service-header::before {
+    /* .service-header::before {
       content: "";
       position: absolute;
       inset: 0;
       background: linear-gradient(to bottom right, rgba(0,0,0,0.85), rgba(0,255,127,0.15));
-    }
+    } */
     .header-content {
       position: relative;
       z-index: 2;
       max-width: 800px;
       padding: 2rem;
     }
-    .header-content h6 {
+    /* .header-content h6 {
       font-size: 3.8rem;
       font-weight: 600;
       color: #00ff7f;
@@ -89,15 +89,15 @@ body {
       opacity: 0;
       transform: translateY(50px);
       animation: slideUp 1.5s ease forwards 0.5s;
-    }
-    .header-content p {
+    } */
+    /* .header-content p {
       font-size: 1.2rem;
       color: #ddd;
       margin: 1rem 0 2rem;
       opacity: 0;
       transform: translateY(50px);
       animation: slideUp 1.5s ease forwards 1.2s;
-    }
+    } */
     .btn-mint {
       background: #00ff7f;
       color: #0d0d0d;
@@ -138,7 +138,7 @@ body {
         background-size: 115%;
       }
     }
-    /* Black background */
+  /* Black background */
 body {
       background-color: #000; 
       color: #f1f1f1;
