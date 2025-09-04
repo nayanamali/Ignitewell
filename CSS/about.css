@@ -140,6 +140,21 @@ border-radius:20px;
       margin-bottom: 10px;
       background-color: none;
     }
+
+    #quotes {
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2);
+    }
+        #quotes:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
+    }
+    /* why choose ignitewell */
+    .row i{
+      color: #00ff7f;
+       font-size: 2rem;
+      background-color: none;
+    }
       
 /* Team cards */
 .team-card img { 
