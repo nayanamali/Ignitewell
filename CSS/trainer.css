@@ -92,6 +92,7 @@ body {
         position: relative; 
         padding: 96px 0 48px; 
         background: radial-gradient(800px 300px at 50% -10%, rgba(0,230,157,.18), transparent 60%); 
+       
        }
 
       .glass { 
@@ -99,6 +100,8 @@ body {
         border:1px solid rgba(255,255,255,.12); 
         border-radius: var(--glass-br); backdrop-filter: blur(12px);
         box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
+         transition: 0.2s;
+        box-shadow: 0 0 15px rgba(0,255,127,0.2);
        }
       .badge-mint 
       { 
@@ -106,6 +109,11 @@ body {
         border:1px solid rgba(0,230,157,.35); 
         color: var(--mint-300); 
       }
+      
+    .glass:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
+    }
 
       /* Trainer Card */
       .trainer-card { 
