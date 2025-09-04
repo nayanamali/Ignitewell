@@ -137,23 +137,8 @@ border-radius:20px;
     .glass1 i {
       font-size: 2rem;
       color: #00ff7f;
-      
-    }
-    /* Our Story */
-    #quotes{
-     transition: 0.3s;
-      box-shadow: 0 0 15px rgba(0,255,127,0.2); 
-    }
-    #quotes:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0,255,127,0.4);
-    }
-     
-    /* why we choose us */
-    .row i{
-      font-size: 2rem;
-      color: #00ff7f;
-      
+      margin-bottom: 10px;
+      background-color: none;
     }
       
 /* Team cards */
