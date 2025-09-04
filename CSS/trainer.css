@@ -151,30 +151,7 @@ body {
          --bs-btn-hover-color: #bffff0; 
         }
 
-      /* Footer */
-      footer { border-top:1px solid rgba(255,255,255,.08); 
-            background: rgba(0,0,0,.35); 
-            backdrop-filter: blur(6px); 
-            }
-
-      /* Social links */
-      .social a { 
-        width:36px; 
-        height:36px; display:inline-flex; 
-        align-items:center; justify-content:center; 
-        border-radius:999px; border:1px solid rgba(255,255,255,.16); 
-        background:rgba(255,255,255,.04);
-       }
-      .social a:hover { 
-        border-color: rgba(0,230,157,.5); 
-        color: var(--mint-300);
-       }
-
-      .divider { 
-        height:1px;
-        background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); 
-      }
-   /* ---------- FOOTER ---------- */
+/* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
   color: #fff;
@@ -194,7 +171,11 @@ body {
 .footer a { color: #aaa; text-decoration: none; transition: color 0.3s, transform 0.3s; }
 .footer a:hover { color: #00ff7f; transform: scale(1.1); }
 .footer-social a { margin-right: 10px; font-size: 1.2rem; }
-.footer-newsletter form { display: flex; margin-top: 10px; }
+.footer-newsletter form { 
+  max-width: 300px;   /* reduces width */
+  margin: 10px auto;  /* centers form */
+  display: flex;
+ }
 .footer-newsletter input {
   flex: 1;
   padding: 8px 10px;
@@ -203,16 +184,24 @@ body {
   background: #111;
   color: #fff;
   outline: none;
+  width:100px;
+  height:35px;
 }
 .footer-newsletter button {
   padding: 8px 15px;
+  padding-left: 4px;
   border-radius: 0 30px 30px 0;
   border: none;
   background: #00ff7f;
   color: #000;
   cursor: pointer;
   transition: transform 0.3s;
+  width:80px;
+  height:35px;
+  font-size:15px;
+  font-weight: 600;
 }
+
 .footer-newsletter button:hover { transform: scale(1.05); }
 .back-color1{
        color:blue;
