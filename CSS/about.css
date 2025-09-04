@@ -55,17 +55,22 @@ border-radius:20px;
 }
 
 
- /* Accent gradient border */
+ /* hero image gradient border */
 .ring {
-   position: relative;
-   border-radius: 1.25rem;
-   isolation: isolate;
+  position: relative;
+  border-radius: 1.25rem;
+  isolation: isolate;
 }
 .ring::before {
  content: "";
- position: absolute; inset: -1px;
+ position: absolute; 
+ inset: -1px;
  background: linear-gradient(135deg, var(--pf-accent), var(--pf-accent-2));
  border-radius: inherit; z-index: -1; filter: blur(8px); opacity: .35;
+}
+/* Make grayscale images pop nicely */
+.bw-img { 
+ filter: grayscale(100%) contrast(1.05); 
 }
 
 /* Hero */
@@ -84,7 +89,8 @@ border-radius:20px;
   opacity: .25; 
   mix-blend-mode: screen;
   background-image: url("/images/about1.avif");
-  background-size: cover; background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 .hero-inner {
   position: relative; 
@@ -105,7 +111,7 @@ border-radius:20px;
   letter-spacing: .5px;
 }
 .muted { 
-  color: #aab0b8;
+  color: #fff;
 }
 /* Glassy cards */
 .glass {
@@ -117,8 +123,6 @@ border-radius:20px;
 }
 /* glass1 Cards */
     .glass1 {
-      background: #111;
-      border-radius: 20px;
       
       transition: 0.3s;
       box-shadow: 0 0 15px rgba(0,255,127,0.2);
@@ -134,6 +138,15 @@ border-radius:20px;
       font-size: 2rem;
       color: #00ff7f;
       
+    }
+    /* Our Story */
+    #quotes{
+     transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2); 
+    }
+    #quotes:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
     }
      
     /* why we choose us */
@@ -186,6 +199,7 @@ border-radius:20px;
   background: #111;
   color: #fff;
   border: none;
+  
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -202,6 +216,8 @@ border-radius:20px;
   from {opacity: 0; transform: translateY(-30px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+
 /* CTA glow */
 .glow {
   box-shadow: 0 0 0 .15rem rgba(126,249,166,.25), 0 .75rem 2rem rgba(0,0,0,.35);
@@ -222,10 +238,7 @@ border-radius:20px;
   --bs-btn-hover-border-color: var(--pf-accent);
 }
 
-/* Make grayscale images pop nicely */
-.bw-img { 
- filter: grayscale(100%) contrast(1.05); 
-}
+
    /* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
