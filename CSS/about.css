@@ -68,10 +68,11 @@ border-radius:20px;
  background: linear-gradient(135deg, var(--pf-accent), var(--pf-accent-2));
  border-radius: inherit; z-index: -1; filter: blur(8px); opacity: .35;
 }
+
 /* Make grayscale images pop nicely */
-.bw-img { 
+/* .bw-img { 
  filter: grayscale(100%) contrast(1.05); 
-}
+} */
 
 /* Hero */
 .hero {
@@ -97,7 +98,7 @@ border-radius:20px;
   z-index: 1;
 }
 .floating {
-  animation: float 6s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 @keyframes float {
   0% { transform: translateY(0) }
@@ -113,6 +114,22 @@ border-radius:20px;
 .muted { 
   color: #fff;
 }
+/* glass2 cards */
+    .glass2{
+      transition: 0.2s;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2);
+      
+    }
+    .glass2:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
+    }
+    .glass2 i{
+      font-size: 2rem;
+      color: #00ff7f;
+      background-color: none;
+    }
+
 /* Glassy cards */
 .glass {
  background: rgba(255,255,255,0.04);
@@ -123,7 +140,6 @@ border-radius:20px;
 }
 /* glass1 Cards */
     .glass1 {
-      
       transition: 0.3s;
       box-shadow: 0 0 15px rgba(0,255,127,0.2);
     }
@@ -140,6 +156,7 @@ border-radius:20px;
       margin-bottom: 10px;
       background-color: none;
     }
+    /* our story */
  /* blockquote */
     #quotes {
       transition: 0.2s;
@@ -151,15 +168,24 @@ border-radius:20px;
       box-shadow: 0 0 25px rgba(0,255,127,0.4);
     }
     /* why choose ignitewell */
-    .row i{
+    .container i{
       color: #00ff7f;
        font-size: 2rem;
       background-color: none;
+    } 
+     .ring {
+      transition: 0.2s;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2);
+      
+    }
+    .ring:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
     }
       
 /* Team cards */
 .team-card img { 
-  filter: grayscale(100%); 
+  /* filter: grayscale(100%);  */
   transition: transform .4s ease, filter .4s ease;
 }
 .team-card:hover img { 
@@ -179,7 +205,6 @@ border-radius:20px;
   height: 56px; 
   border-radius: 50%; 
   object-fit: cover; 
-  border: 2px solid rgba(255,255,255,.25); 
 }
 
 /* Timeline */
@@ -240,7 +265,7 @@ border-radius:20px;
 }
 
 
-   /* ---------- FOOTER ---------- */
+  /* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
   color: #fff;
@@ -260,7 +285,11 @@ border-radius:20px;
 .footer a { color: #aaa; text-decoration: none; transition: color 0.3s, transform 0.3s; }
 .footer a:hover { color: #00ff7f; transform: scale(1.1); }
 .footer-social a { margin-right: 10px; font-size: 1.2rem; }
-.footer-newsletter form { display: flex; margin-top: 10px; }
+.footer-newsletter form { 
+  max-width: 300px;   /* reduces width */
+  margin: 10px auto;  /* centers form */
+  display: flex;
+ }
 .footer-newsletter input {
   flex: 1;
   padding: 8px 10px;
@@ -269,19 +298,25 @@ border-radius:20px;
   background: #111;
   color: #fff;
   outline: none;
+  width:100px;
+  height:35px;
 }
 .footer-newsletter button {
   padding: 8px 15px;
+  padding-left: 4px;
   border-radius: 0 30px 30px 0;
   border: none;
   background: #00ff7f;
   color: #000;
   cursor: pointer;
   transition: transform 0.3s;
+  width:80px;
+  height:35px;
+  font-size:15px;
+  font-weight: 600;
 }
-.footer-newsletter button:hover { 
-  transform: scale(1.05); 
-}
+
+.footer-newsletter button:hover { transform: scale(1.05); }
 .back-color1{
        color:blue;
     
