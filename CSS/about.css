@@ -68,10 +68,11 @@ border-radius:20px;
  background: linear-gradient(135deg, var(--pf-accent), var(--pf-accent-2));
  border-radius: inherit; z-index: -1; filter: blur(8px); opacity: .35;
 }
+
 /* Make grayscale images pop nicely */
-.bw-img { 
+/* .bw-img { 
  filter: grayscale(100%) contrast(1.05); 
-}
+} */
 
 /* Hero */
 .hero {
@@ -172,6 +173,15 @@ border-radius:20px;
        font-size: 2rem;
       background-color: none;
     } 
+     .ring {
+      transition: 0.2s;
+      box-shadow: 0 0 15px rgba(0,255,127,0.2);
+      
+    }
+    .ring:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
+    }
       
 /* Team cards */
 .team-card img { 
@@ -195,7 +205,6 @@ border-radius:20px;
   height: 56px; 
   border-radius: 50%; 
   object-fit: cover; 
-  border: 2px solid rgba(255,255,255,.25); 
 }
 
 /* Timeline */
