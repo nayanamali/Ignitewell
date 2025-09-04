@@ -140,12 +140,13 @@ border-radius:20px;
       margin-bottom: 10px;
       background-color: none;
     }
-
+ /* blockquote */
     #quotes {
-      transition: 0.3s;
+      transition: 0.2s;
       box-shadow: 0 0 15px rgba(0,255,127,0.2);
+      margin-top: 60px;
     }
-        #quotes:hover{
+    #quotes:hover{
       transform: translateY(-8px);
       box-shadow: 0 0 25px rgba(0,255,127,0.4);
     }
