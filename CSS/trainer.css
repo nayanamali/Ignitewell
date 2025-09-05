@@ -70,9 +70,10 @@ body {
         content: "";
         position: fixed; inset: 0;
         z-index: -2;
-        background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
+        background: #000;
+        /* background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
                     radial-gradient(900px 500px at -10% 110%, rgba(0,230,157,.12), transparent 60%),
-                    linear-gradient(180deg, #0b0f12 0%, #07090b 100%); 
+                    linear-gradient(180deg, #0b0f12 0%, #07090b 100%);  */
       }
 
       body::after {
@@ -80,8 +81,9 @@ body {
         position: fixed; inset: 0;
         z-index: -1;
         pointer-events: none;
-        background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+        background: #000;
+        /* background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); */
         background-size: 36px 36px;
         mix-blend-mode: overlay;
         opacity: .4;
@@ -100,7 +102,7 @@ body {
         border:1px solid rgba(255,255,255,.12); 
         border-radius: var(--glass-br); backdrop-filter: blur(12px);
         box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
-         transition: 0.2s;
+        transition: 0.2s;
         box-shadow: 0 0 15px rgba(0,255,127,0.2);
        }
        .glass:hover{
