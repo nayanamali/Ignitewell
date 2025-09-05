@@ -293,7 +293,35 @@ body {
       .fw-bold2{
         padding-top: 10px;
       }
-
+/* ---------- BUTTONS ---------- */
+.btn-join, .carousel-caption a.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00ff7f, #00c3ff);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn-join:hover, .carousel-caption a.btn:hover {
+  background: linear-gradient(90deg, #00c3ff, #00ff7f);
+  color: #111;
+  transform: scale(1.05);
+}
+.btn-join::after, .carousel-caption a.btn::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: rgba(255,255,255,0.3);
+  top: -50%;
+  left: -50%;
+  transform: rotate(45deg);
+  transition: 0.6s;
+}
 
 
 
