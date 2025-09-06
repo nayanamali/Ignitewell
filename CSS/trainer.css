@@ -8,6 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 /* ---------- NAVBAR ---------- */
+
 .navbar {
   background: rgba(0, 0, 0, 0.85);
 }
@@ -53,6 +54,7 @@ border-radius:20px;
 .nav-link:hover {
  color:#00ff7f !important;
 }
+
 
 /* css */
 :root {
