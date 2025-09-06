@@ -24,13 +24,16 @@ body {
   height: 35px;
 }
 .active{
-             background-color: forestgreen;
-             border-radius:20px;
-             
+background-color: #00ff7f;
+border-radius:20px;           
+}
+
+#quotes .carousel-item.active {
+  background: #0b0b0d !important;  /* your page background color */
 }
 /* Animated IgniteWell text */
 .brand-text {
-  background: linear-gradient(90deg, #0f0, #fff);
+  background: linear-gradient(90deg, #00ff7f, #fff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite alternate;
@@ -48,15 +51,9 @@ body {
   font-size: 15px;
 }
 .nav-link:hover {
-  color: #0f0 !important;
+ color:#00ff7f !important;
 }
 
-
-.active{
-    background-color: forestgreen;
-    border-radius:20px;
-             
-}
 /* Hero Section */
     .service-header {
         position: relative;

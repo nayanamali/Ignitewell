@@ -8,6 +8,7 @@ body {
   scroll-behavior: smooth;
 }
 /* ---------- NAVBAR ---------- */
+
 .navbar {
   background: rgba(0, 0, 0, 0.85);
 }
@@ -23,10 +24,17 @@ body {
   width: 50px;
   height: 35px;
 }
+.active{
+background-color: #00ff7f;
+border-radius:20px;           
+}
 
+#quotes .carousel-item.active {
+  background: #0b0b0d !important;  /* your page background color */
+}
 /* Animated IgniteWell text */
 .brand-text {
-  background: linear-gradient(90deg, #0f0, #fff);
+  background: linear-gradient(90deg, #00ff7f, #fff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite alternate;
@@ -39,11 +47,12 @@ body {
 .nav-link {
   color: #fff !important;
   margin-left: 15px;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s;
+  font-size: 15px;
 }
 .nav-link:hover {
-  color: #0f0 !important;
+ color:#00ff7f !important;
 }
 
 :root {
@@ -55,6 +64,7 @@ body {
              border-radius:20px;
              
 }
+
 /* css */
 :root {
         --mint: #00ff7f;
@@ -130,9 +140,26 @@ body {
       
        .d-flex i{
       font-size: 1rem;
-      color: #00ff7f;
       background-color: none;
     }
+    /* Default color for all icons */
+      .social a i {
+        font-size: 20px;         /* adjust size */
+        color: #00ff7f;          /* neon green */
+        margin: 0 8px;           /* spacing */
+        transition: 0.3s ease;
+      }
+
+      /* Hover effect */
+      .social a i:hover {
+        color: #ffffff;          /* turns white when hovered */
+      }
+
+      /* If you want brand colors */
+      .social a .bi-instagram { color: #E1306C; } /* Instagram pink */
+      .social a .bi-youtube { color: #FF0000; }   /* YouTube red */
+      .social a .bi-linkedin { color: #0077B5; }  /* LinkedIn blue */
+      .social a .bi-twitter { color: white; }   /* Twitter white */
 
       /* Trainer Card */
       .trainer-card { 

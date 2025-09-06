@@ -6,13 +6,6 @@ body {
 .navbar {
   background: rgba(0, 0, 0, 0.85);
 }
-.fixed-top{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: 700;
@@ -25,8 +18,17 @@ body {
   width: 50px;
   height: 35px;
 }
+.active{
+background-color: #00ff7f;
+border-radius:20px;           
+}
+
+#quotes .carousel-item.active {
+  background: #0b0b0d !important;  /* your page background color */
+}
+/* Animated IgniteWell text */
 .brand-text {
-  background: linear-gradient(90deg, #0f0, #fff);
+  background: linear-gradient(90deg, #00ff7f, #fff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite alternate;
@@ -35,6 +37,7 @@ body {
   0% { letter-spacing: 1px; opacity: 0.7; }
   100% { letter-spacing: 3px; opacity: 1; }
 }
+
 .nav-link {
   color: #fff !important;
   margin-left: 15px;
@@ -43,13 +46,9 @@ body {
   font-size: 15px;
 }
 .nav-link:hover {
-  color: #0f0 !important;
+ color:#00ff7f !important;
 }
-.active{
-             background-color: forestgreen;
-             border-radius:20px;
-             
-}
+
     /* Hero Section */
    
    .carousel-item {

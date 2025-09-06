@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <title>Home Page</title>
+    <title> Ignitewell Home Page</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -26,10 +25,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="subscription.html">Subscription</a></li>
+            <li class="nav-item"><a class="nav-link active1" href="subscription.html">Subscription</a></li>
             <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
@@ -82,31 +81,41 @@
     </div>
   </header>
    <!-- WHY CHOOSE IGNITEWELL -->
-<section class="py-5 text-light" style="background-color: #0b0b0d;">
+<section class="py-5 text-light section-why-choose">
   <div class="container text-center">
-    <h2 class="mb-4">Why Choose <span style="color:#00ff7f;">IgniteWell?</span></h2>
-    <p class
-    ="mb-5">Transform your body and mind with expert trainers, personalized plans, and a community that pushes you to achieve greatness.</p>
+    <h2 class="mb-4">Why Choose <span class="highlight">IgniteWell?</span></h2>
+    <p class="mb-5">Transform your body and mind with expert trainers, personalized plans, and a community that pushes you to achieve greatness.</p>
     
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-heart-pulse-fill" style="font-size: 3rem; color:#00ff7f;"></i>
-        <h5 class="mt-3">Personal Training</h5>
-        <p>Get 1-on-1 guidance from certified experts tailored to your goals.</p>
+    <div class="row justify-content-center g-1 row1 ">
+      <!-- Card 1 -->
+      <div class="col-md-4 col">
+        <div class="feature-card p-4 h-100">
+          <i class="bi bi-heart-pulse-fill"></i>
+          <h5 class="mt-3">Personal Training</h5>
+          <p>Get 1-on-1 guidance from certified experts tailored to your goals.</p>
+        </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-lightning-fill" style="font-size: 3rem; color:#00ff7f;"></i>
-        <h5 class="mt-3">High-Intensity Workouts</h5>
-        <p>Burn fat & build muscle faster with our proven workout plans.</p>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 col">
+        <div class="feature-card p-4 h-100">
+          <i class="bi bi-lightning-fill"></i>
+          <h5 class="mt-3">High-Intensity Workouts</h5>
+          <p>Burn fat & build muscle faster with our proven workout plans.</p>
+        </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <i class="bi bi-people-fill" style="font-size: 3rem; color:#00ff7f;"></i>
-        <h5 class="mt-3">Community Support</h5>
-        <p>Stay motivated with a strong, supportive fitness community.</p>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 col">
+        <div class="feature-card p-4 h-100">
+          <i class="bi bi-people-fill"></i>
+          <h5 class="mt-3">Community Support</h5>
+          <p>Stay motivated with a strong, supportive fitness community.</p>
+        </div>
       </div>
     </div>
 
-    <a href="contact.html" class="btn btn-lg mt-4" style="background:#00ff7f; color:black; font-weight:600;">Start Your Journey</a>
+    <a href="contact.html" class="btn btn-lg start-btn mt-5">Start Your Journey</a>
   </div>
 </section>
 
@@ -156,7 +165,7 @@
       <!-- Service 1 -->
       <div class="col-md-3">
         <div class="service-card p-4 rounded-3 h-100">
-          <i class="fa-solid fa-dumbbell service-icon"></i> 
+          <i class="fas fa-dumbbell service-icon"></i> 
           <h5 class="mt-3 pt-4">Personal Training</h5>
           <p>For athletes and fitness lovers who want to build muscle and power.</p>
         </div>
@@ -190,165 +199,176 @@
 </section>
 
 <!-- TRAINERS SECTION -->
-<section class="py-5 text-light" style="background-color:#0b0b0d;">
-  <div class="container text-center">
-    <h2 class="mb-4 section-title">Meet Our <span class="highlight">Expert Trainers</span></h2>
-    <p class="mb-5 section-subtitle">Our certified trainers are dedicated to helping you reach your fitness goals with clarity and passion.</p>
+  <section class="trainers py-5" id="trainers">
+    <div class="container text-center">
+      <h2 class="section-title mb-5">MEET OUR EXPERT TRAINERS</h2>
 
-    <div class="row justify-content-center">
-      <!-- Trainer 1 -->
-      <div class="col-auto">
-        <div class="trainer-card">
-          <div class="trainer-img-wrap">
-            <img src="images/trainer1.jpg" class="img-fluid trainer-img" alt="Trainer 1">
+      <div id="trainerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-1 row1">
+              <div class="col-md-4 col">
+                <div class="trainer-frame">
+                  <img src="images/trainer1.jpg" alt="Trainer 1">
+                  <div class="trainer-info">
+                    <h4>Alan Smith</h4>
+                    <p>Strength & conditioning expert</p>
+                    <div class="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col">
+                <div class="trainer-frame">
+                  <img src="images/trainer2.jpg" alt="Trainer 2">
+                  <div class="trainer-info">
+                    <h4>John Carter</h4>
+                    <p>HIIT & functional training coach</p>
+                    <div class="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col">
+                <div class="trainer-frame">
+                  <img src="images/trainer3.jpg" alt="Trainer 3">
+                  <div class="trainer-info">
+                    <h4>Sarah Johnson</h4>
+                    <p>Weight loss & nutrition specialist</p>
+                    <div class="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h5 class="mt-3">Ram Kapoor</h5>
-          <p class="trainer-role">Strength Coach</p>
+
+          <!-- Second Slide -->
+          <div class="carousel-item ">
+            <div class="row justify-content-center g-4 row1">
+              <div class="col-md-4 col">
+                <div class="trainer-frame">
+                  <img src="images/trainer4.jpg" alt="Trainer 4">
+                  <div class="trainer-info">
+                    <h4>Emily Davis</h4>
+                    <p>Yoga & flexibility trainer</p>
+                    <div class="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col">
+                <div class="trainer-frame">
+                  <img src="images/trainer5.jpg" alt="Trainer 5">
+                  <div class="trainer-info">
+                    <h4>Michael Lee</h4>
+                    <p>CrossFit & endurance coach</p>
+                    <div class="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col">
+                <div class="trainer-frame">
+                  <img src="images/trainer6.jpg" alt="Trainer 6">
+                  <div class="trainer-info">
+                    <h4>Olivia Brown</h4>
+                    <p>Pilates & core specialist</p>
+                    <div class="social-icons">
+                      <i class="bi bi-facebook"></i>
+                      <i class="bi bi-instagram"></i>
+                      <i class="bi bi-twitter"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-
-      <!-- Trainer 2 -->
-      <div class="col-auto">
-        <div class="trainer-card">
-          <div class="trainer-img-wrap">
-            <img src="images/trainer2.jpg" class="img-fluid trainer-img" alt="Trainer 2">
-          </div>
-          <h5 class="mt-3">Shweta Patil</h5>
-          <p class="trainer-role">Personal Trainer</p>
-        </div>
-      </div>
-
-      <!-- Trainer 3 -->
-      <div class="col-auto">
-        <div class="trainer-card">
-          <div class="trainer-img-wrap">
-            <img src="images/trainer3.jpg" class="img-fluid trainer-img" alt="Trainer 3">
-          </div>
-          <h5 class="mt-3">Vikrant Chavan</h5>
-          <p class="trainer-role">Cardio Specialist</p>
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#trainerCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#trainerCarousel" data-bs-slide-to="1"></button>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- SUBSCRIPTION PLANS SECTION -->
-<section class="py-4 text-light" style="background-color:#0b0b0d;">
-  <div class="container text-center">
-    <h2 class="mb-4">Choose Your <span style="color:#00ff7f;">Plan</span></h2>
-    <p class="mb-5">Flexible membership options to match your fitness goals.</p>
-
-    <div class="row g-4">
-      <!-- Basic Plan -->
-      <div class="col-md-4">
-        <div class="plan-card">
-          <h4 class="plan-title1">Basic</h4>
-          <p class="plan-price">$19<span>/mo</span></p>
-          <ul class="ul1">
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>Access to Gym Equipment</li>
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>1 Group Class / Week</li>
-          <li class="li1"><i class="bi bi-x-circle-fill not-available"></i>Personal Trainer Guidance</li>
-          <li class="li1"><i class="bi bi-x-circle-fill not-available"></i>Unlimited Classes</li>
-          <li class="li1"><i class="bi bi-x-circle-fill not-available"></i>1-on-1 Personal Coaching</li>
-        </ul>
-          <a href="subscription.html" class="btn-join">Join Now</a>
-        </div>
-      </div>
-
-      <!-- Standard Plan -->
-      <div class="col-md-4">
-        <div class="plan-card popular">
-          <h4 class="plan-title">Standard</h4>
-          <p class="plan-price">$39<span>/mo</span></p>
-          <ul class="ul1">
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>Access to Gym Equipment</li>
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>3 Group Classes / Week</li>
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>Personal Trainer Guidance</li>
-          <li class="li1"><i class="bi bi-x-circle-fill not-available"></i>Unlimited Classes</li>
-          <li class="li1"><i class="bi bi-x-circle-fill not-available"></i>1-on-1 Personal Coaching</li>
-          </ul>
-          <a href="subscription.html" class="btn-join">Join Now</a>
-        </div>
-      </div>
-      <!-- Premium Plan -->
-      <div class="col-md-4">
-        <div class="plan-card">
-          <h4 class="plan-title">Premium</h4>
-          <p class="plan-price">$59<span>/mo</span></p>
-           <ul class="ul1">
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>Access to Gym Equipment</li>
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>Unlimited Classes</li>
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>Personal Trainer Guidance</li>
-          <li class="li1"><i class="bi bi-check-circle-fill available"></i>1-on-1 Personal Coaching</li>
-          <li class="li1"><i class="bi bi-x-circle-fill not-available"></i>Nutrition Plan</li>
-          </ul>
-          <a href="subscription.html" class="btn-join">Join Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 <!-- ⭐ Testimonial Section -->
-<section class="testimonials py-5" id="testimonials">
+<section class="testimonials mb-4" id="testimonials">
   <div class="container text-center">
-    <h2 class="section-title mb-5">What Our Members Say</h2>
-    <div class="row" >
-      
+    <h2 class="section-title mb-5">WHAT OUR MEMBERS SAY</h2>
+    <div class="row g-4 justify-content-center row1">
+
       <!-- Testimonial 1 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 col-sm-6 col">
         <div class="testimonial-card">
-          <div class="testimonial-img">
-            <img src="images/member1.png" alt="Member 1">
-          </div>
+          <img src="images/member1.png" alt="Rahul Mehta">
           <h4>Rahul Mehta</h4>
-          <p class="role">Lost 15kg in 4 months</p>
-          <div class="stars stats-glow">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-half"></i>
-          </div>
-          <p class="quote">"Ignitewell changed my life! The trainers are motivating and the workouts are fun."</p>
+          <p class="subtitle">Lost 15kg in 4 months</p>
+          <div class="rating-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+        </div>
+          <p class="review">"Ignitewell changed my life! The trainers are motivating and the workouts are fun."</p>
         </div>
       </div>
 
       <!-- Testimonial 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="testimonial-card popular-review">
-          <div class="testimonial-img">
-            <img src="images/member2.png" alt="Member 2">
-          </div>
+      <div class="col-md-4 col-sm-6 col">
+        <div class="testimonial-card">
+          <img src="images/member2.png" alt="Ananya Sharma">
           <h4>Ananya Sharma</h4>
-          <p class="role">Gained Strength & Confidence</p>
-          <div class="stars stats-glow">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-          </div>
-          <p class="quote">"Best decision I ever made. I feel stronger, healthier, and more confident every day!"</p>
+          <p class="subtitle">Gained Strength & Confidence</p>
+          <div class="rating-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+          <p class="review">"Best decision I ever made. I feel stronger, healthier, and more confident every day!"</p>
         </div>
       </div>
 
       <!-- Testimonial 3 -->
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 col-sm-6 col">
         <div class="testimonial-card">
-          <div class="testimonial-img">
-            <img src="images/member3.png" alt="Member 3">
-          </div>
+          <img src="images/member3.png" alt="Vikram Singh">
           <h4>Vikram Singh</h4>
-          <p class="role">Built Muscle & Stamina</p>
-          <div class="stars stats-glow">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star"></i>
-          </div>
-          <p class="quote">"The trainers push you to achieve your best. I've never felt this fit before!"</p>
+          <p class="subtitle">Built Muscle & Stamina</p>
+          <div class="rating-stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+          <p class="review">"The trainers push you to achieve your best. I’ve never felt this fit before!"</p>
         </div>
       </div>
 
