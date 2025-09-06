@@ -50,6 +50,8 @@ body {
 .nav-link:hover {
   color: #0f0 !important;
 }
+
+
 .active{
     background-color: forestgreen;
     border-radius:20px;
@@ -68,8 +70,7 @@ body {
       
     }
     .service-header h2{
-      margin-top: 50px;
-      margin-bottom: 10px;
+      margin-top: 60px;
     }
 
     
@@ -143,11 +144,11 @@ body {
       }
     }
   /* Black background */
-body {
+    body {
       background-color: #000; 
       color: #f1f1f1;
     }
-    
+    /* services cards */
     .glass {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(0, 255, 136, 0.4);
@@ -170,7 +171,129 @@ body {
     .icon-green {
       color: #00ff88;
     }
+    .glass5{
+      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass5:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
+    }
+  /* cta */
+    .glass4 {
+      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .glass4:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
+    }
+
+  /* .btn-accent {
+  --bs-btn-color: #000;
+  --bs-btn-bg: var(--pf-accent);
+  --bs-btn-border-color: var(--pf-accent);
+  --bs-btn-hover-bg: #00ff7f;
+  --bs-btn-hover-border-color: #00ff7f;
+}
+
+.btn-outline-accent {
+  --bs-btn-color: var(--pf-accent);
+  --bs-btn-border-color: var(--pf-accent);
+  --bs-btn-hover-bg: rgba(126,249,166,.1);
+  --bs-btn-hover-border-color: var(--pf-accent);
+} */
+
     /* ---------- FOOTER ---------- */
+.footer {
+  background:#0b0b0d;
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.footer h3 { color: #00ff7f; margin-bottom: 15px; }
+.footer p, .footer ul li { color: #aaa; font-size: 0.9rem; }
+.footer a { color: #aaa; text-decoration: none; transition: color 0.3s, transform 0.3s; }
+.footer a:hover { color: #00ff7f; transform: scale(1.1); }
+.footer-social a { margin-right: 10px; font-size: 1.2rem; }
+.footer-newsletter form { 
+  max-width: 300px;   /* reduces width */
+  margin: 10px auto;  /* centers form */
+  display: flex;
+ }
+.footer-newsletter input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid #00ff7f;
+  background: #111;
+  color: #fff;
+  outline: none;
+  width:100px;
+  height:35px;
+}
+.footer-newsletter button {
+  padding: 8px 15px;
+  padding-left: 4px;
+  border-radius: 0 30px 30px 0;
+  border: none;
+  background: #00ff7f;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width:80px;
+  height:35px;
+  font-size:15px;
+  font-weight: 600;
+}
+
+.footer-newsletter button:hover { transform: scale(1.05); }
+.back-color1{
+       color:blue;
+    
+}
+.back-color2{
+       color:rgb(160, 15, 78);
+    
+}
+.back-color3{
+       color:white;
+    
+}
+/* Animated Background Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 255, 127, 0.1);
+}
+.circle1 {
+  top: -50px;
+  left: -50px;
+  width: 150px;
+  height: 150px;
+  animation: floatCircle 6s ease-in-out infinite;
+}
+.circle2 {
+  bottom: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  animation: floatCircle 8s ease-in-out infinite alternate;
+}
+@keyframes floatCircle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(45deg); }
+}
+
+/* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
   color: #fff;
