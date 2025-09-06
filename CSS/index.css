@@ -103,6 +103,72 @@ header {
   100% {opacity: 1;}
 }
 
+.intro-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0b0b0d 60%, #121212 100%);
+  color: #fff;
+}
+/* Make both columns equal height */
+.intro-section .row {
+  display: flex;
+  align-items: stretch; /* stretch children to same height */
+  
+}
+
+
+.intro-text h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #00ff7f;
+  text-shadow: 0 0 10px #00ff7f;
+}
+
+.intro-text p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-top: 20px;
+  color: #ddd;
+}
+
+.features-list {
+  margin-top: 30px;
+}
+
+.features-list li {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.features-list li:hover {
+  transform: translateX(10px);
+  color: #00ff7f;
+}
+
+.features-list i {
+  color: #00ff7f;
+  margin-right: 12px;
+  font-size: 20px;
+  text-shadow: 0 0 8px #00ff7f;
+}
+
+.intro-image img {
+  width: 90%;
+  height: 100%;          /* takes full height of its column */
+  object-fit: cover;     /* crop instead of squish */
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.7);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-left: 18px;
+}
+
+.intro-image img:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 127, 0.9);
+}
+
+
 /* Section Background */
 .section-why-choose {
   background-color: #0b0b0d;
@@ -358,8 +424,8 @@ header {
 
     .trainer-frame {
       background: rgba(0, 0, 0, 0.85);
-      border: 2px solid #00ff7f;
-      border-radius:60px 10px 60px 10px;
+      border:1px solid #00ff7f;
+      border-radius: 20px;
       color: #fff;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -381,7 +447,7 @@ header {
     object-fit: cover;   /* crops image without distortion */
     border-bottom: 2px solid #00ff7f;
     display: block;
-    border-radius:60px 10px 60px 10px;
+    border-radius:20px;
     }     
 
     .trainer-info {
