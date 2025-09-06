@@ -44,131 +44,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <style>
-      :root {
-        --mint: #00e69d;
-        --mint-600: #00cf8d;
-        --mint-300: #4fffc5;
-        --glass-bg: rgba(255,255,255,.06);
-        --glass-br: 18px;
-      }
-
-      html, body { 
-        height: 100%; 
-        background: #0b0f12; 
-        color: #eaeff3; 
-        font-family: 'Segoe UI', sans-serif;
-       }
-
-      body::before {
-        content: "";
-        position: fixed; inset: 0;
-        z-index: -2;
-        background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
-                    radial-gradient(900px 500px at -10% 110%, rgba(0,230,157,.12), transparent 60%),
-                    linear-gradient(180deg, #0b0f12 0%, #07090b 100%);
-      }
-
-      body::after {
-        content: "";
-        position: fixed; inset: 0;
-        z-index: -1;
-        pointer-events: none;
-        background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
-        background-size: 36px 36px;
-        mix-blend-mode: overlay;
-        opacity: .4;
-      }
-
-      /* Hero */
-      .hero { 
-        position: relative; 
-        padding: 96px 0 48px; 
-        background: radial-gradient(800px 300px at 50% -10%, rgba(0,230,157,.18), transparent 60%); 
-       }
-
-      .glass { 
-        background: var(--glass-bg); 
-        border:1px solid rgba(255,255,255,.12); 
-        border-radius: var(--glass-br); backdrop-filter: blur(12px);
-        box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
-       }
-      .badge-mint 
-      { 
-        background: rgba(0,230,157,.15); 
-        border:1px solid rgba(0,230,157,.35); 
-        color: var(--mint-300); 
-      }
-
-      /* Trainer Card */
-      .trainer-card { 
-        background: var(--glass-bg); 
-        border:1px solid rgba(255,255,255,.12); 
-        border-radius: var(--glass-br); overflow:hidden; 
-        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; 
-      }
-      .trainer-card:hover {
-         transform: translateY(-6px); 
-         box-shadow: 0 18px 50px rgba(0,0,0,.5); 
-         border-color: rgba(0,230,157,.35); 
-      }
-      .trainer-img {
-        width: 100%; 
-        aspect-ratio: 4/3; 
-        object-fit: cover; 
-      }
-      .rating i {
-         color: var(--mint); 
-        }
-      .chip { 
-        font-size:.8rem; padding:.35rem .6rem;
-        background:rgba(255,255,255,.06); 
-        border:1px solid rgba(255,255,255,.12); 
-        border-radius:999px; 
-      }
-      .chip i { 
-        margin-right:.25rem; 
-      }
-
-      /* Mint buttons */
-      .btn-mint { 
-        --bs-btn-color:#081012; 
-        --bs-btn-bg: var(--mint); --bs-btn-border-color: var(--mint-600); 
-        --bs-btn-hover-bg:#0df0a5; --bs-btn-hover-border-color: var(--mint-300); 
-        --bs-btn-active-bg:#00bd82; color:#081012; 
-      }
-      .btn-outline-mint { 
-        --bs-btn-color: var(--mint-300); 
-        --bs-btn-border-color: rgba(0,230,157,.5);
-         --bs-btn-hover-bg: rgba(0,230,157,.15); 
-         --bs-btn-hover-color: #bffff0; 
-        }
-
-      /* Footer */
-      footer { border-top:1px solid rgba(255,255,255,.08); 
-            background: rgba(0,0,0,.35); 
-            backdrop-filter: blur(6px); 
-            }
-
-      /* Social links */
-      .social a { 
-        width:36px; 
-        height:36px; display:inline-flex; 
-        align-items:center; justify-content:center; 
-        border-radius:999px; border:1px solid rgba(255,255,255,.16); 
-        background:rgba(255,255,255,.04);
-       }
-      .social a:hover { 
-        border-color: rgba(0,230,157,.5); 
-        color: var(--mint-300);
-       }
-
-      .divider { 
-        height:1px;
-        background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); 
-       }
-    </style>
+    
   </head>
   <body>
 
@@ -245,8 +121,8 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
+              <a href="#"><i class="bi bi-twitter "></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
@@ -261,7 +137,7 @@
         <img class="trainer-img" src="images/trai4.jpg" alt="Trainer Meera">
         <div class="p-3">
           <h5>Meera Kapoor</h5>
-          <p class="text-secondary mb-2">Yoga, Pilates & Mobility</p>
+          <p class="text-white mb-2">Yoga, Pilates & Mobility</p>
           <div class="d-flex gap-2 flex-wrap mb-3">
             <span class="badge badge-mint">Yoga</span>
             <span class="badge badge-mint">Pilates</span>
@@ -269,9 +145,9 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
+              <a href="#"><i class="bi bi-youtube "></i></a>
+              <a href="#"><i class="bi bi-linkedin "></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
           </div>
@@ -294,8 +170,8 @@
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
               <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter "></i></a>
+              <a href="#"><i class="bi bi-linkedin "></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
           </div>
@@ -317,9 +193,9 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
+              <a href="#"><i class="bi bi-youtube "></i></a>
+              <a href="#"><i class="bi bi-linkedin "></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
           </div>
@@ -341,7 +217,7 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
@@ -365,8 +241,8 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
+              <a href="#"><i class="bi bi-twitter "></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
@@ -389,8 +265,8 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
+              <a href="#"><i class="bi bi-twitter "></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
@@ -413,7 +289,7 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
@@ -437,9 +313,9 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="social">
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-youtube"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-instagram "></i></a>
+              <a href="#"><i class="bi bi-youtube "></i></a>
+              <a href="#"><i class="bi bi-linkedin "></i></a>
             </div>
             <a href="#book" class="btn btn-sm btn-mint">Book</a>
           </div>
@@ -449,30 +325,50 @@
   </div>
 </section>
 
-    <!-- FAQ -->
-    <section class="py-5">
+    
+
+        <!-- FAQ -->
+<section class="py-5">
   <div class="container">
-    <h3 class="text-center mb-4" style="color:#00ff7f;">Questioned, Answered.</h3>
+    <h3 class="text-center mb-4" style="color:#00ff7f;">Questions,Answered.</h3>
     <div class="accordion" id="faqAccordion">
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
             Do you offer trials?
           </button>
         </h2>
         <div id="q1" class="accordion-collapse collapse show">
           <div class="accordion-body">Yes-ask for a 30‑minute discovery session to assess your goals and plan.</div>
         </div>
-        <div class="col-lg-6">
-          <div class="trainer-card p-4 h-100">
-            <h4>Certifications & safety</h4>
-            <p class="text-secondary">All trainers are certified and background‑checked. Safe programming is priority.</p>
-            <h4>Pricing</h4>
-            <p class="text-secondary">Session packs start at ₹999. Ask your trainer for tailored packages.</p>
-          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+            Certifications & safety?
+          </button>
+        </h2>
+        <div id="q2" class="accordion-collapse collapse">
+          <div class="accordion-body">All trainers are certified and background‑checked. Safe programming is priority.</div>
         </div>
       </div>
-    </section>
+       <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+             Pricing?
+          </button>
+        </h2>
+        <div id="q3" class="accordion-collapse collapse">
+          <div class="accordion-body">Session packs start at ₹999. Ask your trainer for tailored packages.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+
+       
+    
 
 
     <!-- Footer Section -->

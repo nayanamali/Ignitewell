@@ -47,9 +47,9 @@ body {
 }
 
 :root {
-        --mint: #00e69d;
-        --mint-600: #00cf8d;
-        --mint-300: #4fffc5;}
+        --mint: #00ff7f;
+        --mint-600: #00ff7f;
+        --mint-300:#00ff7f;}
 .active{
              background-color: forestgreen;
              border-radius:20px;
@@ -75,9 +75,10 @@ body {
         content: "";
         position: fixed; inset: 0;
         z-index: -2;
-        background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
+        background-color: black;
+        /* background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
                     radial-gradient(900px 500px at -10% 110%, rgba(0,230,157,.12), transparent 60%),
-                    linear-gradient(180deg, #0b0f12 0%, #07090b 100%);
+                    linear-gradient(180deg, #0b0f12 0%, #07090b 100%); */
         background: #000;
         /* background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
                     radial-gradient(900px 500px at -10% 110%, rgba(0,230,157,.12), transparent 60%),
@@ -89,8 +90,9 @@ body {
         position: fixed; inset: 0;
         z-index: -1;
         pointer-events: none;
-        background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
-                          linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+        background-image: black;
+        /* background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+                          linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); */
         background: #000;
         /* background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
                           linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); */
@@ -151,9 +153,9 @@ body {
         aspect-ratio: 4/3; 
         object-fit: cover; 
       }
-      .rating i {
+     .rating i {
          color: var(--mint); 
-        }
+        } 
       .chip { 
         font-size:.8rem; padding:.35rem .6rem;
         background:rgba(255,255,255,.06); 
@@ -168,8 +170,8 @@ body {
       .btn-mint { 
         --bs-btn-color:#081012; 
         --bs-btn-bg: var(--mint); --bs-btn-border-color: var(--mint-600); 
-        --bs-btn-hover-bg:#0df0a5; --bs-btn-hover-border-color: var(--mint-300); 
-        --bs-btn-active-bg:#00bd82; color:#081012; 
+        --bs-btn-hover-bg:#00ff7f; --bs-btn-hover-border-color: var(--mint-300); 
+        --bs-btn-active-bg:#00ff7f; color:#081012; 
       }
       .btn-outline-mint { 
         --bs-btn-color: var(--mint-300); 
@@ -202,29 +204,31 @@ body {
         background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); 
        }
 
-       /* ---------- FOOTER ---------- */
-  /* FAQ */
-.accordion-button {
-  background: #111;
-  color: #fff;
-  border: none;
-  
-}
-.accordion-button:focus {
-  box-shadow: none;
-}
-.accordion-button:not(.collapsed) {
-  background: #00ff7f;
-  color: #000;
-}
-.accordion-body {
-  background: #111;
-  color: #fff;
-}
-@keyframes fadeInDown {
-  from {opacity: 0; transform: translateY(-30px);}
-  to {opacity: 1; transform: translateY(0);}
-}
+    
+   /* FAQ */
+    .accordion-button {
+      background: #111;
+      color: #fff;
+      border: none;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+    .accordion-button.collapsed{
+      background: #00ff7f;
+      color: #000;
+    }
+    .accordion-body {
+      background: #111;
+      color: #ddd;
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    } 
+
+
 
 /* ---------- FOOTER ---------- */
 .footer {
