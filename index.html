@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="images/logo.jpg" alt="Logo">
+          <img src="images/logo.png" alt="Logo">
           <span class="brand-text">IgniteWell</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -89,7 +89,7 @@
       <!-- Text Content -->
       <div class="col-md-6 intro-text" data-aos="fade-right">
         <h2>Welcome to IgniteWell Fitness</h2>
-        <p>At IgniteWell, we believe fitness is more than just working out—it’s a lifestyle. 
+        <p class="p2">At IgniteWell, we believe fitness is more than just working out—it’s a lifestyle. 
         Our platform offers expert training, customized workout plans, and nutrition guidance 
         to help you achieve your dream body while staying motivated and energized.</p>
 
@@ -128,44 +128,30 @@
 </script>
 
    <!-- WHY CHOOSE IGNITEWELL -->
-<section class="py-5 text-light section-why-choose">
-  <div class="container text-center">
-    <h2 class="mb-4">Why Choose <span class="highlight">IgniteWell?</span></h2>
-    <p class="mb-5">Transform your body and mind with expert trainers, personalized plans, and a community that pushes you to achieve greatness.</p>
-    
-    <div class="row justify-content-center g-1 row1 ">
-      <!-- Card 1 -->
-      <div class="col-md-4 col">
-        <div class="feature-card p-4 h-100">
-          <i class="bi bi-heart-pulse-fill"></i>
-          <h5 class="mt-3">Personal Training</h5>
-          <p>Get 1-on-1 guidance from certified experts tailored to your goals.</p>
-        </div>
-      </div>
+<section class="why-choose">
+  <h2>Why Choose <span>IgniteWell?</span></h2>
+  <p>Expert trainers, high-energy workouts, and a supportive community to help you reach your fitness goals efficiently and safely.</p>
 
-      <!-- Card 2 -->
-      <div class="col-md-4 col">
-        <div class="feature-card p-4 h-100">
-          <i class="bi bi-lightning-fill"></i>
-          <h5 class="mt-3">High-Intensity Workouts</h5>
-          <p>Burn fat & build muscle faster with our proven workout plans.</p>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4 col">
-        <div class="feature-card p-4 h-100">
-          <i class="bi bi-people-fill"></i>
-          <h5 class="mt-3">Community Support</h5>
-          <p>Stay motivated with a strong, supportive fitness community.</p>
-        </div>
-      </div>
+  <div class="services">
+    <div class="service">
+      <i class="bi bi-heart-pulse-fill"></i>
+      <h4>Personal Training</h4>
+      <p>1-on-1 guidance tailored to you.</p>
     </div>
-
-    <a href="contact.html" class="btn btn-lg start-btn mt-5">Start Your Journey</a>
+    <div class="service">
+      <i class="bi bi-lightning-charge-fill"></i>
+      <h4>High-Intensity</h4>
+      <p>Burn fat & build muscle effectively.</p>
+    </div>
+    <div class="service">
+      <i class="bi bi-people-fill"></i>
+      <h4>Community</h4>
+      <p>Stay motivated & connected.</p>
+    </div>
   </div>
-</section>
 
+  <a href="#" class="start-btn">Start Your Journey</a>
+</section>
 <!-- STATS SECTION -->
  <section class="stats-section text-center text-light">
     <div class="container">
@@ -203,48 +189,47 @@
   </section>
 
 <!-- Services Section -->
-<section id="services" class="py-4 text-light" style="background-color: #0b0b0d;">
-  <div class="container text-center">
-    <h2 class="mb-4 fw-bold text-uppercase">Our Services</h2>
-    <p class="mb-5">We provide everything you need to achieve your fitness goals.</p>
+ <section class="services-arc">
+    <h2>Our <span>Services</span></h2>
 
-    <div class="row g-4">
-      <!-- Service 1 -->
-      <div class="col-md-3">
-        <div class="service-card p-4 rounded-3 h-100">
-          <i class="fas fa-dumbbell service-icon"></i> 
-          <h5 class="mt-3 pt-4">Personal Training</h5>
-          <p>For athletes and fitness lovers who want to build muscle and power.</p>
+    <div class="arc-grid">
+      <!-- Left Top -->
+      <div class="arc">
+        <i class="bi bi-heart-pulse"></i>
+        <div class="arc-content">
+          <h5>Personal Training</h5>
+          <p>1-on-1 coaching tailored to your fitness goals.</p>
         </div>
       </div>
-      <!-- Service 2 -->
-      <div class="col-md-3">
-        <div class="service-card p-4 rounded-3 h-100">
-          <i class="bi bi-heart-pulse-fill service-icon"></i>
-          <h5 class="mt-3">Cardio & Fat Burn</h5>
-          <p>Perfect for beginners and busy people looking to stay active and lose weight.</p>
+
+      <!-- Right Top -->
+      <div class="arc">
+        <i class="bi bi-fire"></i>
+        <div class="arc-content">
+          <h5>Fat Loss</h5>
+          <p>Burn fat faster with structured programs.</p>
         </div>
       </div>
-      <!-- Service 3 -->
-      <div class="col-md-3">
-        <div class="service-card p-4 rounded-3 h-100">
-          <i class="bi bi-cup-hot-fill service-icon"></i>
-          <h5 class="mt-3">Nutrition Plans</h5>
-          <p>Simple, practical diet plans designed for all — beginners to professionals.</p>
+
+      <!-- Left Bottom -->
+      <div class="arc">
+        <i class="bi bi-bar-chart-line"></i>
+        <div class="arc-content">
+          <h5>Progress Tracking</h5>
+          <p>Track workouts, calories, and improvements.</p>
         </div>
       </div>
-      <!-- Service 4 -->
-      <div class="col-md-3">
-        <div class="service-card p-4 rounded-3 h-100">
-          <i class="bi bi-people-fill service-icon"></i>
-          <h5 class="mt-3">Group Workouts</h5>
-          <p>Stay motivated with fun, community-driven sessions for every fitness level.</p>
+
+      <!-- Right Bottom -->
+      <div class="arc">
+        <i class="bi bi-people-fill"></i>
+        <div class="arc-content">
+          <h5>Group Classes</h5>
+          <p>Fun & energetic sessions with community spirit.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 <!-- TRAINERS SECTION -->
   <section class="trainers py-5" id="trainers">
     <div class="container text-center">
@@ -363,67 +348,30 @@
     </div>
   </section>
 <!-- ⭐ Testimonial Section -->
-<section class="testimonials mb-4" id="testimonials">
-  <div class="container text-center">
-    <h2 class="section-title mb-5">WHAT OUR MEMBERS SAY</h2>
-    <div class="row g-4 justify-content-center row1">
+<section id="testimonials">
+  <div class="testimonial-container">
+    
+    <!-- Left Content -->
+    <div class="testimonial-content">
+      <h4>TESTIMONIALS</h4>
+      <h2>WHAT THEY <span>SAY ABOUT US</span></h2>
+      <p>"IgniteWell transformed my fitness journey. The trainers are top-notch, and the motivation is unmatched!"</p>
+      <div class="testimonial-author">- John Kevin, Coach</div>
+    </div>
 
-      <!-- Testimonial 1 -->
-      <div class="col-md-4 col-sm-6 col">
-        <div class="testimonial-card">
-          <img src="images/member1.png" alt="Rahul Mehta">
-          <h4>Rahul Mehta</h4>
-          <p class="subtitle">Lost 15kg in 4 months</p>
-          <div class="rating-stars">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star"></i>
-        </div>
-          <p class="review">"Ignitewell changed my life! The trainers are motivating and the workouts are fun."</p>
-        </div>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="col-md-4 col-sm-6 col">
-        <div class="testimonial-card">
-          <img src="images/member2.png" alt="Ananya Sharma">
-          <h4>Ananya Sharma</h4>
-          <p class="subtitle">Gained Strength & Confidence</p>
-          <div class="rating-stars">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-        </div>
-          <p class="review">"Best decision I ever made. I feel stronger, healthier, and more confident every day!"</p>
-        </div>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="col-md-4 col-sm-6 col">
-        <div class="testimonial-card">
-          <img src="images/member3.png" alt="Vikram Singh">
-          <h4>Vikram Singh</h4>
-          <p class="subtitle">Built Muscle & Stamina</p>
-          <div class="rating-stars">
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-fill"></i>
-          <i class="bi bi-star-half"></i>
-        </div>
-          <p class="review">"The trainers push you to achieve your best. I’ve never felt this fit before!"</p>
-        </div>
-      </div>
-
+    <!-- Right Image -->
+    <div class="testimonial-img">
+      <img src="images/member1.png" alt="John Kevin">
+      <div class="overlay-box"></div>
     </div>
   </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="prev"><i class="bi bi-arrow-left"></i></button>
+    <button id="next"><i class="bi bi-arrow-right"></i></button>
+  </div>
 </section>
-
-
 
 <!-- Footer Section -->
 <footer class="footer">
@@ -479,5 +427,52 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const testimonials = [
+    {
+      text: "IgniteWell transformed my fitness journey. The trainers are top-notch, and the motivation is unmatched!",
+      author: "- John Kevin, Coach",
+      img: "images/member1.png"
+    },
+    {
+      text: "From nutrition to workouts, everything is designed to push you towards your goals with energy and focus.",
+      author: "- Sarah Lee, Athlete",
+      img: "images/member5.png"
+    },
+    {
+      text: "The neon vibes and structured plans made me stick to my workouts and actually enjoy the process.",
+      author: "- David Smith, Member",
+      img: "images/member3.png"
+    }
+  ];
+
+  let index = 0;
+
+  const textP = document.querySelector(".testimonial-content p");
+  const authorDiv = document.querySelector(".testimonial-author");
+  const imgTag = document.querySelector(".testimonial-img img");
+
+  function showTestimonial(i) {
+    textP.textContent = testimonials[i].text;
+    authorDiv.textContent = testimonials[i].author;
+    imgTag.src = testimonials[i].img;
+  }
+
+  document.getElementById("prev").addEventListener("click", () => {
+    index = (index > 0) ? index - 1 : testimonials.length - 1;
+    showTestimonial(index);
+  });
+
+  document.getElementById("next").addEventListener("click", () => {
+    index = (index < testimonials.length - 1) ? index + 1 : 0;
+    showTestimonial(index);
+  });
+
+  // Auto slide
+  setInterval(() => {
+    index = (index < testimonials.length - 1) ? index + 1 : 0;
+    showTestimonial(index);
+  }, 4000);
+</script>
 </body>
 </html>
