@@ -91,7 +91,7 @@ border-radius:20px;
       margin-left: 75px;
       margin-top: 10px;
       margin-bottom: 10px;
-      background-color: #65f392;
+      background-color: #00ff7f;
       border: none;
       color: black;
       font-weight: bold;
@@ -100,7 +100,7 @@ border-radius:20px;
     }
 
     .btn-primary:hover {
-      background-color: #65f392;
+      background-color: #00ff7f;
       color: white;
     }
 .carousel-item {
@@ -123,7 +123,7 @@ border-radius:20px;
     .title {
       font-size: 3.2rem;
       font-weight: bold;
-      background: linear-gradient(90deg, #00ff7f, #00cc66, #00ff7f);
+      background: linear-gradient(90deg, #00ff7f, #00ff7f, #00ff7f);
       background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 300% 300%;
@@ -141,7 +141,7 @@ border-radius:20px;
 }
 .plan-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 0 25px rgba(0,255,127,0.4);
+  box-shadow: 0 0 25px #00ff7f;
 }
 .plan-title1 {
   font-size: 1.5rem;
@@ -215,14 +215,6 @@ border-radius:20px;
 
 
 
-
-    .para1{
-    padding: 30px;
-    margin: 30px;
-    
-    text-align: center;
-   }
-
 .package{
   
   display: flex;              /* Flexbox for row layout */
@@ -251,7 +243,7 @@ border-radius:20px;
       .btn-outline-accent {
         --bs-btn-color: var(--pf-accent);
         --bs-btn-border-color: var(--pf-accent);
-        --bs-btn-hover-bg: #65f392;
+        --bs-btn-hover-bg: #00ff7f;
         --bs-btn-hover-border-color: var(--pf-accent);
       }
       .plan-img {
@@ -262,7 +254,7 @@ border-radius:20px;
         margin-bottom: 10px;
       }
       .fw-bold{
-        padding-top: 45px;
+        padding-top: 25px;
       }
 
     .types{
@@ -298,7 +290,7 @@ display: flex;
         height: 250px;
         text-align: center;
      margin: 10px;
-        
+        background-color: #000;
         border: 2px solid gray;
         border-radius: 20px;
       
