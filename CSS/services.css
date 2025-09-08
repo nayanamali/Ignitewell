@@ -148,9 +148,10 @@ border-radius:20px;
     /* services cards */
     .glass {
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(0, 255, 136, 0.4);
+      border: 2px solid rgba(0, 255, 136, 0.4);
       box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+
     }
     .glass:hover {
       transform: translateY(-8px);
@@ -171,10 +172,12 @@ border-radius:20px;
     .glass5{
       box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+       /* border-color:#00ff7f; */
     }
     .glass5:hover{
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
+       border-color:#00ff7f;
     }
     /* Slide entire column from right */
 @keyframes slideFromRight {
@@ -226,20 +229,6 @@ border-radius:20px;
     }
     
 
-  /* .btn-accent {
-  --bs-btn-color: #000;
-  --bs-btn-bg: var(--pf-accent);
-  --bs-btn-border-color: var(--pf-accent);
-  --bs-btn-hover-bg: #00ff7f;
-  --bs-btn-hover-border-color: #00ff7f;
-}
-
-.btn-outline-accent {
-  --bs-btn-color: var(--pf-accent);
-  --bs-btn-border-color: var(--pf-accent);
-  --bs-btn-hover-bg: rgba(126,249,166,.1);
-  --bs-btn-hover-border-color: var(--pf-accent);
-} */
 
     /* ---------- FOOTER ---------- */
 .footer {
