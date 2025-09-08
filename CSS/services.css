@@ -219,14 +219,14 @@ border-radius:20px;
 .stagger-list li:nth-child(4) { animation-delay: 1.6s; }
 
   /* cta */
-    .glass4 {
+    /* .glass4 {
       box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .glass4:hover{
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
-    }
+    } */
     
 
 

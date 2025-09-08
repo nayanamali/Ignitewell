@@ -47,7 +47,7 @@
               <div class="d-flex filter-bar flex-wrap mt-4">
                 <div class="input-group" style="max-width:420px;">
                   <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-search"></i></span>
-                  <input id="searchInput" type="search" class="form-control border-start-0" placeholder="Search by name or skill…" oninput="applyFilters()">
+                  <input id="searchInput" type="search" class="form-control border-start-0 " placeholder="Search by name or skill…" oninput="applyFilters()">
                 </div>
                <select id="specialtySelect" class="form-select w-auto" onchange="applyFilters()">
                   <option value="">All specialties</option>
@@ -69,7 +69,7 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="glass p-3">
+            <div class="glass p-1">
               <img class="w-100 rounded-3" src="images/service1.jpg" alt="fitness hero" />
             </div>
           </div>
@@ -77,18 +77,18 @@
       </div>
     </header>
 
-    <div class="divider my-4"></div>
+    <!-- <div class="divider my-4"></div> -->
 
 
     <!-- TRAINERS GRID -->
     <section id="trainers" class="container py-4 py-md-5">
       <div class="d-flex align-items-end justify-content-between mb-3">
-        <h2 class="fw-bold m-0 text-center" style="color:#00ff7f;">FEATURED TRANIERS</h2>
+        <h2 class="fw-bold m-0 text-center mt-5" style="color:#00ff7f;">FEATURED TRANIERS</h2>
         <!-- <small class="text-secondary">Tap a card for profile & booking</small> -->
       </div>
 
       <div id="cardGrid" class="row g-4">
-        <!-- Trainer Card Template Instances -->
+        
         <!-- Trainer 1 -->
         <div class="col-sm-6 col-lg-4 col-xxl-3">
           <article class="trainer-card h-100" data-name="Dev Sharma" data-gender="Male" data-specialties="Strength,Weight Loss,Nutrition">
@@ -320,7 +320,7 @@
                 <div class="social">
                   <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
                   <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                  <a href="#"><i class="bi bi-youtube"></i></a>
                 </div>
                 <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Aditya Roy">Book</button>
               </div>
@@ -335,17 +335,17 @@
       <div class="row g-4">
         <div class="col-lg-6">
           <div class="trainer-card p-4 h-100">
-            <h4 class="mb-3" style="color:#00ff7f;">How does booking work?</h4>
+            <h4 class="mb-3" style="color:#00ff7f;"><i class="bi bi-dot"></i>How does booking work?</h4>
             <p class="text-white">Choose a trainer, tap <em>Book</em>, pick your preferred slot and format (in-gym, online, or home). You'll get instant confirmation.</p>
-            <h4 class="mt-4 mb-3" style="color:#00ff7f;">Do you offer trials?</h4>
+            <h4 class="mt-4 mb-3" style="color:#00ff7f;"><i class="bi bi-dot"></i>Do you offer trials?</h4>
             <p class="text-white">Yes—ask for a 30‑minute discovery session. We'll assess your goals and build a plan.</p>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="trainer-card p-4 h-100">
-            <h4 class="mb-3" style="color:#00ff7f;">Certifications & safety</h4>
+            <h4 class="mb-3" style="color:#00ff7f;"><i class="bi bi-dot"></i>Certifications & safety</h4>
             <p class="text-white">All trainers are certified and background‑checked. We prioritize safe programming and progressive overload principles.</p>
-            <h4 class="mt-4 mb-3" style="color:#00ff7f;">Pricing</h4>
+            <h4 class="mt-4 mb-3" style="color:#00ff7f;"><i class="bi bi-dot"></i>Pricing</h4>
             <p class="text-white">Session packs start at ₹999. Ask your trainer for tailored packages.</p>
           </div>
         </div>
