@@ -101,8 +101,9 @@ border-radius:20px;
       /* Hero */
       .hero{
         position:relative; 
-        padding: 96px 0 48px;
+        padding: 120px 48px;
         background: radial-gradient(800px 300px at 50% -10%, rgba(0,230,157,.18), transparent 60%);
+        padding-bottom: 20px;
       }
       .hero .glass{
         background: var(--glass-bg); 
