@@ -34,199 +34,454 @@
     </nav>
     </header> 
 
-    <!-- Trainer Intro Section -->
-<section class="py-5 text-center">
-  <div class="container">
-    <span class="badge rounded-pill bg-success mt-4 mb-2">Meet Our Trainers</span>
-    <h2 class="fw-bold mb-3">Experts Behind Your Transformation</h2>
-    <p class="lead text-white mt-3">
-      Our trainers are certified professionals who combine strength, conditioning, nutrition,
-      and mindset coaching. They’re here to push your limits and help you achieve lasting results.
-    </p>
-  </div>
-</section>
-
-<!-- Trainer Grid Section -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
-      <!-- Trainer 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/trainerr1.jpg" 
-               class="img-fluid mb-3" alt="Trainer 1">
-          <h5 class="fw-bold">Dev Sharma</h5>
-          <p class="text-white">Strength & Weight Loss</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+      <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <div class="p-4 p-md-5 glass">
+              <span class="badge badge-mint mb-3">Elite Coaches • 1:1 & Group</span>
+              <h1 class="display-5 fw-bold" style="color:#00ff7f;">Meet Our <span style="color:var(--mint)">Trainers</span></h1>
+              <p class="lead text-white">Certified experts in strength, conditioning, yoga, and sports performance. Handpicked for results and great vibes.</p>
+              <div class="d-flex filter-bar flex-wrap mt-4">
+                <div class="input-group" style="max-width:420px;">
+                  <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-search"></i></span>
+                  <input id="searchInput" type="search" class="form-control border-start-0" placeholder="Search by name or skill…" oninput="applyFilters()">
+                </div>
+               <select id="specialtySelect" class="form-select w-auto" onchange="applyFilters()">
+                  <option value="">All specialties</option>
+                  <option>Strength</option>
+                  <option>Weight Loss</option>
+                  <option>CrossFit</option>
+                  <option>Yoga</option>
+                  <option>Pilates</option>
+                  <option>Boxing</option>
+                  <option>Nutrition</option>
+                </select> 
+                <select id="genderSelect" class="form-select w-auto" onchange="applyFilters()">
+                  <option value="">Any gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+                <button class="btn btn-outline-mint ms-auto" data-bs-toggle="modal" data-bs-target="#availabilityModal"><i class="bi bi-calendar3 me-2"></i>Check Availability</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="glass p-3">
+              <img class="w-100 rounded-3" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1920&auto=format&fit=crop" alt="fitness hero" />
+            </div>
           </div>
         </div>
       </div>
+    </header>
 
-      <!-- Trainer 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/trai4.jpg"class="img-fluid mb-3" alt="Trainer 2">
-          <h5 class="fw-bold">Disha Kumari</h5>
-          <p class="text-white">Yoga & Mobility Specialist</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+    <div class="divider my-4"></div>
+
+
+    <!-- TRAINERS GRID -->
+    <section id="trainers" class="container py-4 py-md-5">
+      <div class="d-flex align-items-end justify-content-between mb-3">
+        <h2 class="fw-bold m-0 text-center" style="color:#00ff7f;">Featured Trainers</h2>
+        <!-- <small class="text-secondary">Tap a card for profile & booking</small> -->
+      </div>
+
+      <div id="cardGrid" class="row g-4">
+        <!-- Trainer Card Template Instances -->
+        <!-- Trainer 1 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Dev Sharma" data-gender="Male" data-specialties="Strength,Weight Loss,Nutrition">
+            <img class="trainer-img" src="images/trainerr1.jpg" alt="Dev - Strength Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Dev Sharma</h5>
+                <span class="rating" aria-label="4.9 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </span>
+              </div>
+              <p class="text-white mb-2">Strength & Fat Loss</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">Strength</span>
+                <span class="badge badge-mint">Weight Loss</span>
+                <span class="badge badge-mint">Nutrition</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Dev Sharma">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+          <!-- Trainer 2 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Disha Kumari" data-gender="Female" data-specialties="Yoga,Pilates,Mobility">
+            <img class="trainer-img" src="images/trai4.jpg" alt="Disha - Yoga Instructor">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Disha Kumari</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">Yoga, Pilates & Mobility</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">Yoga</span>
+                <span class="badge badge-mint">Pilates</span>
+                <span class="badge badge-mint">Mobility</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                  <a class="me-1" href="#"><i class="bi bi-youtube"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Disha Kumari">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+          <!-- Trainer 3 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Arjun Mehta" data-gender="Male" data-specialties="CrossFit,Strength,Endurance">
+            <img class="trainer-img" src="images/co1.jpg" alt="Kabir - CrossFit Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Arjun Mehta</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+              </div>
+              <p class="text-white mb-2">CrossFit & Strength</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">CrossFit</span>
+                <span class="badge badge-mint">Strength</span>
+                <span class="badge badge-mint">Endurance</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                   <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Arjun Mehta">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Trainer 4 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Maya Singh" data-gender="Female" data-specialties="Weight Loss,Nutrition,Cardio">
+            <img class="trainer-img" src="images/co2.jpg" alt="Anaya - Weight Loss Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Maya Singh</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">Weight Loss & Nutrition</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">Weight Loss</span>
+                <span class="badge badge-mint">Nutrition</span>
+                <span class="badge badge-mint">Cardio</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                 <a class="me-1" href="#"><i class="bi bi-youtube"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Maya Singh">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+          <!-- Trainer 5 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Aarav Shah" data-gender="Male" data-specialties="Boxing,HIIT,Conditioning">
+            <img class="trainer-img" src="images/trai5.jpg" alt="Rehan - Boxing Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Aarav Shah</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">Boxing & HIIT</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">Boxing</span>
+                <span class="badge badge-mint">HIIT</span>
+                <span class="badge badge-mint">Conditioning</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
+                  <a class="me-1" href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Aarav Shah">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Trainer 6 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Shruti Nair" data-gender="Female" data-specialties="Pilates,Core,Posture">
+            <img class="trainer-img" src="images/trai3.jpg" alt="Shruti - Pilates Instructor">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Shruti Nair</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">Pilates & Core</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">Pilates</span>
+                <span class="badge badge-mint">Core</span>
+                <span class="badge badge-mint">Posture</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                  <a class="me-1" href="#"><i class="bi bi-youtube"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Shruti Nair">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Trainer 7 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Aniket Singh" data-gender="Male" data-specialties="Endurance,Running,Strength">
+            <img class="trainer-img" src="images/trai6.jpg" alt="Dev - Endurance Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Aniket Singh</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">Endurance & Running</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">Endurance</span>
+                <span class="badge badge-mint">Running</span>
+                <span class="badge badge-mint">Strength</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                   <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Aniket Singh">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Trainer 8 -->
+        <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Anika Desai" data-gender="Female" data-specialties="CrossFit,Strength,HIIT">
+            <img class="trainer-img" src="images/train7.jpg" alt="Zara - CrossFit Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Anika Desai</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">CrossFit & HIIT</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">CrossFit</span>
+                <span class="badge badge-mint">Strength</span>
+                <span class="badge badge-mint">HIIT</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                 <a class="me-1" href="#"><i class="bi bi-youtube"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Anika Desai">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Trainer 9 -->
+         <div class="col-sm-6 col-lg-4 col-xxl-3">
+          <article class="trainer-card h-100" data-name="Aditya Roy" data-gender="Female" data-specialties="CrossFit,Strength,HIIT">
+            <img class="trainer-img" src="images/trai9.jpg" alt="Aditya Roy - CrossFit Coach">
+            <div class="p-3 p-md-4">
+              <div class="d-flex justify-content-between align-items-start">
+                <h5 class="mb-1">Aditya Roy</h5>
+                <span class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span>
+              </div>
+              <p class="text-white mb-2">CrossFit & HIIT</p>
+              <div class="d-flex gap-2 flex-wrap mb-3">
+                <span class="badge badge-mint">CrossFit</span>
+                <span class="badge badge-mint">Strength</span>
+                <span class="badge badge-mint">HIIT</span>
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="social">
+                  <a class="me-1" href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-sm btn-mint" data-bs-toggle="modal" data-bs-target="#profileModal" data-trainer="Aditya Roy">Book</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faqs" class="container pb-5">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="trainer-card p-4 h-100">
+            <h4 class="mb-3" style="color:#00ff7f;">How does booking work?</h4>
+            <p class="text-white">Choose a trainer, tap <em>Book</em>, pick your preferred slot and format (in-gym, online, or home). You'll get instant confirmation.</p>
+            <h4 class="mt-4 mb-3" style="color:#00ff7f;">Do you offer trials?</h4>
+            <p class="text-white">Yes—ask for a 30‑minute discovery session. We'll assess your goals and build a plan.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="trainer-card p-4 h-100">
+            <h4 class="mb-3" style="color:#00ff7f;">Certifications & safety</h4>
+            <p class="text-white">All trainers are certified and background‑checked. We prioritize safe programming and progressive overload principles.</p>
+            <h4 class="mt-4 mb-3" style="color:#00ff7f;">Pricing</h4>
+            <p class="text-white">Session packs start at ₹999. Ask your trainer for tailored packages.</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Trainer 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/co1.jpg" 
-               class="img-fluid mb-3" alt="Trainer 3">
-          <h5 class="fw-bold">Arjun Mehta</h5>
-          <p class="text-white">Strength & Wellness Expert</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+   
+
+    <!-- Availability Modal -->
+    <div class="modal fade" id="availabilityModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background:rgba(20,24,27,.85); border:1px solid rgba(255,255,255,.12);">
+          <div class="modal-header">
+            <h5 class="modal-title">Check Availability</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label">Choose Trainer</label>
+                <select class="form-select" id="availTrainer"></select>
+              </div>
+              <div class="col-6">
+                <label class="form-label">Date</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="col-6">
+                <label class="form-label">Time</label>
+                <input type="time" class="form-control" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Mode</label>
+                <select class="form-select">
+                  <option>In‑Gym</option>
+                  <option>Online</option>
+                  <option>Home Visit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-mint w-100">Request Slot</button>
           </div>
         </div>
       </div>
-          <!-- Trainer 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/co2.jpg" 
-               class="img-fluid mb-3" alt="Trainer 4">
-          <h5 class="fw-bold">Maya Singh</h5>
-          <p class="text-white">Pilates and Strength</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trainer 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/trai5.jpg"class="img-fluid mb-3" alt="Trainer 5">
-          <h5 class="fw-bold">Aarav Shah</h5>
-          <p class="text-white">Boxing & Cardio</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trainer 6 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/trai3.jpg" 
-               class="img-fluid mb-3" alt="Trainer 6">
-          <h5 class="fw-bold">Priya Singh</h5>
-          <p class="text-white">Nutrition & Wellness Expert</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-
-          <!-- Trainer 7 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/trai6.jpg" 
-               class="img-fluid mb-3" alt="Trainer 7">
-          <h5 class="fw-bold">Aniket Singh</h5>
-          <p class="text-white">Strength & HIIT</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trainer 8 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/train7.jpg"class="img-fluid mb-3" alt="Trainer 8">
-          <h5 class="fw-bold">Anika Desai</h5>
-          <p class="text-white">Endurance and Cardio</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trainer 9 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="trainer-card p-3 text-center h-100">
-          <img src="images/trai9.jpg" 
-               class="img-fluid mb-3" alt="Trainer 9">
-          <h5 class="fw-bold">Aditya Roy</h5>
-          <p class="text-white">Yoga & Meditation</p>
-          <div class="social">
-            <a href="https://www.instagram.com/" class="me-2"><i class="bi bi-instagram"></i></a>
-            <a href="https://x.com/i/flow/login" class="me-2"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- FAQ -->
-<section class="py-5">
-  <div class="container">
-    <h3 class="text-center mb-4" style="color:#00ff7f;">Questioned,Answered.</h3>
-    <div class="accordion" id="faqAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
-            Do you offer trials?
-          </button>
-        </h2>
-        <div id="q1" class="accordion-collapse collapse show">
-          <div class="accordion-body">Yes-ask for a 30-minute discovery session to assess your goals and plan.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
-            Certifications and Safety?
-          </button>
-        </h2>
-        <div id="q2" class="accordion-collapse collapse">
-          <div class="accordion-body">All trainers are certified and background-checked.Safe programming is priority.</div>
-        </div>
-      </div>
-       <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
-            Pricing ?
-          </button>
-        </h2>
-        <div id="q3" class="accordion-collapse collapse">
-          <div class="accordion-body">Session packs start at ₹999. Ask your trainer for tailored packages.</div>
-        </div>
-      </div>
-
-      
     </div>
-  </div>
-</section>
+
+    <!-- Profile Modal (reused) -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="background:rgba(20,24,27,.9); border:1px solid rgba(255,255,255,.12);">
+          <div class="modal-header">
+            <h5 class="modal-title" id="profileTitle">Trainer Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img id="profileImg" class="w-100 rounded-3" src="" alt="Trainer photo">
+              </div>
+              <div class="col-md-7">
+                <h3 id="profileName" class="mb-1"></h3>
+                <p id="profileSubtitle" class="text-secondary mb-3"></p>
+                <div class="mb-3" id="profileBadges"></div>
+                <p class="mb-0">A results‑driven plan tailored to your goals. Expect habit coaching, progressive programming, and accountability check‑ins.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex gap-2">
+            <button class="btn btn-outline-mint" data-bs-dismiss="modal">Close</button>
+            <button class="btn btn-mint">Book Session</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+    <script>
+      // Populate year
+      document.getElementById('year').textContent = new Date().getFullYear();
 
-    
+      // Build availability trainer list
+      const trainerOptions = Array.from(document.querySelectorAll('[data-name]')).map(el=>el.dataset.name);
+      const availSel = document.getElementById('availTrainer');
+      trainerOptions.forEach(n=>{ const opt=document.createElement('option'); opt.textContent=n; availSel.appendChild(opt); });
 
+      // Card filtering
+      function applyFilters(){
+        const q = document.getElementById('searchInput').value.trim().toLowerCase();
+        const spec = document.getElementById('specialtySelect').value;
+        const gender = document.getElementById('genderSelect').value;
 
+        document.querySelectorAll('#cardGrid .trainer-card').forEach(card=>{
+          const name = card.dataset.name.toLowerCase();
+          const specs = card.dataset.specialties.toLowerCase();
+          const g = card.dataset.gender;
+          let ok = true;
+          if(q && !(name.includes(q) || specs.includes(q))) ok = false;
+          if(spec && !specs.includes(spec.toLowerCase())) ok = false;
+          if(gender && g !== gender) ok = false;
+          card.parentElement.style.display = ok ? '' : 'none';
+        });
+      }
+
+      // Profile modal logic (reuse data from the card)
+      const profileModal = document.getElementById('profileModal');
+      profileModal.addEventListener('show.bs.modal', function (event) {
+        const triggerBtn = event.relatedTarget;
+        if(!triggerBtn) return;
+        const trainerName = triggerBtn.getAttribute('data-trainer');
+        const card = [...document.querySelectorAll('#cardGrid .trainer-card')].find(c=>c.dataset.name===trainerName);
+        if(!card) return;
+        const img = card.querySelector('img').src;
+        const subs = card.querySelector('p.text-secondary').textContent;
+        const badges = [...card.querySelectorAll('.badge')].map(b=>b.textContent);
+
+        document.getElementById('profileTitle').textContent = trainerName;
+        document.getElementById('profileName').textContent = trainerName;
+        document.getElementById('profileImg').src = img;
+        document.getElementById('profileSubtitle').textContent = subs;
+
+        const badgeWrap = document.getElementById('profileBadges');
+        badgeWrap.innerHTML = '';
+        badges.forEach(t=>{
+          const s = document.createElement('span');
+          s.className='badge badge-mint me-2 mb-2';
+          s.textContent = t; badgeWrap.appendChild(s);
+        });
+      });
+
+      // Allow clicking anywhere on card image/body to open profile
+      document.querySelectorAll('#cardGrid .trainer-card').forEach(card=>{
+        card.addEventListener('click', (e)=>{
+          if(e.target.closest('button, a')) return; // ignore clicks on buttons/links
+          const btn = card.querySelector('button[data-bs-target="#profileModal"]');
+          if(btn) btn.click();
+        });
+      });
+    </script>
     <!-- Footer Section -->
 <footer class="footer">
   <div class="footer-container">
