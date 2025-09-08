@@ -221,20 +221,23 @@ border-radius:20px;
   gap: 20px;                  /* Space between cards */
   justify-content: center;    /* Center cards horizontally */
   flex-wrap: wrap;   
-  padding: 20px;       
 
 }
  .price {
         font-size: 1.5rem;
         font-weight: 400;
+        color: #00ff7f;
+        text-shadow:1px 1px 5px #00ff7f;
       }
       .card-glow{
         width: 340px;
         text-align: center;
         padding: 28px;
         margin: 50px;
+        
         border: 2px solid gray;
         border-radius: 20px;
+        background-color: rgba(255,255,255,0.04);
       }
       .card-glow:hover {
         transform: translateY(-6px);
@@ -252,9 +255,6 @@ border-radius:20px;
         object-fit: cover;
         border-radius: 45%;
         margin-bottom: 10px;
-      }
-      .fw-bold{
-        padding-top: 25px;
       }
 
     .types{
@@ -384,11 +384,11 @@ display: flex;
    }
    .midtitle{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
+    color: #00ff7f;
    }
 
     
-
 
 
 
@@ -480,4 +480,8 @@ display: flex;
 @keyframes floatCircle {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-15px) rotate(45deg); }
+}
+.text-center{
+     text-align:center;
+     width:100%;
 }
