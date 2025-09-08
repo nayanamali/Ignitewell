@@ -12,6 +12,7 @@ body {
 
 .navbar {
   background: rgba(0, 0, 0, 0.85);
+  height: 60px;
 }
 .navbar-brand {
   font-size: 1.8rem;
@@ -19,11 +20,14 @@ body {
   color: #fff !important;
   display: flex;
   align-items: center;
-  gap: 8px;
+
 }
 .navbar-brand img {
-  width: 50px;
-  height: 35px;
+  height: 60px;      /* increase logo height */
+  width: 70px;
+  margin-top: -8px;  /* shift up */
+  margin-bottom: -8px; /* shift down */
+  padding-left: 0px;
 }
 .active1{
 background-color: #00ff7f;
@@ -139,7 +143,9 @@ header {
   font-size: 2.3rem;
   font-weight: bold;
   color: #00ff7f;
-  text-shadow: 0 0 10px #00ff7f;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  text-align: left;
 }
 
 .p2 {
@@ -219,7 +225,6 @@ header {
 
   .span1 {
     color: #00ff7f;
-    text-shadow: 0 0 12px #00ff7f, 0 0 25px #00ff7f;
   }
 
   .p1 {
@@ -402,12 +407,17 @@ header {
 .btn-join:hover::after, .carousel-caption a.btn:hover::after {
   left: 120%;
 }
-
+.col-md-3{
+             width:220px;
+             margin-left: 47px;
+             margin-top: 30px;
+             margin-bottom: 40px;
+}
 .stats {
       display: flex;
       justify-content: center;
-      gap: 60px;   /* tighter spacing */
-      padding: 40px 20px; /* less vertical padding */
+      gap: 10px;   /* tighter spacing */
+      padding:40px 20px;
       flex-wrap: wrap;
     }
 
@@ -488,6 +498,7 @@ header {
       padding: 10px 30px;
       margin-bottom: 80px;
       text-align: center;
+      margin-top: 20px;
     }
 
     .services-arc h2 {
@@ -555,102 +566,107 @@ header {
     }
 
 /* ---------- TRAINER CARDS ---------- */
+.trainers {
+      padding: 10px 0;
+      background: #0b0b0d;
+      margin-bottom:30px;
+    }
 
-.row1{
-      column-gap: 35px;
-}
-.col {
-        flex: 0 0 auto;
-        width: 300px;
-    }.row1{
-      column-gap: 35px;
-    }
-    .active{
-          background-color:#0b0b0d;
-    }
-.col {
-        flex: 0 0 auto;
-        width: 300px;
-    }
     .section-title {
-      font-size: 2rem;
+      font-size: 32px;
       font-weight: bold;
-      color: #00ff7f;
-    
-    }
-
-    .trainer-frame {
-      background: rgba(0, 0, 0, 0.85);
-      border:1px solid #00ff7f;
-      border-radius: 20px;
-      color: #fff;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      padding: 10px;
-      box-shadow: 0 0 10px rgba(0, 255, 153, 0.15);
-      margin: 0 auto 15px auto;
-      width:300px;
-      height:400px;
-      margin-top: 20px;
-    }
-
-    .trainer-frame:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 10px rgba(0, 255, 127, 0.7);
-    }
-    .trainer-frame img {
-    width: 100%;
-    height: 250px;       /* fixed uniform height */
-    object-fit: cover;   /* crops image without distortion */
-    border-bottom: 2px solid #00ff7f;
-    display: block;
-    border-radius:20px;
-    }     
-
-    .trainer-info {
-      padding: 15px;
+      color:#00ff7f;
       text-align: center;
     }
 
-    .trainer-info h4 {
+    .trainer-slider {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+
+    .trainer-track {
+      display: flex;
+      gap: 20px;
+      animation: scroll 25s linear infinite;
+      width: max-content;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .trainer-track:hover {
+      animation-play-state: paused; /* pause on hover */
+    }
+
+    .trainer-frame {
+      flex: 0 0 auto;
+      width: 250px;
+      background: #0b0b0d;
+      border: 2px solid #00ff7f;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .trainer-frame:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 25px #00ff7f;
+    }
+
+    .trainer-frame img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .trainer-frame h4 {
       margin: 10px 0 5px;
+      font-size: 18px;
       color: #00ff7f;
     }
 
-    .trainer-info p {
+    .trainer-frame p {
       font-size: 14px;
+      opacity: 0.85;
       margin-bottom: 10px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
     }
 
     .social-icons i {
       font-size: 18px;
-      margin: 0 8px;
-      color: #00ff7f;
-      cursor: pointer;
-      transition: color 0.3s;
+      color: #fff;
+      border: 1px solid #00ff7f;
+      border-radius: 50%;
+      padding: 6px;
+      transition: 0.3s;
     }
 
     .social-icons i:hover {
-      color: #fff;
+      background: #00ff7f;
+      color: #000;
+      box-shadow: 0 0 12px #00ff7f;
     }
-  #trainerCarousel .carousel-indicators {
-  position: static;     /* remove absolute positioning */
-      /* add spacing below cards */
-}
 
-#trainerCarousel .carousel-indicators button {
-  background-color: #00ff7f !important; /* neon green dots */
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
- 
-
+    /* continuous scroll */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
 /* ---------- TESTIMONIALS ---------- */
 
  section {
-      padding: 30px 0;
+      padding: 40px 0;
       text-align: center;
+      padding-bottom: 60px;
     }
 
     .testimonial-container {
@@ -707,7 +723,9 @@ header {
       position: relative;
       max-width: 300px;
       height: 300px;
-      margin-right: 130px;
+      margin-right: 110px;
+      box-shadow: 0px 0px 10px #00ff7f;
+      border-radius: 10px;
     }
 
     .testimonial-img img {
@@ -719,10 +737,9 @@ header {
       border: 2px solid #00ff7f;
     }
 
-
     /* Slider Navigation */
     .controls {
-      margin-top: 40px;
+      margin-top: 20px;
       text-align: center;
     }
 
