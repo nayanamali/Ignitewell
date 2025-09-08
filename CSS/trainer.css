@@ -109,12 +109,32 @@ border-radius:20px;
       .form-control:focus, .form-select:focus { border-color: var(--mint); box-shadow:0 0 0 .25rem rgba(0,230,157,.15); }
 
       /* Trainer card */
-      .trainer-card{ background: var(--glass-bg); border:1px solid rgba(255,255,255,.12); border-radius: var(--glass-br); overflow:hidden; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
-      .trainer-card:hover{ transform:translateY(-6px); box-shadow:0 18px 50px rgba(0,0,0,.5); border-color:rgba(0,230,157,.35); }
-      .trainer-img{ aspect-ratio: 4/3; object-fit: cover; width:100%; filter:saturate(1.05) contrast(1.05); }
-      .rating i{ color: var(--mint); }
-      .chip{ font-size:.8rem; padding:.35rem .6rem; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:999px; }
-      .chip i{ margin-right:.25rem; }
+      .trainer-card{
+         background: var(--glass-bg);
+          border:3px solid rgba(255,255,255,.12);
+           border-radius: var(--glass-br); overflow:hidden;
+            transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+           }
+
+      .trainer-card:hover{
+         transform:translateY(-6px);
+          box-shadow:0 18px 50px rgba(0,0,0,.5); 
+           box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
+            border-color:rgba(3,230,157,.35); }
+      .trainer-img{ aspect-ratio: 4/3; object-fit: cover;
+         width:100%; filter:saturate(1.05) contrast(1.05);
+         }
+      .rating i{
+         color: var(--mint); 
+        }
+      .chip{ font-size:.8rem; padding:.35rem .6rem;
+         background:rgba(255,255,255,.06);
+          border:1px solid rgba(255,255,255,.12);
+           border-radius:999px;
+           }
+      .chip i{ 
+        margin-right:.25rem;
+       }
 
       /* Mint buttons */
       .btn-mint{ --bs-btn-color:#081012; --bs-btn-bg: var(--mint); --bs-btn-border-color: var(--mint-600); --bs-btn-hover-bg:#0df0a5; --bs-btn-hover-border-color: var(--mint-300); --bs-btn-active-bg:#00bd82; color:#081012; }
@@ -125,7 +145,10 @@ border-radius:20px;
 
       /* Social links */
       .social a{ width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.04); }
-      .social a:hover{ border-color: rgba(0,230,157,.5); color:var(--mint-300); }
+      .social a:hover{ 
+        border-color: rgba(0,230,157,.5); color:var(--mint-300);
+         box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
+      }
 
       /* Utility */
       .divider{ height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); }
