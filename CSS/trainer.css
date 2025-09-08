@@ -73,48 +73,79 @@ border-radius:20px;
         --glass-bg: rgba(255,255,255,.06);
         --glass-br: 18px;
       }
-      html,body{height:100%; background:#0b0f12;}
+      html,body{
+        height:100%; 
+        background:#0b0f12;
+      }
       /* Subtle grid + noise background */
       body::before{
-        content:""; position:fixed; inset:0; z-index:-2;
+        content:""; 
+        position:fixed; 
+        inset:0; 
+        z-index:-2;
         background: radial-gradient(1200px 600px at 120% -10%, rgba(0,230,157,.15), transparent 60%),
                     radial-gradient(900px 500px at -10% 110%, rgba(0,230,157,.12), transparent 60%),
                     linear-gradient(180deg, #0b0f12 0%, #07090b 100%);
       }
       body::after{
         content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
-        background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
-        background-size: 36px 36px; mix-blend-mode: overlay; opacity:.4;
+        background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), 
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+        background-size: 36px 36px;
+        mix-blend-mode: overlay; 
+        opacity:.4;
       }
 
       
 
       /* Hero */
       .hero{
-        position:relative; padding: 96px 0 48px;
+        position:relative; 
+        padding: 96px 0 48px;
         background: radial-gradient(800px 300px at 50% -10%, rgba(0,230,157,.18), transparent 60%);
       }
       .hero .glass{
-        background: var(--glass-bg); border:1px solid rgba(255,255,255,.12);
-        backdrop-filter: blur(12px); border-radius: var(--glass-br);
+        background: var(--glass-bg); 
+        border:1px solid rgba(255,255,255,.12);
+        border-color:#00ff7f;
+        backdrop-filter: blur(12px); 
+        border-radius: var(--glass-br);
         box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
       }
-      .badge-mint{ background: rgba(0,230,157,.15); border:1px solid rgba(0,230,157,.35); color: var(--mint-300); }
+      .glass:hover{
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,127,0.4);
+    }
+
+      .badge-mint{ 
+        background: rgba(0,230,157,.15); 
+        border:1px solid rgba(0,230,157,.35); 
+        color: var(--mint-300); 
+      }
 
       /* Search + filters */
-      .filter-bar{ gap:.75rem; }
-      .form-control, .form-select {
-        background: rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.14); color:#eaeff3;
+      .filter-bar{ 
+        gap:.75rem; 
       }
-      .form-control:focus, .form-select:focus { border-color: var(--mint); box-shadow:0 0 0 .25rem rgba(0,230,157,.15); }
+      .form-control, .form-select {
+        background: #000;
+        /* background: rgba(255,255,255,.04);  */
+        border:1px solid rgba(255,255,255,.14);
+        color:#eaeff3;
+      }
+      .form-control:focus, .form-select:focus { 
+        border-color: var(--mint); 
+        box-shadow:0 0 0 .25rem rgba(0,230,157,.15);
+       }
 
       /* Trainer card */
       .trainer-card{
-         background: var(--glass-bg);
-          border:2px solid rgba(255,255,255,.12);
-           border-radius: var(--glass-br); overflow:hidden;
-            transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-           }
+        background: var(--glass-bg);
+        border:2px solid rgba(255,255,255,.12);
+        border-radius: var(--glass-br); 
+        overflow:hidden;
+        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      }
 
       .trainer-card:hover{
         transform:translateY(-6px);
@@ -145,7 +176,13 @@ border-radius:20px;
       footer{ border-top:1px solid rgba(255,255,255,.08); background:rgba(0,0,0,.35); backdrop-filter: blur(6px); }
 
       /* Social links */
-      .social a{ width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.04); }
+      .social a{ 
+        width:36px;
+        height:36px; display:inline-flex;
+        align-items:center; justify-content:center; 
+        border-radius:999px; border:1px solid rgba(255,255,255,.16); 
+        background:rgba(255,255,255,.04);
+     }
       .social a:hover{ 
         border-color:#00ff7f; color:var(--mint-300);
          box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
