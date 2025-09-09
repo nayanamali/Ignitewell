@@ -8,9 +8,6 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
 }
 /* ---------- NAVBAR ---------- */
-
-
-
 .navbar {
   background: rgba(0, 0, 0, 0.85);
   height: 60px;
@@ -21,7 +18,6 @@ body {
   color: #fff !important;
   display: flex;
   align-items: center;
-
 }
 .navbar-brand img {
   height: 60px;      /* increase logo height */
@@ -31,10 +27,9 @@ body {
   padding-left: 0px;
 }
 .active{
-background-color: #00ff7f;
-border-radius:20px;           
+  background-color: #00ff7f;
+  border-radius:20px;           
 }
-
 #quotes .carousel-item.active {
   background: #0b0b0d !important;  /* your page background color */
 }
@@ -46,8 +41,14 @@ border-radius:20px;
   animation: shine 3s infinite alternate;
 }
 @keyframes shine {
-  0% { letter-spacing: 1px; opacity: 0.7; }
-  100% { letter-spacing: 3px; opacity: 1; }
+  0% { 
+  letter-spacing: 1px; 
+  opacity: 0.7; 
+  }
+  100% { 
+  letter-spacing: 3px; 
+  opacity: 1; 
+  }
 }
 
 .nav-link {
@@ -68,11 +69,11 @@ border-radius:20px;
   isolation: isolate;
 }
 .ring::before {
- content: "";
- position: absolute; 
- inset: -1px;
- background: linear-gradient(135deg, var(--pf-accent), var(--pf-accent-2));
- border-radius: inherit; z-index: -1; filter: blur(8px); opacity: .35;
+  content: "";
+  position: absolute; 
+  inset: -1px;
+  background: linear-gradient(135deg, var(--pf-accent), var(--pf-accent-2));
+  border-radius: inherit; z-index: -1; filter: blur(8px); opacity: .35;
 }
 
 /* Make grayscale images pop nicely */
@@ -82,12 +83,12 @@ border-radius:20px;
 
 /* Hero */
 .hero {
- min-height: 80vh;
- background: radial-gradient(60% 100% at 70% 50%, rgba(126,249,166,0.08), transparent 60%),
- radial-gradient(50% 100% at 10% 10%, rgba(166,200,255,0.08), transparent 50%),
- #0b0b0d;
- position: relative;
- overflow: hidden;
+  min-height: 80vh;
+  background: radial-gradient(60% 100% at 70% 50%, rgba(126,249,166,0.08), transparent 60%),
+  radial-gradient(50% 100% at 10% 10%, rgba(166,200,255,0.08), transparent 50%),
+  #0b0b0d;
+  position: relative;
+  overflow: hidden;
 }
 .hero-img {
   position: absolute; 
@@ -121,76 +122,73 @@ border-radius:20px;
   color: #fff;
 }
 /* glass2 cards */
-    .glass2{
-      transition: 0.2s;
-      box-shadow: 0 0 15px rgba(0,255,127,0.2);
-      
-    }
-    .glass2:hover{
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0,255,127,0.4);
-    }
-    .glass2 i{
-      font-size: 2rem;
-      color: #00ff7f;
-      background-color: none;
-    }
+.glass2{
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba(0,255,127,0.2);
+}
+.glass2:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,127,0.4);
+}
+.glass2 i{
+  font-size: 2rem;
+  color: #00ff7f;
+  background-color: none;
+}
 
 /* Glassy cards */
 .glass {
- background: rgba(255,255,255,0.04);
- border: 1px solid rgba(255,255,255,0.08);
- backdrop-filter: blur(8px);
- -webkit-backdrop-filter: blur(8px);
- border-radius: 1.25rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 1.25rem;
 }
 /* glass1 Cards */
-    .glass1 {
-      transition: 0.3s;
-      box-shadow: 0 0 15px rgba(0,255,127,0.2);
-      border: 2px solid #00ff7f;
-    }
-    .glass1 h5{
-      text-align: center;
-    }
-    .glass1:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0,255,127,0.4);
-    }
-    .glass1 i {
-      font-size: 2rem;
-      color: #00ff7f;
-      margin-bottom: 10px;
-      background-color: none;
-    }
-    /* our story */
- /* blockquote */
-    #quotes {
-      transition: 0.2s;
-      box-shadow: 0 0 15px rgba(0,255,127,0.2);
-      margin-top: 60px;
-      border: 2px solid #00ff7f;
-    }
-    #quotes:hover{
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0,255,127,0.4);
-    }
-    /* why choose ignitewell */
-    .container i{
-      color: #00ff7f;
-       font-size: 2rem;
-      background-color: none;
-    } 
-     .ring {
-      transition: 0.2s;
-      box-shadow: 0 0 15px rgba(0,255,127,0.2);
-      
-    }
-    .ring:hover{
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0,255,127,0.4);
-    }
-      
+.glass1 {
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0,255,127,0.2);
+  border: 2px solid #00ff7f;
+}
+.glass1 h5{
+  text-align: center;
+}
+.glass1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,127,0.4);
+}
+.glass1 i {
+  font-size: 2rem;
+  color: #00ff7f;
+  margin-bottom: 10px;
+  background-color: none;
+}
+/* our story */
+/* blockquote */
+#quotes {
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba(0,255,127,0.2);
+  margin-top: 60px;
+  border: 2px solid #00ff7f;
+}
+#quotes:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,127,0.4);
+}
+/* why choose ignitewell */
+.container i{
+  color: #00ff7f;
+  font-size: 2rem;
+  background-color: none;
+} 
+.ring {
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba(0,255,127,0.2);
+}
+.ring:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,127,0.4);
+}
 /* Team cards */
 .team-card img { 
   /* filter: grayscale(100%);  */
@@ -207,7 +205,6 @@ border-radius:20px;
 .team-card .social a:hover { 
   opacity: 1;
 }
-
 /* Testimonial avatar ring */
 .avatar { 
   width: 56px; 
@@ -215,7 +212,6 @@ border-radius:20px;
   border-radius: 50%; 
   object-fit: cover; 
 }
-
 /* Timeline */
 .timeline {
  border-left: 3px dashed rgba(255,255,255,0.18);
@@ -324,18 +320,17 @@ border-radius:20px;
   font-size:15px;
   font-weight: 600;
 }
-
 .footer-newsletter button:hover { transform: scale(1.05); }
 .back-color1{
-       color:blue;
+  color:blue;
     
 }
 .back-color2{
-       color:rgb(160, 15, 78);
+  color:rgb(160, 15, 78);
     
 }
 .back-color3{
-       color:white;
+  color:white;
     
 }
 /* Animated Background Circles */
