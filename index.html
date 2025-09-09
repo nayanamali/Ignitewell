@@ -123,35 +123,10 @@
 <script>
   AOS.init({
     duration: 1000, // animation speed
-    once: false     // animate every time on scroll
+    once:false     // animate every time on scroll
   });
 </script>
 
-   <!-- WHY CHOOSE IGNITEWELL -->
-<section class="why-choose">
-  <h2>Why Choose <span class="span1">IgniteWell?</span></h2>
-  <p>Expert trainers, high-energy workouts, and a supportive community to help you reach your fitness goals efficiently and safely.</p>
-
-  <div class="services">
-    <div class="service">
-      <i class="bi bi-heart-pulse-fill"></i>
-      <h4>Personal Training</h4>
-      <p>1-on-1 guidance tailored to you.</p>
-    </div>
-    <div class="service">
-      <i class="bi bi-lightning-charge-fill"></i>
-      <h4>High-Intensity</h4>
-      <p>Burn fat & build muscle effectively.</p>
-    </div>
-    <div class="service">
-      <i class="bi bi-people-fill"></i>
-      <h4>Community</h4>
-      <p>Stay motivated & connected.</p>
-    </div>
-  </div>
-
-  <a href="#" class="start-btn">Start Your Journey</a>
-</section>
 <!-- STATS SECTION -->
  <section class="stats-section text-center text-light">
     <div class="container">
@@ -188,6 +163,57 @@
     </div>
   </section>
 
+  <section class="video-split-section" data-aos="fade-up" data-aos-duration="1500">
+  <div class="container">
+    <div class="video-split">
+      <!-- Left: Video -->
+      <div class="video-left">
+        <video autoplay muted loop playsinline disablePictureInPicture controlslist="nodownload noremoteplayback">
+          <source src="video/vdo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Right: Content -->
+      <div class="content-right" data-aos="fade-left">
+        <h2 data-aos="fade-down">Your Journey With IgniteWell</h2>
+        
+        <div class="timeline">
+          <div class="step" data-aos="fade-left" data-aos-delay="200">
+            <div class="step-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="step-content">
+              <h4>Day 1: Kickstart</h4>
+              <p>Begin your fitness journey with energy & determination.</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-left" data-aos-delay="300">
+            <div class="step-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+            <div class="step-content">
+              <h4>1 Month: Energy Boost</h4>
+              <p>Feel stronger, more active, and motivated to push further.</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-left" data-aos-delay="400">
+            <div class="step-icon"><i class="bi bi-fire"></i></div>
+            <div class="step-content">
+              <h4>3 Months: Visible Results</h4>
+              <p>Experience real transformation in body & mind.</p>
+            </div>
+          </div>
+          <div class="step" data-aos="fade-left" data-aos-delay="500">
+            <div class="step-icon"><i class="bi bi-trophy-fill"></i></div>
+            <div class="step-content">
+              <h4>6 Months: Peak Performance</h4>
+              <p>Achieve your best shape and unstoppable confidence.</p>
+            </div>
+          </div>
+        </div>
+        <!-- CTA Button -->
+        <a href="subscription.html" class="btn-glow" data-aos="zoom-in" data-aos-delay="600">Start Today</a>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Services Section -->
  <section class="services-arc">
     <h2>Our <span>Services</span></h2>
@@ -230,6 +256,10 @@
       </div>
     </div>
   </section>
+   
+    <!-- 🎥 Split Video & Content Section -->
+  <!-- 🎥 Split Video & Content Section -->
+
 <!-- TRAINERS SECTION -->
   <section class="trainers" id="trainers">
   <div class="container text-center">
@@ -275,7 +305,7 @@
         </div>
 
         <!-- Trainer 4 -->
-        <div class="trainer-frame">
+         <div class="trainer-frame">
           <img src="images/trainer4.jpg" alt="Trainer 4">
           <h4>Emily Davis</h4>
           <p>Yoga & Flexibility</p>
