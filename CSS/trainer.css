@@ -101,8 +101,9 @@ border-radius:20px;
       /* Hero */
       .hero{
         position:relative; 
-        padding: 96px 0 48px;
+        padding: 120px 48px;
         background: radial-gradient(800px 300px at 50% -10%, rgba(0,230,157,.18), transparent 60%);
+        padding-bottom: 20px;
       }
       .hero .glass{
         background: var(--glass-bg); 
@@ -189,7 +190,11 @@ border-radius:20px;
       }
 
       /* Utility */
-      .divider{ height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); }
+      .divider{ 
+        height:1px; 
+        background: black;
+        /* background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); */
+       }
 
       /* If you want brand colors */
       .social a .bi-instagram { color: #E1306C; } /* Instagram pink */

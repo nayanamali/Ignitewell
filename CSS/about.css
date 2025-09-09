@@ -144,6 +144,7 @@ border-radius:20px;
     .glass1 {
       transition: 0.3s;
       box-shadow: 0 0 15px rgba(0,255,127,0.2);
+      border: 2px solid #00ff7f;
     }
     .glass1 h5{
       text-align: center;
@@ -164,6 +165,7 @@ border-radius:20px;
       transition: 0.2s;
       box-shadow: 0 0 15px rgba(0,255,127,0.2);
       margin-top: 60px;
+      border: 2px solid #00ff7f;
     }
     #quotes:hover{
       transform: translateY(-8px);
@@ -189,6 +191,7 @@ border-radius:20px;
 .team-card img { 
   /* filter: grayscale(100%);  */
   transition: transform .4s ease, filter .4s ease;
+  border: 2px solid #fff;
 }
 .team-card:hover img { 
   filter: grayscale(0%); 
@@ -247,7 +250,7 @@ border-radius:20px;
 
 
 /* CTA glow */
-.glow {
+/* .glow {
   box-shadow: 0 0 0 .15rem rgba(126,249,166,.25), 0 .75rem 2rem rgba(0,0,0,.35);
 }
 
@@ -264,7 +267,7 @@ border-radius:20px;
   --bs-btn-border-color: var(--pf-accent);
   --bs-btn-hover-bg: rgba(126,249,166,.1);
   --bs-btn-hover-border-color: var(--pf-accent);
-}
+} */
 
 
   /* ---------- FOOTER ---------- */
