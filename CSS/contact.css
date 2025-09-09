@@ -70,116 +70,15 @@ body {
   color: #00ff7f !important;
 }
 
-/* Hero Section */
-
-.carousel-item {
-  height: 80vh;
-  min-height: 400px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  position: relative;
-}
-
-.carousel-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.65);
-}
-
-.carousel-caption {
-  bottom: 13%;
-  z-index: 2;
-}
-
-.hero-title {
-  font-size: 3.4rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #00ff7f, #00cc66, #00ff7f);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 300% 300%;
-  animation: gradientFlow 6s infinite linear;
-}
-
-.hero-subtext {
-  font-size: 1.3rem;
-  margin-top: 15px;
-  color: #ddd;
-  animation: fadeIn 2s ease;
-}
-
-.btn-cta {
-  margin-top: 25px;
-  padding: 14px 34px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background: #00ff7f;
-  color: #000;
-  border-radius: 35px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-  animation: pulse 2s infinite;
-}
-
-.btn-cta:hover {
-  background: #00cc66;
-  transform: scale(1.08);
-}
-
-/* Animations */
-@keyframes gradientFlow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0.6);
-  }
-
-  70% {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px 12px rgba(0, 255, 127, 0);
-  }
-
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0);
-  }
-}
 
 
 /* Info Cards */
 .mt-5 {
-  background-image: url("/images/slide1.jpg");
+  background-image: url("/images/gym_image1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  margin-top: 100px;
 }
 
 .g-4 {
@@ -187,22 +86,18 @@ body {
 }
 
 .info-card {
-  background: rgba(0, 0, 0, 0.5);
-  /* glass black background */
-  border-radius: 15px;
-  border: 1px solid #00ff7f;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  padding: 30px 15px;
-  color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+      background:rgba(0, 0, 0, 0.4);
+      color: #fff;
+      padding: 30px 20px;
+      border-radius: 10px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      border: 1px solid #00ff7f;
+    }
 
-/* Hover effect */
-.info-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 15px rgba(0, 255, 127, 0.5);
-  /* neon green glow */
-}
+    .info-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 255, 127, 0.5);
+    }
 
 /* Icon styling */
 .info-card i {
