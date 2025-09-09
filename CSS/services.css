@@ -55,21 +55,25 @@ border-radius:20px;
 }
 
 /* Hero Section */
-    .service-header {
-        position: relative;
-        height: 100vh;
-        background: url("/images/serviceback.jpg") center center/cover no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-      
-    }
-    .service-header h2{
-      margin-top: 60px;
-    }
-
+.service-header {
+  position: relative;
+  height: 100vh;
+  background: url("/images/serviceback.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.service-header h2{
+  margin-top: 50px;
+}
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
     
     /* .service-header::before {
       content: "";
@@ -77,12 +81,7 @@ border-radius:20px;
       inset: 0;
       background: linear-gradient(to bottom right, rgba(0,0,0,0.85), rgba(0,255,127,0.15));
     } */
-    .header-content {
-      position: relative;
-      z-index: 2;
-      max-width: 800px;
-      padding: 2rem;
-    }
+    
     /* .header-content h6 {
       font-size: 3.8rem;
       font-weight: 600;
@@ -169,20 +168,14 @@ border-radius:20px;
     .icon-green {
       color: #00ff7f;
     }
-    .glass5{
-      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      /* border: 2px solid  #00ff7f; */
-      /*height: 750px;
-     width:550px */
-       /* border-color:#00ff7f; */
-    }
+    
     .glass5:hover{
       transform: translateY(-8px);
       box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
-       border-color:#00ff7f;
-    }
-    /* Slide entire column from right */
+      
+    } 
+
+/*      
 @keyframes slideFromRight {
   0% {
     opacity: 0;
@@ -210,13 +203,47 @@ border-radius:20px;
   }
 }
 
-.stagger-list li {
+/* why choose our programs*/
+.glass5, .glass4 {
+  background: rgba(255,255,255,0.05);
+  border: 0px solid #00ff7f; 
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0,255,127,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Image styling */
+.bw-img {
+  /* filter: grayscale(100%); */
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+.bw-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Mint button */
+.btn-mint {
+  background-color: #00ff7f;
+  color: #000;
+  border-radius: 30px;
+  padding: 0.7rem 1.6rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.btn-mint:hover {
+  background-color: #00cc66;
+  color: #fff;
+}
+    
+/* .stagger-list li {
   opacity: 0;
   animation: fadeUp 0.8s ease forwards;
 }
 
 /* Stagger effect */
-.stagger-list li:nth-child(1) { 
+/* .stagger-list li:nth-child(1) { 
   animation-delay: 1s; 
 }
 .stagger-list li:nth-child(2) { 
@@ -227,19 +254,11 @@ border-radius:20px;
 }
 .stagger-list li:nth-child(4) { 
   animation-delay: 1.6s; 
-}
+} */
 
-  /* cta */
-    /* .glass4 {
-      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .glass4:hover{
-      transform: translateY(-8px);
-      box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
-    } */
+ 
     /* CTA glow */
-      .glow {
+      /* .glow {
         box-shadow: 0 0 0 .15rem rgba(126,249,166,.25), 0 .75rem 2rem rgba(0,0,0,.35);
       }
 
@@ -259,10 +278,10 @@ border-radius:20px;
       }
       :root {
         --pf-accent: #00ff7f; /* mint */
-        --pf-accent-2: #a6c8ff; /* soft blue */
-      }
+        /* --pf-accent-2: #a6c8ff; /* soft blue */
+      /* } */ 
      
-      .ring {
+      /* .ring {
         position: relative;
         border-radius: 1.25rem;
         isolation: isolate;
@@ -284,8 +303,10 @@ border-radius:20px;
      }
      .mt-5{
             padding-top: 50px;
-     }
-    /* ---------- FOOTER ---------- */
+     } */ 
+
+
+ /* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
   color: #fff;

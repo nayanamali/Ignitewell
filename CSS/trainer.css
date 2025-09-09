@@ -190,7 +190,11 @@ border-radius:20px;
       }
 
       /* Utility */
-      .divider{ height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); }
+      .divider{ 
+        height:1px; 
+        background: black;
+        /* background:linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent); */
+       }
 
       /* If you want brand colors */
       .social a .bi-instagram { color: #E1306C; } /* Instagram pink */
