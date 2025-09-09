@@ -221,13 +221,14 @@ border-radius:20px;
     
  /* ---------- FOOTER ---------- */
 .footer {
-  background:#0b0b0d;
+  background: #0b0b0d;
   color: #fff;
   padding: 50px 0;
   position: relative;
   overflow: hidden;
   padding-bottom: 10px;
 }
+
 .footer-container {
   max-width: 1100px;
   margin: auto;
@@ -235,16 +236,42 @@ border-radius:20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
-.footer h3 { color: #00ff7f; margin-bottom: 15px; }
-.footer p, .footer ul li { color: #aaa; font-size: 0.9rem; }
-.footer a { color: #aaa; text-decoration: none; transition: color 0.3s, transform 0.3s; }
-.footer a:hover { color: #00ff7f; transform: scale(1.1); }
-.footer-social a { margin-right: 10px; font-size: 1.2rem; }
-.footer-newsletter form { 
-  max-width: 300px;   /* reduces width */
-  margin: 10px auto;  /* centers form */
+
+.footer h3 {
+  color: #00ff7f;
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer ul li {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer a:hover {
+  color: #00ff7f;
+  transform: scale(1.1);
+}
+
+.footer-social a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-newsletter form {
+  max-width: 300px;
+  /* reduces width */
+  margin: 10px auto;
+  /* centers form */
   display: flex;
- }
+}
+
 .footer-newsletter input {
   flex: 1;
   padding: 8px 10px;
@@ -253,9 +280,10 @@ border-radius:20px;
   background: #111;
   color: #fff;
   outline: none;
-  width:100px;
-  height:35px;
+  width: 100px;
+  height: 35px;
 }
+
 .footer-newsletter button {
   padding: 8px 15px;
   padding-left: 4px;
@@ -265,31 +293,38 @@ border-radius:20px;
   color: #000;
   cursor: pointer;
   transition: transform 0.3s;
-  width:80px;
-  height:35px;
-  font-size:15px;
+  width: 80px;
+  height: 35px;
+  font-size: 15px;
   font-weight: 600;
 }
 
-.footer-newsletter button:hover { transform: scale(1.05); }
-.back-color1{
-       color:blue;
-    
+.footer-newsletter button:hover {
+  transform: scale(1.05);
 }
-.back-color2{
-       color:rgb(160, 15, 78);
-    
+
+.back-color1 {
+  color: blue;
+
 }
-.back-color3{
-       color:white;
-    
+
+.back-color2 {
+  color: rgb(160, 15, 78);
+
 }
+
+.back-color3 {
+  color: white;
+
+}
+
 /* Animated Background Circles */
 .circle {
   position: absolute;
   border-radius: 50%;
   background: rgba(0, 255, 127, 0.1);
 }
+
 .circle1 {
   top: -50px;
   left: -50px;
@@ -297,6 +332,7 @@ border-radius:20px;
   height: 150px;
   animation: floatCircle 6s ease-in-out infinite;
 }
+
 .circle2 {
   bottom: -60px;
   right: -60px;
@@ -304,19 +340,28 @@ border-radius:20px;
   height: 200px;
   animation: floatCircle 8s ease-in-out infinite alternate;
 }
+
 @keyframes floatCircle {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(45deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(45deg);
+  }
 }
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background:#0b0b0d;
+  background: #0b0b0d;
   color: #fff;
   padding: 50px 0;
   position: relative;
   overflow: hidden;
 }
+
 .footer-container {
   max-width: 1100px;
   margin: auto;
@@ -324,16 +369,42 @@ border-radius:20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
-.footer h3 { color: #00ff7f; margin-bottom: 15px; }
-.footer p, .footer ul li { color: #aaa; font-size: 0.9rem; }
-.footer a { color: #aaa; text-decoration: none; transition: color 0.3s, transform 0.3s; }
-.footer a:hover { color: #00ff7f; transform: scale(1.1); }
-.footer-social a { margin-right: 10px; font-size: 1.2rem; }
-.footer-newsletter form { 
-  max-width: 300px;   /* reduces width */
-  margin: 10px auto;  /* centers form */
+
+.footer h3 {
+  color: #00ff7f;
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer ul li {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer a:hover {
+  color: #00ff7f;
+  transform: scale(1.1);
+}
+
+.footer-social a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-newsletter form {
+  max-width: 300px;
+  /* reduces width */
+  margin: 10px auto;
+  /* centers form */
   display: flex;
- }
+}
+
 .footer-newsletter input {
   flex: 1;
   padding: 8px 10px;
@@ -342,9 +413,10 @@ border-radius:20px;
   background: #111;
   color: #fff;
   outline: none;
-  width:100px;
-  height:35px;
+  width: 100px;
+  height: 35px;
 }
+
 .footer-newsletter button {
   padding: 8px 15px;
   padding-left: 4px;
@@ -354,31 +426,38 @@ border-radius:20px;
   color: #000;
   cursor: pointer;
   transition: transform 0.3s;
-  width:80px;
-  height:35px;
-  font-size:15px;
+  width: 80px;
+  height: 35px;
+  font-size: 15px;
   font-weight: 600;
 }
 
-.footer-newsletter button:hover { transform: scale(1.05); }
-.back-color1{
-       color:blue;
-    
+.footer-newsletter button:hover {
+  transform: scale(1.05);
 }
-.back-color2{
-       color:rgb(160, 15, 78);
-    
+
+.back-color1 {
+  color: blue;
+
 }
-.back-color3{
-       color:white;
-    
+
+.back-color2 {
+  color: rgb(160, 15, 78);
+
 }
+
+.back-color3 {
+  color: white;
+
+}
+
 /* Animated Background Circles */
 .circle {
   position: absolute;
   border-radius: 50%;
   background: rgba(0, 255, 127, 0.1);
 }
+
 .circle1 {
   top: -50px;
   left: -50px;
@@ -386,6 +465,7 @@ border-radius:20px;
   height: 150px;
   animation: floatCircle 6s ease-in-out infinite;
 }
+
 .circle2 {
   bottom: -60px;
   right: -60px;
@@ -393,7 +473,15 @@ border-radius:20px;
   height: 200px;
   animation: floatCircle 8s ease-in-out infinite alternate;
 }
+
 @keyframes floatCircle {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-15px) rotate(45deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(45deg);
+  }
 }
