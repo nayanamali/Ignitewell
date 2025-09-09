@@ -13,6 +13,7 @@ body {
 /* ---------- NAVBAR ---------- */
 .navbar {
   background: rgba(0, 0, 0, 0.85);
+  height: 60px;
 }
 .navbar-brand {
   font-size: 1.8rem;
@@ -20,11 +21,14 @@ body {
   color: #fff !important;
   display: flex;
   align-items: center;
-  gap: 8px;
+
 }
 .navbar-brand img {
-  width: 50px;
-  height: 35px;
+  height: 60px;      /* increase logo height */
+  width: 70px;
+  margin-top: -8px;  /* shift up */
+  margin-bottom: -8px; /* shift down */
+  padding-left: 0px;
 }
 .active{
 background-color: #00ff7f;
