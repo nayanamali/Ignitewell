@@ -65,9 +65,7 @@ border-radius:20px;
   text-align: center;
   overflow: hidden;
 }
-.service-header h2{
-  margin-top: 50px;
-}
+
 .header-content {
   position: relative;
   z-index: 2;
