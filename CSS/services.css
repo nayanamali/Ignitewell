@@ -58,10 +58,10 @@ border-radius:20px;
  color:#00ff7f !important;
 }
 
-/* Hero Section */
+/* Hero Section 
 .service-header {
   position: relative;
-  height: 100vh;
+  height:650px;
   background: url("/images/serviceback.jpg") center center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -75,7 +75,7 @@ border-radius:20px;
   z-index: 2;
   max-width: 800px;
   padding: 2rem;
-}
+}*/
     
     /* .service-header::before {
       content: "";
@@ -146,65 +146,45 @@ border-radius:20px;
       background-color: #000; 
       color: #f1f1f1;
     }
-    /* services cards */
-    .glass {
-      background: rgba(255, 255, 255, 0.05);
+    .service-header {
+       position: relative;
+  height:650px;
+  background: url("/images/serviceback.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+    }
+
+    .title {
+     background: #0d0d0d;
+      color: #00ff7f;
+    }
+    .subtitle {
+      color: #f0f0f0;
+      font-size: 1.1rem;
+    }
+
+    /* Service Box */
+    .service-box {
+     background: rgba(255, 255, 255, 0.05);
       border: 2px solid #00ff7f;
       box-shadow: 0 8px 20px rgba(0, 255, 136, 0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-
     }
-    .glass:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px rgba(0,255,127,0.4);
-    }
-    .btn-accent {
-      background-color: #00ff7f;
-      color: #000;
-      font-weight: 600;
-    }
-    .btn-accent:hover {
-      background-color: #00ff7f;
-      color: #fff;
-    }
-    .icon-green {
+    .service-box i {
       color: #00ff7f;
+      transition: transform 0.4s, color 0.4s;
     }
-    
-    .glass5:hover{
-      transform: translateY(-8px);
-      box-shadow: 0 12px 25px rgba(0, 255, 136, 0.25);
-      
-    } 
-
-/*      
-@keyframes slideFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.slide-right {
-  animation: slideFromRight 1s ease-out forwards;
-}
-
-/* Fade + slide up for list items */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+    .service-box:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 255, 127, 0.4);
+    }
+    .service-box:hover i {
+      color: #fff;
+      transform: scale(1.2);
+    }
 /* why choose our programs*/
 .glass5, .glass4 {
   background: rgba(255,255,255,0.05);
@@ -239,75 +219,6 @@ border-radius:20px;
   color: #fff;
 }
     
-/* .stagger-list li {
-  opacity: 0;
-  animation: fadeUp 0.8s ease forwards;
-}
-
-/* Stagger effect */
-/* .stagger-list li:nth-child(1) { 
-  animation-delay: 1s; 
-}
-.stagger-list li:nth-child(2) { 
-  animation-delay: 1.2s; 
-}
-.stagger-list li:nth-child(3) { 
-  animation-delay: 1.4s; 
-}
-.stagger-list li:nth-child(4) { 
-  animation-delay: 1.6s; 
-} */
-
- 
-    /* CTA glow */
-      /* .glow {
-        box-shadow: 0 0 0 .15rem rgba(126,249,166,.25), 0 .75rem 2rem rgba(0,0,0,.35);
-      }
-
-      .btn-accent {
-        --bs-btn-color: #000;
-        --bs-btn-bg: var(--pf-accent);
-        --bs-btn-border-color: var(--pf-accent);
-        --bs-btn-hover-bg: #00ff7f;;
-        --bs-btn-hover-border-color: #00ff7f;
-      }
-
-      .btn-outline-accent {
-        --bs-btn-color: var(--pf-accent);
-        --bs-btn-border-color: var(--pf-accent);
-        --bs-btn-hover-bg: rgba(126,249,166,.1);
-        --bs-btn-hover-border-color: var(--pf-accent);
-      }
-      :root {
-        --pf-accent: #00ff7f; /* mint */
-        /* --pf-accent-2: #a6c8ff; /* soft blue */
-      /* } */ 
-     
-      /* .ring {
-        position: relative;
-        border-radius: 1.25rem;
-        isolation: isolate;
-      
-      }
-      .ring::before {
-        content: "";
-        position: absolute; 
-        inset: -1px;
-        background: linear-gradient(135deg, var(--pf-accent), var(--pf-accent-2));
-        border-radius: inherit; z-index: -1; filter: blur(8px); opacity: .35;
-      }
-      .py-5 {
-          padding-top: 3rem !important;
-          padding-bottom: 20px !important;
-      }
-     .g1{
-          margin-bottom:60px;
-     }
-     .mt-5{
-            padding-top: 50px;
-     } */ 
-
-
  /* ---------- FOOTER ---------- */
 .footer {
   background:#0b0b0d;
@@ -315,6 +226,7 @@ border-radius:20px;
   padding: 50px 0;
   position: relative;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 .footer-container {
   max-width: 1100px;
