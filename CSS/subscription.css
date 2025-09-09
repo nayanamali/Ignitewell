@@ -84,7 +84,6 @@ h1 {
   font-weight: bold;
 }
 
-<<<<<<< HEAD
     h1 {
       margin: 30px 0;
       font-weight: bold;
@@ -94,8 +93,6 @@ h1 {
   height: 300px;
   width: 450px;
   border-radius: 20px;
-=======
->>>>>>> e4747966c431b79a54c25be1ae596b5be9c85e0b
 
 }
 
@@ -142,7 +139,6 @@ h1 {
   color: white;
 }
 
-<<<<<<< HEAD
     .btn-primary:hover {
       background-color: #00ff7f;
       color: white;
@@ -228,7 +224,6 @@ h1 {
       100% { transform: rotateY(360deg); }
     }
  
-=======
 .carousel-item {
   height: 80vh;
   min-height: 400px;
@@ -262,7 +257,6 @@ h1 {
   animation: gradientFlow 6s infinite linear;
 }
 
->>>>>>> e4747966c431b79a54c25be1ae596b5be9c85e0b
 /* ---------- PLANS ---------- */
 .plan-card {
   background: rgba(255, 255, 255, 0.04);
@@ -368,7 +362,6 @@ i {
   flex-wrap: wrap;
 
 }
-<<<<<<< HEAD
  .price {
         font-size: 1.5rem;
         font-weight: 400;
@@ -403,8 +396,6 @@ i {
         border-radius: 45%;
         margin-bottom: 10px;
       }
-=======
->>>>>>> e4747966c431b79a54c25be1ae596b5be9c85e0b
 
 .price {
   font-size: 1.5rem;
@@ -413,7 +404,6 @@ i {
   text-shadow: 1px 1px 5px #00ff7f;
 }
 
-<<<<<<< HEAD
  .card {
    width: 250px;
         height: 250px;
@@ -425,13 +415,11 @@ i {
       
       perspective: 1000px; /* Needed for 3D effect */
     }
-=======
 .card-glow {
   width: 340px;
   text-align: center;
   padding: 28px;
   margin: 50px;
->>>>>>> e4747966c431b79a54c25be1ae596b5be9c85e0b
 
   border: 2px solid gray;
   border-radius: 20px;
