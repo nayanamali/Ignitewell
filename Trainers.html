@@ -38,10 +38,10 @@
     </header> 
 
       <!-- HERO -->
-    <header class="hero" data-aos="fade-up">
+    <header class="hero" data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <div class="row g-4 align-items-center">
-          <div class="col-lg-7">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1500">
             <div class="p-4 p-md-5 glass">
               <span class="badge badge-mint mb-3">Elite Coaches • 1:1 & Group</span>
               <h1 class="display-5 fw-bold" style="color:#00ff7f;">Meet Our <span style="color:var(--mint)">Trainers</span></h1>
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" data-aos="fade-left" data-aos-duration="1500">
             <div class="glass p-1">
               <img class="w-100 rounded-3" src="images/service1.jpg" alt="fitness hero" />
             </div>
@@ -541,12 +541,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 1000, // Animation duration in ms
-    easing: 'ease-in-out', // Animation easing
-    once: true, // Whether animation should happen only once
-    mirror: false // Whether elements should animate out while scrolling past them
-  });
+   
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false     // animate every time on scroll
+    });
 </script>
 </body>
 </html>
