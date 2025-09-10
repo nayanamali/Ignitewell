@@ -222,9 +222,8 @@
 
 
 
-
-    <!-- Footer Section -->
-<footer class="footer">
+  <!-- Footer Section -->
+  <footer class="footer">
     <div class="footer-container">
 
       <!-- About Section -->
@@ -248,6 +247,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="Trainers.html">Trainers</a></li>
+          <li><a href="Subscription.html">Subscription</a></li> 
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -277,9 +278,54 @@
     <div class="circle circle2"></div>
   </footer>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const testimonials = [
+      {
+        text: "IgniteWell transformed my fitness journey. The trainers are top-notch, and the motivation is unmatched!",
+        author: "- John Kevin, Coach",
+        img: "images/member1.png"
+      },
+      {
+        text: "From nutrition to workouts, everything is designed to push you towards your goals with energy and focus.",
+        author: "- Sarah Lee, Athlete",
+        img: "images/member5.png"
+      },
+      {
+        text: "The neon vibes and structured plans made me stick to my workouts and actually enjoy the process.",
+        author: "- David Smith, Member",
+        img: "images/member3.png"
+      }
+    ];
+
+    let index = 0;
+
+    const textP = document.querySelector(".testimonial-content p");
+    const authorDiv = document.querySelector(".testimonial-author");
+    const imgTag = document.querySelector(".testimonial-img img");
+
+    function showTestimonial(i) {
+      textP.textContent = testimonials[i].text;
+      authorDiv.textContent = testimonials[i].author;
+      imgTag.src = testimonials[i].img;
+    }
+
+    document.getElementById("prev").addEventListener("click", () => {
+      index = (index > 0) ? index - 1 : testimonials.length - 1;
+      showTestimonial(index);
+    });
+
+    document.getElementById("next").addEventListener("click", () => {
+      index = (index < testimonials.length - 1) ? index + 1 : 0;
+      showTestimonial(index);
+    });
+
+    // Auto slide
+    setInterval(() => {
+      index = (index < testimonials.length - 1) ? index + 1 : 0;
+      showTestimonial(index);
+    }, 4000);
+  </script>
 </body>
+
 </html>
