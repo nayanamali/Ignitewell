@@ -141,7 +141,7 @@ body::after {
 
 .hero .glass {
   background: var(--glass-bg);
-  border: 1px solid rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .12);  
   border-color: #00ff7f;
   backdrop-filter: blur(12px);
   border-radius: var(--glass-br);
@@ -181,7 +181,7 @@ body::after {
 /* Trainer card */
 .trainer-card {
   background: var(--glass-bg);
-  border: 2px solid rgba(255, 255, 255, .12);
+  border: 2px solid rgba(0, 230, 157, .35);
   border-radius: var(--glass-br);
   overflow: hidden;
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
