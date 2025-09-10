@@ -309,7 +309,7 @@ h1 {
 
 .li1 {
   margin: 10px 0;
-  /*margin: 8px 0;*/
+ /* margin: 8px 0;*/
   font-size: 1rem;
 }
 
@@ -655,7 +655,6 @@ i {
   width: 100px;
   height: 35px;
 }
-
 .footer-newsletter button {
   padding: 8px 15px;
   padding-left: 4px;
@@ -696,7 +695,6 @@ i {
   border-radius: 50%;
   background: rgba(0, 255, 127, 0.1);
 }
-
 .circle1 {
   top: -50px;
   left: -50px;
@@ -724,7 +722,6 @@ i {
     transform: translateY(-15px) rotate(45deg);
   }
 }
-
 .text-center {
   text-align: center;
   width: 100%;

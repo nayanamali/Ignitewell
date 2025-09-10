@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   background: #000;
   color: #fff;
@@ -19,12 +20,9 @@ body {
 
 .navbar-brand img {
   height: 60px;
-  /* increase logo height */
   width: 70px;
   margin-top: -8px;
-  /* shift up */
   margin-bottom: -8px;
-  /* shift down */
   padding-left: 0px;
 }
 
@@ -33,9 +31,16 @@ body {
   border-radius: 20px;
 }
 
-#quotes .carousel-item.active {
-  background: #0b0b0d !important;
-  /* your page background color */
+.nav-link {
+  color: #fff !important;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: color 0.3s;
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  color: #00ff7f !important;
 }
 
 /* Animated IgniteWell text */
@@ -51,26 +56,11 @@ body {
     letter-spacing: 1px;
     opacity: 0.7;
   }
-
   100% {
     letter-spacing: 3px;
     opacity: 1;
   }
 }
-
-.nav-link {
-  color: #fff !important;
-  margin-left: 15px;
-  font-weight: 600;
-  transition: color 0.3s;
-  font-size: 15px;
-}
-
-.nav-link:hover {
-  color: #00ff7f !important;
-}
-
-
 
 /* Info Cards */
 .mt-5 {
@@ -86,39 +76,37 @@ body {
 }
 
 .info-card {
-      background:rgba(0, 0, 0, 0.4);
-      color: #fff;
-      padding: 30px 20px;
-      border-radius: 10px;
-      transition: transform 0.4s, box-shadow 0.4s;
-      border: 1px solid #00ff7f;
-    }
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  border: 2px solid #00ff7f;
+}
 
-    .info-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 255, 127, 0.5);
-    }
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 255, 127, 0.5);
+}
 
-/* Icon styling */
 .info-card i {
   font-size: 2rem;
   color: #00ff7f;
-  /* neon green */
   margin-bottom: 10px;
   display: block;
 }
 
-
 /* Contact Form */
 .contact-form {
-  background: #111;
+  background: #000;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 0 20px rgba(0, 255, 127, 0.2);
+  border: 1px solid #00ff7f;
 }
 
 .form-control {
-  background: #000;
+  background: #111;
   border: 1px solid #00ff7f;
   color: #fff;
 }
@@ -141,17 +129,14 @@ body {
   transform: scale(1.05);
 }
 
-/* Force placeholder color for all inputs and textareas */
+/* Placeholder styling */
 form input::placeholder,
 form textarea::placeholder,
 form select::placeholder {
   color: #00ff7f !important;
-  /* Bright neon green */
   opacity: 1 !important;
-  /* Ensure full visibility */
 }
 
-/* For cross-browser compatibility */
 form input::-webkit-input-placeholder,
 form textarea::-webkit-input-placeholder {
   color: white !important;
@@ -176,39 +161,99 @@ textarea:hover::placeholder {
   margin-top: 20px;
 }
 
-/* FAQ */
-.accordion-button {
-  background: #111;
+/* FAQ Section */
+.faq-section {
+
+  padding: 80px 0;
+}
+
+.faq-left h6 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #39ff14;
+  margin-bottom: 10px;
+}
+
+.faq-left h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
   color: #fff;
-  border: none;
+  margin-bottom: 20px;
 }
 
-.accordion-button:focus {
-  box-shadow: none;
+.faq-left p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
 }
 
-.accordion-button:not(.collapsed) {
+.faq-left .btn {
   background: #00ff7f;
   color: #000;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
-.accordion-body {
-  background: #111;
-  color: #ddd;
+.faq-left .btn:hover {
+  background: #00cc66;
+  transform: scale(1.05);
 }
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
+.accordion-item {
+          background-color: #1a1a1a;
+          border: 1px solid #00ff7f;
+          margin-bottom: 10px;
+          border-radius: 6px;
+          overflow: hidden;
+          box-shadow: 0 0 8px rgba(57, 255, 20, 0.2);
+          transition: 0.3s;
+          margin-left: 50px;
+        }
+    
+        .accordion-item:hover {
+          box-shadow: 0 0 15px rgba(57, 255, 20, 0.5);
+        }
+    
+        .accordion-button {
+          background-color: #1a1a1a;
+          color: #fff;
+          font-weight: 500;
+          padding: 15px;
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+    
+        .accordion-button::after {
+          filter: invert(1) brightness(2);
+        }
+    
+        .accordion-button:not(.collapsed) {
+          background-color: #111;
+          color: #39ff14;
+          font-weight: bold;
+        }
+    
+        .accordion-body {
+          background-color: #111;
+          color: #ccc;
+          padding: 15px;
+        }
+    
+/* Responsive FAQ */
+@media (max-width: 992px) {
+  .faq-left, .faq-right {
+    text-align: center;
+    margin-bottom: 30px;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .faq-right .accordion {
+    max-width: 100% !important;
+    margin: 0 auto;
   }
 }
 
+/* Footer */
 .footer {
   background: #000;
   color: #fff;
@@ -284,23 +329,20 @@ textarea:hover::placeholder {
   font-weight: 600;
 }
 
+.footer-newsletter button:hover {
+  transform: scale(1.05);
+}
+
 .back-color1 {
   color: blue;
-
 }
 
 .back-color2 {
   color: rgb(160, 15, 78);
-
 }
 
 .back-color3 {
   color: white;
-
-}
-
-.footer-newsletter button:hover {
-  transform: scale(1.05);
 }
 
 /* Animated Background Circles */
@@ -327,13 +369,42 @@ textarea:hover::placeholder {
 }
 
 @keyframes floatCircle {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0px) rotate(0deg);
   }
-
   50% {
     transform: translateY(-15px) rotate(45deg);
+  }
+}
+
+/* Existing Accordion Styles (for contact section fallback) */
+.accordion-button {
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #00ff7f;
+  color: #000;
+}
+
+.accordion-body {
+  background: #111;
+  color: #ddd;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
