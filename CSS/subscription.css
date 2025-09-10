@@ -198,9 +198,9 @@ h1 {
       position: relative;
       margin-left: 100PX;
       margin-top: 60PX;
-     
+      
       transform-style: preserve-3d;
-      animation: spin 7s infinite linear;
+      animation: spin 10s infinite linear;
     }
 
     .face {
@@ -214,7 +214,7 @@ h1 {
 
     /* Four sides only */
     .front  { transform: rotateY(  0deg) translateZ(125px); background-image: url('/images/gym1.jpg'); }
-    .back   { transform: rotateY(180deg) translateZ(125px); background-image: url('/images/logo2.png'); }
+    .back   { transform: rotateY(180deg) translateZ(125px); background-image: url('/images/service1.jpg'); }
     .right  { transform: rotateY( 90deg) translateZ(125px); background-image: url('/images/about5.jpg'); }
     .left   { transform: rotateY(-90deg) translateZ(125px); background-image: url('/images/rock.jpg'); }
 
@@ -462,6 +462,7 @@ i {
 
 .fw-bold2 {
   padding-top: 10px;
+  text-decoration: none;
 }
 
 
@@ -521,6 +522,8 @@ i {
 .card-front {
   background: #000;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-back {
@@ -587,7 +590,10 @@ i {
   color: #00ff7f;
 }
 
-
+.c1{
+        display:flex;
+        flex-direction: column;
+}
 
 
 
