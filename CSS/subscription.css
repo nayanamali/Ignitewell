@@ -1,7 +1,6 @@
 /* ---------- BASE ---------- */
 body {
   justify-content: center;
-  text-align: center;
   margin: 0;
   padding: 0;
   background: #0b0b0d;
@@ -160,7 +159,7 @@ h1 {
 
 /* main */
 .main {
- min-height: 80vh;
+ min-height: 95vh;
  background: radial-gradient(60% 100% at 70% 50%, rgba(126,249,166,0.08), transparent 60%),
  radial-gradient(50% 100% at 10% 10%, rgba(166,200,255,0.08), transparent 50%),
  #0b0b0d;
@@ -182,11 +181,37 @@ h1 {
   z-index: 1;
 }
 
+/* ---------- TEXT ANIMATIONS ---------- */
+.main h1 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.main p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.main a.btn {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 
-
-
-    .scene {
+.scene {
       width: 250px;
       height: 250px;
       perspective: 1000px;
@@ -211,7 +236,20 @@ h1 {
       background-position: center;
       border: 2px solid #00ff7f;
     }
+   .btn-success{
+              background: #00ff7f;
+                border: none;
+                color: #000;
+                font-weight: 600;
+                border-radius: 30px;
+                padding: 12px 30px;
+                border: 1px solid white;
+     }
+   .btn-success:hover{
+              box-shadow: 0px 0px 10px #00ff7f;
+              border: 1px solid white;
 
+   }
     /* Four sides only */
     .front  { transform: rotateY(  0deg) translateZ(125px); background-image: url('/images/slide1.jpg'); }
     .back   { transform: rotateY(180deg) translateZ(125px); background-image: url('/images/slide2.jpg'); }
@@ -638,7 +676,7 @@ i {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: #0b0b0d;
+  background: #000;
   color: #fff;
   padding: 50px 0;
   position: relative;
@@ -681,11 +719,8 @@ i {
 }
 
 .footer-newsletter form {
-  max-width: 300px;
-  /* reduces width */
-  margin: 10px auto;
-  /* centers form */
   display: flex;
+  margin-top: 10px;
 }
 
 .footer-newsletter input {
@@ -699,6 +734,7 @@ i {
   width: 100px;
   height: 35px;
 }
+
 .footer-newsletter button {
   padding: 8px 15px;
   padding-left: 4px;
@@ -720,17 +756,14 @@ i {
 
 .back-color1 {
   color: blue;
-
 }
 
 .back-color2 {
   color: rgb(160, 15, 78);
-
 }
 
 .back-color3 {
   color: white;
-
 }
 
 /* Animated Background Circles */
@@ -757,14 +790,10 @@ i {
 }
 
 @keyframes floatCircle {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0px) rotate(0deg);
   }
-
   50% {
     transform: translateY(-15px) rotate(45deg);
   }
 }
-
