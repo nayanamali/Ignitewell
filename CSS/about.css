@@ -125,7 +125,7 @@ body {
   position: relative;
   z-index: 1;
 }
-
+/* image floating */
 .floating {
   animation: float 3s ease-in-out infinite;
 }
@@ -224,6 +224,19 @@ body {
   background-color: none;
 }
 /* our story */
+/* Timeline */
+.timeline {
+  border-left: 3px dashed rgba(255, 255, 255, 0.18);
+  padding-left: 0rem;
+}
+
+.timeline .dot {
+  width: .9rem;
+  height: .9rem;
+  border-radius: 999px;
+  background: var(--pf-accent);
+  box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
+}
 /* blockquote */
 #quotes {
   transition: 0.1s;
@@ -281,19 +294,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-/* Timeline */
-.timeline {
-  border-left: 3px dashed rgba(255, 255, 255, 0.18);
-  padding-left: 0rem;
-}
 
-.timeline .dot {
-  width: .9rem;
-  height: .9rem;
-  border-radius: 999px;
-  background: var(--pf-accent);
-  box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
-}
 
 /* FAQ */
 .accordion-button {
