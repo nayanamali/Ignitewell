@@ -283,8 +283,9 @@ body {
 }
 /* Timeline */
 .timeline {
-  border-left: 3px dashed rgba(255, 255, 255, 0.18);
-  padding-left: 0rem;
+  border-left: 3px dashed rgba(255, 255, 255, 0.18); /* keep your dashed line */
+  padding-left: 0rem; /* keep existing */
+  position: relative; /* needed for absolute positioning of dots */
 }
 
 .timeline .dot {
@@ -293,7 +294,18 @@ body {
   border-radius: 999px;
   background: var(--pf-accent);
   box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
+  position: absolute; /* absolute positioning */
+  left: -8px; /* center on border-left (adjust: half of dot width minus border thickness) */
+  top: 0; /* you can adjust top via timeline item's margin/padding */
+  z-index: 1; /* appear above dashed line */
 }
+.timeline .d-flex {
+  padding-left: 2rem; /* creates space for the dot */
+  gap: 1rem; /* optional: space between dot and text if using flex */
+  position: relative;
+}
+
+
 
 /* FAQ */
 .accordion-button {
