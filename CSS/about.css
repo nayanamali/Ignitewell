@@ -59,12 +59,12 @@ body {
     letter-spacing: 1px;
     opacity: 0.7;
   }
-
   100% {
     letter-spacing: 3px;
     opacity: 1;
+  }
 }
-}
+
 .nav-link {
   color: #fff !important;
   margin-left: 15px;

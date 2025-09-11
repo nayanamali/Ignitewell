@@ -213,10 +213,10 @@ h1 {
     }
 
     /* Four sides only */
-    .front  { transform: rotateY(  0deg) translateZ(125px); background-image: url('/images/gym1.jpg'); }
-    .back   { transform: rotateY(180deg) translateZ(125px); background-image: url('/images/service1.jpg'); }
-    .right  { transform: rotateY( 90deg) translateZ(125px); background-image: url('/images/about5.jpg'); }
-    .left   { transform: rotateY(-90deg) translateZ(125px); background-image: url('/images/rock.jpg'); }
+    .front  { transform: rotateY(  0deg) translateZ(125px); background-image: url('/images/slide1.jpg'); }
+    .back   { transform: rotateY(180deg) translateZ(125px); background-image: url('/images/slide2.jpg'); }
+    .right  { transform: rotateY( 90deg) translateZ(125px); background-image: url('/images/slide5.jpg'); }
+    .left   { transform: rotateY(-90deg) translateZ(125px); background-image: url('/images/service1.jpg'); }
 
     /* Rotation */
     @keyframes spin {
@@ -275,7 +275,7 @@ h1 {
 .plan-title1 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
   text-align: center;
   padding-right: 25px;
 }
@@ -355,7 +355,6 @@ i {
 
   display: flex;
   /* Flexbox for row layout */
-  gap: 20px;
   /* Space between cards */
   justify-content: center;
   /* Center cards horizontally */
@@ -405,46 +404,57 @@ i {
 }
 
  .card {
-   width: 250px;
-        height: 250px;
-        text-align: center;
-     margin: 10px;
-        background-color: #000;
-        border: 2px solid #00ff7f;
-        border-radius: 20px;
-      
-      perspective: 1000px; /* Needed for 3D effect */
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 2px solid #00ff7f;
+    border-radius: 20px;
+  
+    perspective: 1000px;
+    /* Needed for 3D effect */
     }
 .card-glow {
-  width: 340px;
-  text-align: center;
-  padding: 28px;
-  margin: 50px;
+    min-height: 200px; /* adjust height here */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0px;
+  }
 
-  border: 2px solid gray;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.04);
+  .plan-img {
+  width: 160px;           /* medium-large size */
+  height: 160px;
+  object-fit: cover;      /* crop to fit circle */
+  border-radius: 50%;     /* makes it circular */
+  display: block;
+  margin: 0 auto 15px;    /* center horizontally + space below */
+  border: 2px solid #fff; /* optional: white border around circle */
 }
-
 .card-glow:hover {
-  transform: translateY(-6px);
-  box-shadow: 5px 5px 30px #00ff7f;
+  transform: translateY(-10px) scale(0.5rem);
+  box-shadow: 0 0 25px #00ff7f;
 }
 
-.btn-outline-accent {
-  --bs-btn-color: var(--pf-accent);
-  --bs-btn-border-color: var(--pf-accent);
-  --bs-btn-hover-bg: #00ff7f;
-  --bs-btn-hover-border-color: var(--pf-accent);
+.btn-get-started {
+  background-color: #00ff7f;   /* green */
+  color:black;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 50px;        /* circular curve */
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.plan-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 45%;
-  margin-bottom: 10px;
+.btn-get-started:hover {
+  background-color: #00ff7f;   /* darker green on hover */
+  transform: scale(1.05);
 }
+
 
 .types {
   font-size: 1.0rem;
@@ -467,8 +477,7 @@ i {
 
 
 
-.container {
-
+.container-custom {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -532,7 +541,33 @@ i {
   transform: rotateY(180deg);
 }
 
+.ignitewell-stats {
+  background: #0b0b0b;
+  color: #fff;
+}
 
+.stat-box {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width:250px;
+  padding-right:50px;
+ 
+}
+.r1{
+        width:100%;
+}
+.stat-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00ff7f50;
+}
+
+.stat-box h3 {
+  color: #00ff7f;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 
 
@@ -573,7 +608,10 @@ i {
 }
 
 
-
+.py-3 {
+    padding-top: 2rem !important;
+    padding-bottom: 0rem !important;
+}
 
 
 .para2 {

@@ -9,13 +9,13 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ---------- NAVBAR ---------- */
 
+
+/* ---------- NAVBAR ---------- */
 .navbar {
   background: rgba(0, 0, 0, 0.85);
   height: 60px;
 }
-
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: 700;
@@ -24,28 +24,21 @@ body {
   align-items: center;
 
 }
-
 .navbar-brand img {
-  height: 60px;
-  /* increase logo height */
+  height: 60px;      /* increase logo height */
   width: 70px;
-  margin-top: -8px;
-  /* shift up */
-  margin-bottom: -8px;
-  /* shift down */
+  margin-top: -8px;  /* shift up */
+  margin-bottom: -8px; /* shift down */
   padding-left: 0px;
 }
-
-.active1 {
-  background-color: #00ff7f;
-  border-radius: 20px;
+.active1{
+background-color: #00ff7f;
+border-radius:20px;           
 }
 
 #quotes .carousel-item.active {
-  background: #0b0b0d !important;
-  /* your page background color */
+  background: #0b0b0d !important;  /* your page background color */
 }
-
 /* Animated IgniteWell text */
 .brand-text {
   background: linear-gradient(90deg, #00ff7f, #fff);
@@ -59,13 +52,11 @@ body {
     letter-spacing: 1px;
     opacity: 0.7;
   }
-
   100% {
     letter-spacing: 3px;
     opacity: 1;
   }
 }
-
 .nav-link {
   color: #fff !important;
   margin-left: 15px;
@@ -73,11 +64,9 @@ body {
   transition: color 0.3s;
   font-size: 15px;
 }
-
 .nav-link:hover {
-  color: #00ff7f !important;
+ color:#00ff7f !important;
 }
-
 /* ---------- HERO SLIDER ---------- */
 header {
   position: relative;
