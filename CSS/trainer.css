@@ -141,7 +141,7 @@ body::after {
 
 .hero .glass {
   background: var(--glass-bg);
-  border: 1px solid rgba(255, 255, 255, .12);  
+  border: 2px solid rgba(255, 255, 255, .12);  
   border-color: #00ff7f;
   backdrop-filter: blur(12px);
   border-radius: var(--glass-br);

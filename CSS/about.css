@@ -59,12 +59,12 @@ body {
     letter-spacing: 1px;
     opacity: 0.7;
   }
-
   100% {
     letter-spacing: 3px;
     opacity: 1;
+  }
 }
-}
+
 .nav-link {
   color: #fff !important;
   margin-left: 15px;
@@ -125,7 +125,7 @@ body {
   position: relative;
   z-index: 1;
 }
-
+/* image floating */
 .floating {
   animation: float 3s ease-in-out infinite;
 }
@@ -224,6 +224,19 @@ body {
   background-color: none;
 }
 /* our story */
+/* Timeline */
+.timeline {
+  border-left: 3px dashed rgba(255, 255, 255, 0.18);
+  padding-left: 0rem;
+}
+
+.timeline .dot {
+  width: .9rem;
+  height: .9rem;
+  border-radius: 999px;
+  background: var(--pf-accent);
+  box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
+}
 /* blockquote */
 #quotes {
   transition: 0.1s;
@@ -283,8 +296,9 @@ body {
 }
 /* Timeline */
 .timeline {
-  border-left: 3px dashed rgba(255, 255, 255, 0.18);
-  padding-left: 0rem;
+  border-left: 3px dashed rgba(255, 255, 255, 0.18); /* keep your dashed line */
+  padding-left: 0rem; /* keep existing */
+  position: relative; /* needed for absolute positioning of dots */
 }
 
 .timeline .dot {
@@ -293,7 +307,18 @@ body {
   border-radius: 999px;
   background: var(--pf-accent);
   box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
+  position: absolute; /* absolute positioning */
+  left: -8px; /* center on border-left (adjust: half of dot width minus border thickness) */
+  top: 0; /* you can adjust top via timeline item's margin/padding */
+  z-index: 1; /* appear above dashed line */
 }
+.timeline .d-flex {
+  padding-left: 2rem; /* creates space for the dot */
+  gap: 1rem; /* optional: space between dot and text if using flex */
+  position: relative;
+}
+
+
 
 /* FAQ */
 .accordion-button {
