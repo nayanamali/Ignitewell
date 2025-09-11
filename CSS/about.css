@@ -294,9 +294,6 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-<<<<<<< HEAD
-
-=======
 /* Timeline */
 .timeline {
   border-left: 3px dashed rgba(255, 255, 255, 0.18); /* keep your dashed line */
@@ -322,7 +319,6 @@ body {
 }
 
 
->>>>>>> 04e8c403eae105b774368c191bc18bac45907b90
 
 /* FAQ */
 .accordion-button {
