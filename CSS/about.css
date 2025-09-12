@@ -335,12 +335,12 @@ body {
 
 .footer p,
 .footer ul li {
-  color: #aaa;
+  color: #ccc;
   font-size: 0.9rem;
 }
 
 .footer a {
-  color: #aaa;
+  color: #ccc;
   text-decoration: none;
   transition: color 0.3s, transform 0.3s;
 }
