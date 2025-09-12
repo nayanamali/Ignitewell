@@ -94,13 +94,7 @@ body {
   filter: blur(8px);
   opacity: .35;
 }
-
-/* Make grayscale images pop nicely */
-/* .bw-img { 
- filter: grayscale(100%) contrast(1.05); 
-} */
-
-/* Hero */
+/* Hero Section*/
 .hero {
   min-height: 80vh;
   background: radial-gradient(60% 100% at 70% 50%, rgba(126, 249, 166, 0.08), transparent 60%),
@@ -109,7 +103,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .hero-img {
   position: absolute;
   inset: 0;
@@ -125,7 +118,7 @@ body {
   position: relative;
   z-index: 1;
 }
-
+/* image floating */
 .floating {
   animation: float 3s ease-in-out infinite;
 }
@@ -143,7 +136,7 @@ body {
     transform: translateY(0)
   }
 }
-
+/* our mission how it started */
 .btn-accent {
   background-color: #00ff7f;
   color: black;
@@ -163,18 +156,7 @@ body {
   border: 2px solid #00ff7f;
   color: #00ff7f;
 }
-
-.stat {
-  font-size: clamp(2rem, 3.8vw, 3.25rem);
-  font-weight: 800;
-  letter-spacing: .5px;
-}
-
-.muted {
-  color: #fff;
-}
-
-/* glass2 cards */
+/* quick stats  glass2 cards */
 .glass2 {
   transition: 0.2s;
   box-shadow: 0 0 15px rgba(0, 255, 127, 0.2);
@@ -191,7 +173,15 @@ body {
   color: #00ff7f;
   background-color: none;
 }
+.stat {
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: .5px;
+}
 
+.muted {
+  color: #fff;
+} 
 /* Glassy cards */
 .glass {
   background: rgba(255, 255, 255, 0.04);
@@ -224,6 +214,19 @@ body {
   background-color: none;
 }
 /* our story */
+/* Timeline */
+.timeline {
+  border-left: 3px dashed rgba(255, 255, 255, 0.18);
+  padding-left: 0rem;
+}
+
+.timeline .dot {
+  width: .9rem;
+  height: .9rem;
+  border-radius: 999px;
+  background: var(--pf-accent);
+  box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
+}
 /* blockquote */
 #quotes {
   transition: 0.1s;
@@ -340,29 +343,6 @@ body {
     transform: translateY(0);
   }
 }
-
-
-/* CTA glow */
-/* .glow {
-  box-shadow: 0 0 0 .15rem rgba(126,249,166,.25), 0 .75rem 2rem rgba(0,0,0,.35);
-}
-
-.btn-accent {
-  --bs-btn-color: #000;
-  --bs-btn-bg: var(--pf-accent);
-  --bs-btn-border-color: var(--pf-accent);
-  --bs-btn-hover-bg: #00ff7f;
-  --bs-btn-hover-border-color: #00ff7f;
-}
-
-.btn-outline-accent {
-  --bs-btn-color: var(--pf-accent);
-  --bs-btn-border-color: var(--pf-accent);
-  --bs-btn-hover-bg: rgba(126,249,166,.1);
-  --bs-btn-hover-border-color: var(--pf-accent);
-} */
-
-
 /* ---------- FOOTER ---------- */
 .footer {
   background: #0b0b0d;
