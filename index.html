@@ -463,32 +463,32 @@ const testimonials = [
       author: "- David Smith, Member",
       img: "images/member3.png"
     }
-  ];
+  ];                  /*stores all testimonial data*/
 
-  let index = 0;
+  let index = 0;    /*track current testimonial*/
 
-  const textP = document.querySelector(".testimonial-content p");
+  const textP = document.querySelector(".testimonial-content p");   /* This lines select HTML elements where testimional data will appear*/
   const authorDiv = document.querySelector(".testimonial-author");
   const imgTag = document.querySelector(".testimonial-img img");
 
-  function showTestimonial(i) {
+  function showTestimonial(i) {                                      /*updates testimonial Data*/
     textP.textContent = testimonials[i].text;
     authorDiv.textContent = testimonials[i].author;
     imgTag.src = testimonials[i].img;
   }
 
-  document.getElementById("prev").addEventListener("click", () => {
+  document.getElementById("prev").addEventListener("click", () => {              /*navigates to prev testimonial*/
     index = (index > 0) ? index - 1 : testimonials.length - 1;
     showTestimonial(index);
   });
 
-  document.getElementById("next").addEventListener("click", () => {
+  document.getElementById("next").addEventListener("click", () => {               /*navigates to next testimonial*/
     index = (index < testimonials.length - 1) ? index + 1 : 0;
     showTestimonial(index);
   });
 
   // Auto slide
-  setInterval(() => {
+  setInterval(() => {                                               /*automatically changes testimonial at every 4 sec*/
     index = (index < testimonials.length - 1) ? index + 1 : 0;
     showTestimonial(index);
   }, 4000);
