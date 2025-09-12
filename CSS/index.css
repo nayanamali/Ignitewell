@@ -75,13 +75,11 @@ header {
 .carousel-item.active .slider-img {
   transform: scale(1);
 }
-.carousel-indicators [data-bs-target].active {
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
 .carousel-caption {
   animation: fadeUp 1.5s ease forwards;
+}
+.carousel-item.active {
+     border:none !important;
 }
 .slide-title {
   font-size: clamp(2rem, 5vw, 4rem);
