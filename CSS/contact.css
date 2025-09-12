@@ -69,10 +69,12 @@ body {
   background-size: cover;
   height: 300px;
   margin-top: 100px;
+  width: 100%;
 }
 
 .g-4 {
   margin-top: 20px;
+  margin:auto;
 }
 
 .info-card {
@@ -88,14 +90,32 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 255, 127, 0.5);
 }
-
 .info-card i {
   font-size: 2rem;
-  color: #00ff7f;
+  color: #00ff7f; 
   margin-bottom: 10px;
   display: block;
 }
 
+.info-card p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Media Query for extra small screens */
+@media (max-width: 575.98px) {
+  .info-card {
+    padding: 15px;          /* Reduce padding */
+  }
+  .info-card p {
+    font-size: 0.9rem;      /* Slightly smaller text */
+  }
+  .mt-5{
+       height:350px;
+       width: 100%;
+  }
+}
 /* Contact Form */
 .contact-form {
   background: #000;
