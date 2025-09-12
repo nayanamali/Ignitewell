@@ -37,7 +37,7 @@ body {
 }
 
 .active {
-  background-color: #00ff7f;
+  border:2px solid #00ff7f;
   border-radius: 20px;
 }
 
@@ -607,7 +607,12 @@ i {
   font-weight: bold;
 }
 
-
+.counter::after {
+  content: "+";
+  margin-left: 2px;
+  color: #00ff7f; /* optional: same as heading color */
+  font-weight: bold;
+}
 
 /* ---------- BUTTONS ---------- */
 .btn-join,
@@ -676,7 +681,7 @@ i {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: #0b0b0b;
+  background: #111;
   color: #fff;
   padding: 50px 0;
   position: relative;
@@ -717,7 +722,9 @@ i {
   margin-right: 10px;
   font-size: 1.2rem;
 }
-
+.bi-envelope-fill{
+     padding-right:6px;
+}
 .footer-newsletter form {
   display: flex;
   margin-top: 10px;
@@ -758,15 +765,19 @@ i {
 }
 
 .back-color1 {
-  color: blue;
+  color:#1877F2;
+  font-size: 22px;
+
 }
 
 .back-color2 {
   color: rgb(160, 15, 78);
+
 }
 
 .back-color3 {
   color: white;
+
 }
 
 /* Animated Background Circles */

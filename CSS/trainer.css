@@ -36,7 +36,7 @@ body {
 }
 
 .active1 {
-  background-color: #00ff7f;
+  border:2px solid #00ff7f;
   border-radius: 20px;
 }
 
@@ -287,11 +287,10 @@ footer {
   color: #fff;
 }
 
-/* Twitter white */
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: #0b0b0d;
+  background: #111;
   color: #fff;
   padding: 50px 0;
   position: relative;
@@ -326,6 +325,9 @@ footer {
 .footer-social a { 
   margin-right: 10px; 
   font-size: 1.2rem; 
+}
+.bi-envelope-fill{
+     padding-right:6px;
 }
 .footer-newsletter form { 
   max-width: 300px;   /* reduces width */
@@ -364,23 +366,22 @@ footer {
   font-size: 0.9rem;
 }
 .footer-newsletter button:hover { transform: scale(1.05); }
-.back-color1{
-  color:blue;
-    
+.back-color1 {
+  color:#1877F2;
+  font-size: 22px;
+
 }
-.back-color2{
-  color:rgb(160, 15, 78);
-    
-}
-.back-color3{
-  color:white;
-    
+
+.back-color2 {
+  color: rgb(160, 15, 78);
+
 }
 
 .back-color3 {
   color: white;
 
 }
+
 
 /* Animated Background Circles */
 .circle {

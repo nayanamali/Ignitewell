@@ -29,9 +29,9 @@ body {
   margin-bottom: -8px; /* shift down */
   padding-left: 0px;
 }
-.active1{
-background-color: #00ff7f;
-border-radius:20px;           
+.active {
+  border:2px solid #00ff7f;
+  border-radius: 20px;
 }
 
 #quotes .carousel-item.active {
@@ -668,7 +668,7 @@ header {
     }
     .step-content h4 {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 15.7px;
       font-weight: 600;
       color: #fff;
     }
@@ -935,7 +935,7 @@ button:hover {
 
 /* ---------- FOOTER ---------- */
 .footer {
-  background: #0b0b0d;
+  background: #111;
   color: #fff;
   padding: 50px 0;
   position: relative;
@@ -977,6 +977,9 @@ button:hover {
   font-size: 1.2rem;
 }
 
+.bi-envelope-fill{
+     padding-right:6px;
+}
 .footer-newsletter form {
   max-width: 300px;
   /* reduces width */
@@ -1020,7 +1023,8 @@ button:hover {
 }
 
 .back-color1 {
-  color: blue;
+  color:#1877F2;
+  font-size: 22px;
 
 }
 

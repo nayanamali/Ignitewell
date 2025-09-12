@@ -27,7 +27,7 @@ body {
 }
 
 .active {
-  background-color: #00ff7f;
+  border:2px solid #00ff7f;;
   border-radius: 20px;
 }
 
@@ -312,7 +312,7 @@ textarea:hover::placeholder {
 
 /* Footer */
 .footer {
-  background: #000;
+  background:#111;
   color: #fff;
   padding: 50px 0;
   position: relative;
@@ -353,7 +353,9 @@ textarea:hover::placeholder {
   margin-right: 10px;
   font-size: 1.2rem;
 }
-
+.bi-envelope-fill{
+     padding-right:6px;
+}
 .footer-newsletter form {
   display: flex;
   margin-top: 10px;
@@ -394,16 +396,21 @@ textarea:hover::placeholder {
 }
 
 .back-color1 {
-  color: blue;
+  color:#1877F2;
+  font-size: 22px;
+
 }
 
 .back-color2 {
   color: rgb(160, 15, 78);
+
 }
 
 .back-color3 {
   color: white;
+
 }
+
 
 /* Animated Background Circles */
 .circle {
