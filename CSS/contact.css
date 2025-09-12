@@ -166,7 +166,13 @@ textarea:hover::placeholder {
 
   padding: 80px 0;
 }
-
+.faq-left
+{
+     margin-left:20px;
+}
+.faq-right{
+       margin-right: 20px;
+}
 .faq-left h6 {
   font-weight: 600;
   letter-spacing: 1px;
@@ -239,7 +245,38 @@ textarea:hover::placeholder {
           color: #ccc;
           padding: 15px;
         }
-    
+    /* Existing Accordion Styles (for contact section fallback) */
+.accordion-button {
+  background: #111;
+  color: #fff;
+  border: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #00ff7f;
+  color: #000;
+}
+
+.accordion-body {
+  background: #111;
+  color: #ddd;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Responsive FAQ */
 @media (max-width: 992px) {
   .faq-left, .faq-right {
@@ -328,7 +365,10 @@ textarea:hover::placeholder {
   font-size: 15px;
   font-weight: 600;
 }
-
+.footer-newsletter input::placeholder {
+  color: gray;   /* muted secondary */
+  font-size: 0.9rem;
+}
 .footer-newsletter button:hover {
   transform: scale(1.05);
 }
@@ -377,34 +417,3 @@ textarea:hover::placeholder {
   }
 }
 
-/* Existing Accordion Styles (for contact section fallback) */
-.accordion-button {
-  background: #111;
-  color: #fff;
-  border: none;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-button:not(.collapsed) {
-  background: #00ff7f;
-  color: #000;
-}
-
-.accordion-body {
-  background: #111;
-  color: #ddd;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}

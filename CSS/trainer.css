@@ -359,7 +359,10 @@ footer {
   font-size: 15px;
   font-weight: 600;
 }
-
+.footer-newsletter input::placeholder {
+  color:white;   /* muted secondary */
+  font-size: 0.9rem;
+}
 .footer-newsletter button:hover { transform: scale(1.05); }
 .back-color1{
   color:blue;
