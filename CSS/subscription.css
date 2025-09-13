@@ -268,8 +268,7 @@ h1 {
 
 .back {
   transform: rotateY(180deg) translateZ(125px);
-  
-  background-image: url('images/slide2.jpg');
+
 }
 
 .right {
