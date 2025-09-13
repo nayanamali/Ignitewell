@@ -588,7 +588,7 @@ h2 {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(#00ff7f 20deg, transparent 120deg);
+  background: conic-gradient(#00ff7f 20deg, transparent 120deg);  /*it spins colors around a center point*/
   animation: rotate 6s linear infinite;
 }
 
