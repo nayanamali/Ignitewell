@@ -178,7 +178,7 @@ h1 {
   z-index: 0;
   /* opacity: .25;  */
   mix-blend-mode: screen;
-  background-image: url("/images/gym1.jpg");
+  background-image: url("/images/about1.avif");
   background-size: cover;
   background-position: center;
 }
