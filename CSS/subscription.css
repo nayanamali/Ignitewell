@@ -263,22 +263,22 @@ h1 {
 /* Four sides only */
 .front {
   transform: rotateY(0deg) translateZ(125px);
-  background-image: url('/images/slide1.jpg');
+  
 }
 
 .back {
   transform: rotateY(180deg) translateZ(125px);
-  background-image: url('/images/slide2.jpg');
+  
 }
 
 .right {
   transform: rotateY(90deg) translateZ(125px);
-  background-image: url('/images/slide5.jpg');
+  
 }
 
 .left {
   transform: rotateY(-90deg) translateZ(125px);
-  background-image: url('/images/service1.jpg');
+
 }
 
 /* Rotation */
