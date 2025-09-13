@@ -167,7 +167,6 @@ body::after {
 .form-control,
 .form-select {
   background: #000;
-  /* background: rgba(255,255,255,.04);  */
   border: 1px solid rgba(255, 255, 255, .14);
   color: #eaeff3;
 }

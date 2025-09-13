@@ -22,10 +22,10 @@ body {
 
 }
 .navbar-brand img {
-  height: 60px;      /* increase logo height */
+  height: 60px;    
   width: 70px;
-  margin-top: -8px;  /* shift up */
-  margin-bottom: -8px; /* shift down */
+  margin-top: -8px; 
+  margin-bottom: -8px; 
   padding-left: 0px;
 }
 .active{
@@ -34,7 +34,7 @@ border-radius:20px;
 }
 
 #quotes .carousel-item.active {
-  background: #0b0b0d !important;  /* your page background color */
+  background: #0b0b0d !important; 
 }
 
 /* Animated IgniteWell text */
@@ -145,7 +145,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .service-box {
-     padding:15px;      /* Reduce padding */
+     padding:15px;     
   }
   .service-header{
        height:1500px;
@@ -178,7 +178,7 @@ body {
 
 /* Image styling */
 .bw-img {
-  /* filter: grayscale(100%); */
+  
   transition: filter 0.4s ease, transform 0.4s ease;
 }
 .bw-img:hover {
@@ -243,8 +243,8 @@ body {
      padding-right:6px;
 }
 .footer-newsletter form { 
-  max-width: 300px;   /* reduces width */
-  margin: 10px auto;  /* centers form */
+  max-width: 300px;   
+  margin: 10px auto;  
   display: flex;
 }
 .footer-newsletter input {

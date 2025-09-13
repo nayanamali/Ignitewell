@@ -1,13 +1,10 @@
 :root {
   --pf-accent: #00ff7f;
-  /* mint */
   --pf-accent-2: #a6c8ff;
-  /* soft blue */
 }
 
 body {
   background: #0b0b0d;
-  /* deep black */
   color: #fff;
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
 }
@@ -28,12 +25,9 @@ body {
 
 .navbar-brand img {
   height: 60px;
-  /* increase logo height */
   width: 70px;
   margin-top: -8px;
-  /* shift up */
   margin-bottom: -8px;
-  /* shift down */
   padding-left: 0px;
 }
 
@@ -43,7 +37,7 @@ body {
 }
 #quotes .carousel-item.active {
   background: #0b0b0d !important;
-  /* your page background color */
+  
 }
 
 /* Animated IgniteWell text */
@@ -94,6 +88,7 @@ body {
   filter: blur(8px);
   opacity: .35;
 }
+
 /* Hero Section*/
 .hero {
   min-height: 80vh;
@@ -232,11 +227,11 @@ body {
   box-shadow: 0 0 25px rgba(0, 255, 127, 0.4);
 }
 
-/* Our story/Timeline*/
+/* Our story Timeline*/
 .timeline {
-  border-left: 3px dashed rgba(255, 255, 255, 0.18); /* keep your dashed line */
-  padding-left: 0rem; /* keep existing */
-  position: relative; /* needed for absolute positioning of dots */
+  border-left: 3px dashed rgba(255, 255, 255, 0.18); 
+  padding-left: 0rem; 
+  position: relative; 
 }
 .timeline .dot {
   width: .9rem;
@@ -244,14 +239,14 @@ body {
   border-radius: 999px;
   background: var(--pf-accent);
   box-shadow: 0 0 0 .25rem rgba(126, 249, 166, .15);
-  position: absolute; /* absolute positioning */
-  left: -8px; /* center on border-left (adjust: half of dot width minus border thickness) */
-  top: 0; /* you can adjust top via timeline item's margin/padding */
-  z-index: 1; /* appear above dashed line */
+  position: absolute;
+  left: -8px; 
+  top: 0; 
+  z-index: 1;
 }
 .timeline .d-flex {
-  padding-left: 2rem; /* creates space for the dot */
-  gap: 1rem; /* optional: space between dot and text if using flex */
+  padding-left: 2rem; 
+  gap: 1rem; 
   position: relative;
 }
 /* Testimonial avatar ring */
@@ -279,13 +274,11 @@ body {
 
 /* Team cards */
 .team-card img {
-  /* filter: grayscale(100%);  */
   transition: transform .4s ease, filter .4s ease;
   border: 2px solid #fff;
 }
 
 .team-card:hover img {
-  /* filter: grayscale(0%); */
   transform: scale(1.03);
 }
 
