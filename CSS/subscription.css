@@ -178,7 +178,11 @@ h1 {
   z-index: 0;
   /* opacity: .25;  */
   mix-blend-mode: screen;
+<<<<<<< HEAD
   background-image: url("/images/about5.jpg");
+=======
+  background-image: url("/images/about1.avif");
+>>>>>>> a8c0444e2b5e2fa277d5d9f6c04704496814998d
   background-size: cover;
   background-position: center;
 }
